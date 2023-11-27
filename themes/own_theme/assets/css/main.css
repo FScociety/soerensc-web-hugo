@@ -59,3 +59,36 @@ a {
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+nav > ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  display: flex; /* Aligns children in a row */
+  flex-wrap: nowrap; /* Prevents wrapping into a new line */
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: var(--accent-bg); /* Example button color */
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: var(--accent); /* Darker shade for hover effect */
+  color: var(--accent-bg);
+}
+
+nav ul li a.active {
+  background-color: var(--accent); /* Different color for active menu item */
+  color: var(--accent-bg);
+}
+
+.header {
+  display: inline-block;
+}

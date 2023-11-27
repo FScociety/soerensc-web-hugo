@@ -1,1 +1,6 @@
-Hello Das ist die Index datei
+---
+title: "Index"
+layout: single"
+---
+
+Hello

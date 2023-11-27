@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ .Content }}
   <div class="cover-grid-container">
-    {{ range site.RegularPages }}
+    {{ range .Pages }}
     <a href="{{ .RelPermalink }}">
       <div class="cover-item">
         {{ $coverPath := print .RelPermalink "media/COVER.png"}}
