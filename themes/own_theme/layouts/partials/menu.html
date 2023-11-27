@@ -7,6 +7,8 @@
     @example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
     */}}
     
+    <p>Menu beginn</p>
+
     {{- $page := .page }}
     {{- $menuID := .menuID }}
     
@@ -49,4 +51,6 @@
         </li>
       {{- end }}
     {{- end }}
+
+    <p>Menu end</p>
     

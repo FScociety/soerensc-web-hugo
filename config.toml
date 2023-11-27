@@ -1,4 +1,4 @@
 baseURL = 'http://example.org/'
-languageCode = 'de-de'
+languageCode = 'en-US'
 title = 'Sören Schmidt-Clausen'
 theme = "own_theme"
