@@ -1,6 +1,4 @@
 ---
-title: "Index"
-layout: single"
+title: test
+layout: list
 ---
-
-Hello
