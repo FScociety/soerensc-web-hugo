@@ -1,0 +1,61 @@
+:root,
+  ::backdrop {
+    --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    --standard-border-radius: 5px;
+
+    color-scheme: dark;
+    --bg: #212121;
+    --accent-bg: #2b2b2b;
+    --text: #dcdcdc;
+    --text-light: #ababab;
+    --accent: #ffb300;
+    --accent-text: var(--bg);
+    --code: #f06292;
+    --preformatted: #ccc;
+    --disabled: #111;
+  }
+
+body {
+  color: var(--text-light);
+  background-color: var(--bg);
+  font-family: var(--sans-font);
+  line-height: 1.5;
+  display: grid;
+  margin: 5rem;
+  text-align: center;
+}
+
+h1 {
+  color: var(--text)
+}
+
+a {
+  color: var(--text);
+}
+
+.cover-grid-container {
+  display: inline-grid;
+  column-gap: 0px;
+  row-gap: 0px;
+  grid-template-columns: auto auto;
+  align-content: center;
+}
+
+.cover-grid-container a {
+  text-decoration: none;
+}
+
+.cover-item {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.cover-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}

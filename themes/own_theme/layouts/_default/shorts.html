@@ -1,0 +1,16 @@
+{{ define "main" }}
+  {{ .Content }}
+  <div class="cover-grid-container">
+    {{ range site.RegularPages }}
+    <a href="{{ .RelPermalink }}">
+      <div class="cover-item">
+        {{ $coverPath := print .RelPermalink "media/COVER.png"}}
+        <img src="{{ $coverPath}}" alt="No Cover Image">
+        <br>
+        <p><b>{{ .LinkTitle }}</b></p>
+
+      </div>
+    </a>
+    {{ end }}
+  </div>
+{{ end }}

@@ -1,4 +1,4 @@
 baseURL = 'http://example.org/'
 languageCode = 'de-de'
-title = 'soerensc'
-theme = "hugo-PaperMod-7.0"
+title = 'Sören Schmidt-Clausen'
+theme = "own_theme"
