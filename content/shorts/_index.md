@@ -1,4 +1,4 @@
 ---
-title: test
-layout: list
+title: Index
+layout: blogview
 ---

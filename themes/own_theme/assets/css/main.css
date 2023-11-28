@@ -18,13 +18,18 @@
     --disabled: #111;
   }
 
+html {
+  font-family: var(--sans-font);
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--text-light);
   background-color: var(--bg);
-  font-family: var(--sans-font);
+  font-size: 1.15rem;
   line-height: 1.5;
   display: grid;
-  margin: 5rem;
+  margin: 10rem;
   text-align: center;
 }
 
@@ -38,8 +43,8 @@ a {
 
 .cover-grid-container {
   display: inline-grid;
-  column-gap: 0px;
-  row-gap: 0px;
+  column-gap: 60px;
+  row-gap: 30px;
   grid-template-columns: auto auto;
   align-content: center;
 }
@@ -72,7 +77,7 @@ nav ul li a {
   display: inline-block;
   padding: 10px 20px;
   margin: 5px;
-  background-color: var(--accent-bg); /* Example button color */
+  background-color: var(--accent-bg);
   color: var(--text);
   text-decoration: none;
   border-radius: 5px;
@@ -80,15 +85,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: var(--accent); /* Darker shade for hover effect */
+  background-color: var(--accent);
   color: var(--accent-bg);
 }
 
-nav ul li a.active {
-  background-color: var(--accent); /* Different color for active menu item */
+nav ul li a:active {
+  background-color: var(--accent);
   color: var(--accent-bg);
 }
 
 .header {
-  display: inline-block;
+  display: inline-box;
 }

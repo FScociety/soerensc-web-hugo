@@ -1,24 +1,24 @@
-[[main]]
+[[menus.main]]
 name = 'Home'
 pageRef = '/'
 weight = 10
 
-[[main]]
+[[menus.main]]
 name = 'Shorts'
 pageRef = '/shorts'
 weight = 20
 
-[[main]]
+[[menus.main]]
 name = 'Photography'
 pageRef = '/photography'
 weight = 30
 
-[[main]]
+[[menus.main]]
 name = 'Coding'
 pageRef = '/coding'
 weight = 40
 
-[[main]]
+[[menus.main]]
 name = 'Blog'
 pageRef = '/blog'
 weight = 50
