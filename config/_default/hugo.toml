@@ -1,24 +1,43 @@
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
+url = '/'
 weight = 10
 
 [[menus.main]]
-name = 'Shorts'
-pageRef = '/shorts'
+name = 'Work'
+pageRef = 'work'
+url = '/work'
 weight = 20
+    [[menus.main]]
+    name = 'Shorts'
+    pageRef = 'shorts'
+    url = '/shorts'
+    weight = 10
+    parent = 'Work'
 
-[[menus.main]]
-name = 'Photography'
-pageRef = '/photography'
-weight = 30
+    [[menus.main]]
+    name = 'Photography'
+    pageRef = 'photography'
+    url = '/photography'
+    weight = 20
+    parent = 'Work'
 
-[[menus.main]]
-name = 'Coding'
-pageRef = '/coding'
-weight = 40
+    [[menus.main]]
+    name = 'Coding'
+    pageRef = 'coding'
+    url = '/coding'
+    weight = 30
+    parent = 'Work'
 
 [[menus.main]]
 name = 'Blog'
-pageRef = '/blog'
-weight = 50
+pageRef = 'blog'
+url = '/blog'
+weight = 30
+
+[[menus.main]]
+name = 'About'
+pageRef = 'about'
+url = '/about'
+weight = 40

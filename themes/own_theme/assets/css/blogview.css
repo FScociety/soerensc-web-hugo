@@ -1,3 +1,32 @@
-{
- font-size: 20px;   
+.project-grid-container {
+    display: inline-grid;
+    column-gap: 60px;
+    row-gap: 30px;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: var(--text);
+    }
+    
+    .project-item {
+
+        position: relative;
+
+        img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        .cover-static {
+            position: absolute;
+        }
+
+        .cover-static:hover {
+            opacity: 0;
+        }      
+    }
 }

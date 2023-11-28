@@ -7,3 +7,15 @@
     {{- end }}
   {{- end }}
 {{- end }}
+
+{{- with resources.Get "css/blogview.css" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- end }}
+
+{{- with resources.Get "css/header.css" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- end }}
+
+{{- with resources.Get "css/footer.css" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- end }}

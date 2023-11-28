@@ -11,6 +11,7 @@
     --accent-bg: #2b2b2b;
     --text: #dcdcdc;
     --text-light: #ababab;
+    --border: #898EA4;
     --accent: #ffb300;
     --accent-text: var(--bg);
     --code: #f06292;
@@ -24,76 +25,56 @@ html {
 }
 
 body {
-  color: var(--text-light);
+  color: var(--text);
   background-color: var(--bg);
   font-size: 1.15rem;
   line-height: 1.5;
   display: grid;
-  margin: 10rem;
+  grid-template-columns: 1fr min(60rem, 90%) 1fr;
+  margin: 0;
   text-align: center;
 }
 
+body > * { /* Put all body elements into the middle */
+  grid-column: 2;
+}
+
+main {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Format headers */
 h1 {
-  color: var(--text)
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 0.96rem;
+}
+
+p {
+  margin: 1.5rem 0;
 }
 
 a {
-  color: var(--text);
-}
-
-.cover-grid-container {
-  display: inline-grid;
-  column-gap: 60px;
-  row-gap: 30px;
-  grid-template-columns: auto auto;
-  align-content: center;
-}
-
-.cover-grid-container a {
-  text-decoration: none;
-}
-
-.cover-item {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.cover-item img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-nav > ul {
-  list-style-type: none; /* Removes bullet points */
-  padding: 0; /* Removes default padding */
-  margin: 0; /* Removes default margin */
-  display: flex; /* Aligns children in a row */
-  flex-wrap: nowrap; /* Prevents wrapping into a new line */
-}
-
-nav ul li a {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  background-color: var(--accent-bg);
-  color: var(--text);
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-  background-color: var(--accent);
-  color: var(--accent-bg);
-}
-
-nav ul li a:active {
-  background-color: var(--accent);
-  color: var(--accent-bg);
-}
-
-.header {
-  display: inline-box;
+  color: var(--accent)
 }
