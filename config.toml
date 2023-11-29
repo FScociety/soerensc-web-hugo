@@ -1,4 +1,4 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-US'
 title = 'Sören Schmidt-Clausen'
-theme = "own_theme"
+theme = ["own_theme", "hugo-shortcode-gallery-master"]

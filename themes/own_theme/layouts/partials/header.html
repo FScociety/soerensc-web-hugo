@@ -1,3 +1,4 @@
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-
 <h1>{{ site.Title }}</h1>
+
+{{ partial "menu_top_level.html" (dict "menuID" "main" "page" .) }}
+{{ partial "menu_selected_level.html" (dict "menuID" "main" "page" .) }}

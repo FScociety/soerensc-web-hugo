@@ -13,40 +13,39 @@ header {
       display: flex; /* Aligns children in a row */
       flex-wrap: nowrap; /* Prevents wrapping into a new line */
       justify-content: center;
+    
+      li {
+        a {
+          display: inline-block;
+          padding: 5px 40px;
+          margin: 0px 10px;
+          background-color: var(--accent-bg);
+          color: var(--text);
+          text-decoration: none;
+          border-radius: var(--standard-border-radius);
+          border: 1px solid var(--text-light);
+          transition: background-color 0.3s;
+        }
+
+        a:hover {
+          border: 1px solid var(--accent);
+        }
+
+        a.active, a.ancestor {
+          color: var(--accent);
+          border: 1px solid var(--accent);
+        }
+      }
     }
   }
-}
 
-
-header > nav > ul > li > a {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  background-color: var(--accent-bg);
-  color: var(--text);
-  text-decoration: none;
-  border-radius: var(--standard-border-radius);
-  border: 1px solid var(--text-light);
-  transition: background-color 0.3s;
-}
-
-header > nav > ul > li > ul > li > a {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  background-color: var(--accent-bg);
-  color: var(--text);
-  text-decoration: none;
-  border-radius: var(--standard-border-radius);
-  border: 1px solid var(--text-light);
-  transition: background-color 0.3s;
-}
-
-header > nav > ul > li > a:hover {
-  border: 1px solid var(--accent);
-}
-
-header > nav > ul > li > a.active, a.ancestor {
-  color: var(--accent);
-  border: 1px solid var(--accent);
+  nav.menu_selected_level {
+    ul {
+      li {
+        a {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
 }

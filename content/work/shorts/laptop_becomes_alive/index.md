@@ -17,5 +17,3 @@ For the animation I used several so-called constraints. With them you can set ce
 
 ![Image](media/laptop_animation_test.gif)
 
-
-

@@ -30,6 +30,21 @@ weight = 20
     weight = 30
     parent = 'Work'
 
+    [[menus.main]]
+    name = 'Stils'
+    pageRef = 'stils'
+    url = '/stils'
+    weight = 40
+    parent = 'Work'
+
+    [[menus.main]]
+    name = 'Small Animations'
+    pageRef = 'small_animations'
+    url = '/small_animations'
+    weight = 50
+    parent = 'Work'
+
+
 [[menus.main]]
 name = 'Blog'
 pageRef = 'blog'
