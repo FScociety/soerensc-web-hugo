@@ -14,11 +14,20 @@ The story is about a melon. In the beginning, it is carried to different places 
 
 ## Story Creation
 
-To get a rough overview of the scenes, I made some shot sketches for large story blocks. This was especially helpful for the drone shots, since I only had the drone available one afternoon, so I had to know beforehand what I was filming so that nothing would be missing when editing. It also helped to give the movie a general structure.
+{{< row >}}
+    To get a rough overview of the scenes, I made some shot sketches for large story blocks. This was especially helpful for the drone shots, since I only had the drone available one afternoon, so I had to know beforehand what I was filming so that nothing would be missing when editing. It also helped to give the movie a general structure.
+    {{< row >}}
+        {{< image src="media/breakdown_birds.gif">}}
+        {{< image src="media/breakdown_birds.gif">}}
+    {{< /row >}}
+{{< /row >}}
 
 ## Models
 
-The melon was my first completely original character. Texturing, modeling and rigging, I did everything. When rigging, one particular difficulty was with the eyes. They had to look at a point in space that could be moved to any Point. But I was able to solve the whole thing with a few bone constraints.
+{{< row >}}
+    The melon was my first completely original character. Texturing, modeling and rigging, I did everything. When rigging, one particular difficulty was with the eyes. They had to look at a point in space that could be moved to any Point. But I was able to solve the whole thing with a few bone constraints.
+    {{< image src="media/breakdown_melon_model.gif" >}}
+{{< /row >}}
 
 I also modeled the tank for the project. It was inspired by Matrix and "Behind the Aquila Rift" from the series Love Death and Robots. I wanted to create a run-down alien look.
 

@@ -20,5 +20,3 @@ I kept the spaceship very close to the Lost in Space template. It was difficult 
 
 The black hole was created in a separate project. It's a mix of geometry and a combination of different shaders to achieve the atmospheric look
 
-
-
