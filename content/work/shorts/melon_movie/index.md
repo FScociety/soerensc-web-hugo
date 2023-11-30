@@ -17,28 +17,54 @@ The story is about a melon. In the beginning, it is carried to different places 
 {{< row >}}
     To get a rough overview of the scenes, I made some shot sketches for large story blocks. This was especially helpful for the drone shots, since I only had the drone available one afternoon, so I had to know beforehand what I was filming so that nothing would be missing when editing. It also helped to give the movie a general structure.
     {{< row >}}
-        {{< image src="media/breakdown_birds.gif">}}
-        {{< image src="media/breakdown_birds.gif">}}
+        {{< image src="media/story_board_01.jpg">}}
+        {{< image src="media/story_board_02.jpg">}}
     {{< /row >}}
 {{< /row >}}
 
 ## Models
 
 {{< row >}}
-    The melon was my first completely original character. Texturing, modeling and rigging, I did everything. When rigging, one particular difficulty was with the eyes. They had to look at a point in space that could be moved to any Point. But I was able to solve the whole thing with a few bone constraints.
     {{< image src="media/breakdown_melon_model.gif" >}}
+    The melon was my first completely original character. Texturing, modeling and rigging, I did everything. When rigging, one particular difficulty was with the eyes. They had to look at a point in space that could be moved to any Point. But I was able to solve the whole thing with a few bone constraints.
 {{< /row >}}
 
-I also modeled the tank for the project. It was inspired by Matrix and "Behind the Aquila Rift" from the series Love Death and Robots. I wanted to create a run-down alien look.
+{{< row >}}
+    I also modeled the tank for the project. It was inspired by Matrix and "Behind the Aquila Rift" from the series Love Death and Robots. I wanted to create a run-down alien look.
+    {{< image src="media/breakdown_breakout.gif" >}}
+{{< /row >}}
 
 ## Poster
 
-For the film I have designed a poster. Unlike in the rest of the film, the melon here is a real model. I think that the poster feels more real compared to a CGI melon.
+{{< row >}}
+    {{< row >}}
+        {{< image src="media/breakdown_poster.gif" >}}
+        {{< image src="media/poster_bts.gif" >}}
+    {{< /row >}}
+    <p>
+    For the film I have designed a poster. Unlike in the rest of the film, the melon here is a real model. I think that the poster feels more real compared to a CGI melon.
+    </p>
+{{< /row >}}
 
-The model was 3D printed by a friend of mine, which meant that I only had to paint it. This also had its difficulties, since It was my first time painting a model, but I'm satisfied with the result.
+
+{{< row >}}
+    <p>
+    The model was 3D printed by a friend of mine, which meant that I only had to paint it. This also had its difficulties, since It was my first time painting a model, but I'm satisfied with the result.
+    </p>
+    {{< row >}}
+        {{< image src="media/photo_shot.png" >}}
+        {{< image src="media/photo_shot_bts.png" >}}
+    {{< /row>}}
+{{< /row>}}
 
 ## Animation
 
-The particular difficulty was the many VFX shots. 90% of the shots in the film are a mix of real footage and CGI. That took a lot of work because I didn't know if the scene was going to look good while I was shooting it. Also, I had limited spontaneity as opposed to pure CGI.
+{{< row >}}
+    {{< image src="media/breakdown_sink.gif" >}}
+    The particular difficulty was the many VFX shots. 90% of the shots in the film are a mix of real footage and CGI. That took a lot of work because I didn't know if the scene was going to look good while I was shooting it. Also, I had limited spontaneity as opposed to pure CGI.
+{{< /row >}}
 
-Later in the film, birds send a message to the melon. The technical realization of the birds was not straightforward, but it worked out in the end. The scene is very much inspired by a scene from the movie "The Amazing Life of Walter Mitty".
+{{< row >}}
+    Later in the film, birds send a message to the melon. The technical realization of the birds was not straightforward, but it worked out in the end. The scene is very much inspired by a scene from the movie "The Amazing Life of Walter Mitty".
+    {{< image src="media/breakdown_birds.gif" >}}
+{{< /row>}}

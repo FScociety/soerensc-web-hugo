@@ -1,3 +1,7 @@
 {{ define "main" }}
-  Willkommen
+  <main class="main">
+    {{ $coverPath := print .RelPermalink "media/COVER.gif"}}
+    <img class="static" src="{{ $coverPath }}" alt="No Cover Image">
+
+  </main>
 {{ end }}

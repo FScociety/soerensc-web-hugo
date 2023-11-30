@@ -2,17 +2,27 @@
     .image-text-row {
         display: grid;
         grid-template-columns: 50% 50%;
-        align-items: top;
-        text-align: right;
-        padding: 2rem;
+        align-items: start;
+    }
 
-        .image img {
-            width: 100%;
-        }
+    .image-text-row p {
+        margin: 0;
+    }
+
+    .image-text-row .image img {
+        width: 100%;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .text-right {
+        text-align: right;
     }
 
 </style>
 
-<div class="image-text-row">
+<div class="image-text-row {{ if eq (.Get "align") "right" }}text-right{{ else }}text-left{{ end }}">
     {{ .Inner }}
 </div>
