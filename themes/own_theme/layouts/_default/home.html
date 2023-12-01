@@ -1,7 +1,20 @@
 {{ define "main" }}
+  <style>
+    img {
+      position: fixed;
+      width: 100%;
+      top:0px;
+      left: 0px;
+      height: 10rem;
+      z-index: -1;
+      object-fit: cover;
+    }
+  </style>
+
   <main class="main">
     {{ $coverPath := print .RelPermalink "media/COVER.gif"}}
     <img class="static" src="{{ $coverPath }}" alt="No Cover Image">
 
+    {{ .Content}}
   </main>
 {{ end }}
