@@ -1,13 +1,8 @@
 .own-gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .own-gallery img {
     /* Stellt sicher, dass das Bild seine Proportionen beibehält */
-    flex: 1;
-    object-fit: cover; /* oder 'contain' je nach gewünschter Darstellung */
-    max-width: 100%; /* Stellt sicher, dass das Bild nicht über den Container hinausgeht */
-    margin: 5px; /* Optional: Fügt Abstand zwischen den Bildern hinzu */
+    scale: 0.95;
 }
