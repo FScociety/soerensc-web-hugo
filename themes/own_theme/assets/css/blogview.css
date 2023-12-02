@@ -36,10 +36,10 @@
             .cover-static {
                 position: absolute;
             }
-    
-            .cover-static:hover {
-                opacity: 0;
-            }      
+        }
+
+        .project-item:hover .cover-static {
+            opacity: 0;
         }
     }
 }

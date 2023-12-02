@@ -1,28 +1,21 @@
 <style>
-    .image-text-row {
+    .row-container {
         display: grid;
         grid-template-columns: 50% 50%;
         align-items: start;
+        margin: 0px 0px 100px 0px;
     }
 
-    .image-text-row p {
-        margin: 0;
-    }
-
-    .image-text-row .image img {
+    img {
         width: 100%;
-    }
-
-    .text-left {
-        text-align: left;
-    }
-
-    .text-right {
-        text-align: right;
+        object-fit: contain;
     }
 
 </style>
 
-<div class="image-text-row {{ if eq (.Get "align") "right" }}text-right{{ else }}text-left{{ end }}">
+<!-- /*{{ if eq (.Get "align") "right" }} text-right{{ else }}text-left{{ end }}*/ -->
+
+<div class="row-container">
+    <!-- Process Each Line of Content Within the Shortcode -->
     {{ .Inner }}
 </div>
