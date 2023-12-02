@@ -1,12 +1,14 @@
 ---
-title: "2021 - Melon Movie"
+title: "Melon Movie"
 draft: false
-cover: "/media/breakdown_birds.gif"
+year: "2021"
+programs_used: "Blender | After Effects | Premiere Pro | Photoshop"
+weight: 60
 ---
 
 My biggest project so far. I worked on it for a total of 1 year.
 
-{{< youtube JR3cwxSdOB4 >}}
+{{< youtube-lite src="JR3cwxSdOB4" >}}
 
 ## Story
 

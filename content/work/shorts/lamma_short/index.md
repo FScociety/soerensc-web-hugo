@@ -1,6 +1,9 @@
 ---
 title: "Lama Short (Upcoming)"
 draft: false
+year: "2022-Today"
+programs_used: "Blender | After Effects | Davinci Resolve"
+weight: 70
 ---
 
 The lama short film (title yet to be determined) is my current project that I have been working on since the winter of 2021. The lama is a 3D scan of a real llama stuffed animal. For this, I took around 350 photos of the stuffed animal in good lighting conditions. For this it was important to capture all possible perspectives.

@@ -1,11 +1,14 @@
 ---
-title: "2021 - Robots in Love"
+title: "Robots in Love"
 draft: false
+year: "2021"
+programs_used: "Blender | Premire Pro | Embergen"
+weight: 50
 ---
 
 For art class, we were asked to create a work on the theme "Together we are strong". The medium wasn't specified. Because of my experience with Blender, I thought about creating a 3D animated short film.
 
-{{< youtube KPq-dPOjAKM >}}
+{{< youtube-lite src="KPq-dPOjAKM" >}}
 
 ## Story
 

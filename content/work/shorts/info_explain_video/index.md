@@ -1,11 +1,13 @@
 ---
-title: "2021 Computer sciene explainer video"
+title: "Computer sciene explainer video"
 draft: false
+year: "2021"
+weight: 30
 ---
 
 For my 11th grade computer science class, I was asked to make a StopMotion movie explaining a principle of computer science. I decided to make a dramatic production with Lego.
 
-{{< youtube Pkx-H8FAbDk >}}
+{{< youtube-lite src="Pkx-H8FAbDk" >}}
 
 ## Story
 

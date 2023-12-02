@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ .Content }}
   <div class="project-grid-container">
-    {{ range .Pages }}
+    {{ range sort .Pages "Weight" "desc"}}
     <a href="{{ .RelPermalink }}">
       <div class="project-item">
         {{ $coverPath := print .RelPermalink "media/COVER.png"}}
@@ -18,7 +18,10 @@
             <img class="active" src="{{ $coverPath_active }}" alt="">
           </div>
         </div>
-        <p><b>{{ .LinkTitle }}</b></p>
+        <div class="title-container">
+          <h4>{{ .LinkTitle }}</h4>
+          <p>{{ .Params.year }}</p>
+        </div>
       </div>
     </a>
     {{ end }}

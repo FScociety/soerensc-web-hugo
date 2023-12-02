@@ -30,9 +30,13 @@ body {
   font-size: 1.15rem;
   line-height: 1.5;
   display: grid;
-  grid-template-columns: 1fr 40rem 1fr;
+  grid-template-columns: 1fr 50% 1fr;
   margin: 0;
   text-align: center;
+}
+
+img {
+  border-radius: var(--standard-border-radius);
 }
 
 body > * { /* Put all body elements into the middle */
@@ -40,8 +44,7 @@ body > * { /* Put all body elements into the middle */
 }
 
 main {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+
 }
 
 /* Format headers */
@@ -73,6 +76,7 @@ h6 {
 
 p {
   margin: 1.5rem 0;
+  color: var(--text-light)
 }
 
 a {

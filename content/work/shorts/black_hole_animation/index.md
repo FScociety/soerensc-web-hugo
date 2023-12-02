@@ -1,12 +1,14 @@
 ---
-title: "2020 Black Hole Animation"
+title: "Black Hole Animation"
 draft: false
+year: "2020"
 programs_used: "Blender | After Effects"
+weight: 10
 ---
 
 As a fan of the Netflix series "Lost in Space" I tried to model the spaceship "Jupiter". I also wanted to make a small animation and this short film was the result.
 
-{{< youtube FPQ4QwuLxF4 >}}
+{{< youtube-lite src="FPQ4QwuLxF4" >}}
 
 ## Story
 
@@ -16,12 +18,12 @@ The story is relatively short. You see a spaceship (Jupiter) flying into a porta
 
 {{< row >}}
     {{< image src="media/breakdown_jupiter_model.gif" >}}
-    I kept the spaceship very close to the Lost in Space template. It was difficult to get the exact dimensions right, since there were no blueprints or similar online. My only templates were excerpts from the series.
+    <p>I kept the spaceship very close to the Lost in Space template. It was difficult to get the exact dimensions right, since there were no blueprints or similar online. My only templates were excerpts from the series.</P>
 {{< /row >}}
 
 ## Animation
 
 {{< row >}}
-    The black hole was created in a separate project. It's a mix of geometry and a combination of different shaders to achieve the atmospheric look
+    <p>The black hole was created in a separate project. It's a mix of geometry and a combination of different shaders to achieve the atmospheric look</P>
     {{< image src="media/breakdown_black_hole.gif" >}}
 {{< /row>}}

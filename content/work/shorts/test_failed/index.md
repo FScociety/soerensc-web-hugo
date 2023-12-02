@@ -1,11 +1,14 @@
 ---
-title: "2021 Test: Failed"
+title: "Test: Failed"
 draft: false
+year: "2021"
+programs_used: "Blender | Premiere Pro"
+weight: 40
 ---
 
 A little thought experiment that I wanted to explore in a short video.
 
-{{< youtube 8OqXyam7NjA>}}
+{{< youtube-lite src="8OqXyam7NjA">}}
 
 ## Story
 

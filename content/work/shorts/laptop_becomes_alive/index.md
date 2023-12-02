@@ -1,11 +1,14 @@
 ---
-title: "2020 - Laptop becomes alive"
+title: "Laptop becomes alive"
 draft: false
+year: "2020"
+programs_used: "Blender | Premire Pro"
+weight: 1
 ---
 
 A funny thought ...
 
-{{< youtube 3xzHRtRIY8I >}}
+{{< youtube-lite src="3xzHRtRIY8I" >}}
 
 ## Story
 

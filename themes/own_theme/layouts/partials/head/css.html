@@ -19,3 +19,7 @@
 {{- with resources.Get "css/footer.css" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- end }}
+
+{{- with resources.Get "css/lite-yt-embed.css" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- end }}

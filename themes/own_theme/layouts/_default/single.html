@@ -1,12 +1,25 @@
 {{ define "main" }}
-  <div class="site-container">
-    <div class="site-content">
-      <h1>{{ .Title }}</h1>
-      <p>{{ .Params.programs_used}}</p>
-      
-      {{ .Content }}
+  <style>
+    .site-container {
+      .title-container {
+        background-color: var(--bg);
+        border-radius: var(--standard-border-radius);
+        padding: 0.5rem;
+        border-color: var(--text);
+        margin: 1rem 0 2rem 0;
+      }
+    }
+  </style>
 
-      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  <div class="site-container">
+    <div class="title-container">
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Params.year}}</p>
+      <h4>{{ .Params.programs_used}}</h4>
     </div>
+    <div class="content-container">
+      {{ .Content }}
+    </div>
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   </div>
 {{ end }}
