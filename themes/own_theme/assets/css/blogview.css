@@ -1,13 +1,15 @@
 .project-grid-container {
-    display: inline-grid;
+    display: flex;
+    flex-wrap: wrap;
     column-gap: 40px;
     row-gap: 40px;
-    grid-template-columns: 50% 50%;
+
     align-content: center;
 
     a {
         text-decoration: none;
         color: var(--text);
+        flex: 1 1 calc(50% - 40px); /* Adjust the 50% for different widths */
 
         .project-item {
             box-shadow: 0px 0px 3px black;
@@ -40,6 +42,12 @@
 
         .project-item:hover .cover-static {
             opacity: 0;
+        }
+    }
+
+    @media screen and (max-width: 600px) { /* Adjust 600px to your preference */
+        a {
+            flex-basis: 100%; /* Full width on small screens */
         }
     }
 }
