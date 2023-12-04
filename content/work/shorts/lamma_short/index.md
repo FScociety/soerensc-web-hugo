@@ -1,7 +1,7 @@
 ---
 title: "Lama Short (Upcoming)"
 draft: false
-year: "2022-Today"
+year: "wip"
 programs_used: "Blender | After Effects | Davinci Resolve"
 weight: 70
 ---

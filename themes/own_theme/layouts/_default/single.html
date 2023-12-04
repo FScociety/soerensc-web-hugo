@@ -12,14 +12,16 @@
   </style>
 
   <div class="site-container">
-    <div class="title-container">
-      <h1>{{ .Title }}</h1>
-      <p>{{ .Params.year}}</p>
-      <h4>{{ .Params.programs_used}}</h4>
-    </div>
     <div class="content-container">
-      {{ .Content }}
+      <div class="title-container">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.year}}</p>
+        <h4>{{ .Params.programs_used}}</h4>
+      </div>
+      <div class="content-container">
+        {{ .Content }}
+      </div>
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </div>
-    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   </div>
 {{ end }}

@@ -12,14 +12,15 @@
         flex: 1 1 calc(50% - 40px); /* Adjust the 50% for different widths */
 
         .project-item {
-            box-shadow: 0px 0px 3px black;
             position: relative;
             width: 100%;
             height: 100%;
 
+            /*
             background-color: var(--accent-bg);
             border-radius: var(--standard-border-radius);
-    
+            */
+
             img {
                 width: 100%;
                 aspect-ratio: 4 / 3;
@@ -29,14 +30,37 @@
                 border-bottom-right-radius: 0px;
             }
 
-            .title-container {
-                text-align: left;
-                padding-left: 10px;
-                line-height: 1rem;
+            .information-container {
+            
+                .title-container {
+                    text-align: center;
+                    line-height: 1rem;
+                    white-space: nowrap;
+                    font-weight: normal;
+                    font-size: 1.5rem;
+                    margin-top: 10px;
+        
+                    span {
+                        font-weight: lighter;
+                        background-color: var(--light-bg);
+                        color: var(--text);
+                        padding: 6px;
+                        border-radius: var(--standard-border-radius);
+                        margin: 1rem;
+                        font-size: 1rem;
+                    }
+
+                    .wip {
+                        background-color: var(--accent-dark);
+                    }
+
+                }
+
             }
     
             .cover-static {
                 position: absolute;
+                width: 100%;
             }
         }
 
