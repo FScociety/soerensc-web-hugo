@@ -1,4 +1,54 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://soerensc.xyz/'
 languageCode = 'en-US'
 title = 'Sören Schmidt-Clausen'
 theme = ["own_theme", "hugo-shortcode-gallery-master"]
+
+[[menu.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menu.main]]
+name = 'Work'
+pageRef = 'work'
+weight = 20
+    [[menu.main]]
+    name = 'Shorts'
+    pageRef = 'shorts'
+    weight = 10
+    parent = 'Work'
+
+    [[menu.main]]
+    name = 'Photography'
+    pageRef = 'photography'
+    weight = 20
+    parent = 'Work'
+
+    [[menu.main]]
+    name = 'Coding'
+    pageRef = 'coding'
+    weight = 30
+    parent = 'Work'
+
+    [[menu.main]]
+    name = 'Stils'
+    pageRef = 'stils'
+    weight = 40
+    parent = 'Work'
+
+    [[menu.main]]
+    name = 'Small Animations'
+    pageRef = 'small_animations'
+    weight = 50
+    parent = 'Work'
+
+
+[[menu.main]]
+name = 'Blog'
+pageRef = 'blog'
+weight = 30
+
+[[menu.main]]
+name = 'About'
+pageRef = 'about'
+weight = 40
