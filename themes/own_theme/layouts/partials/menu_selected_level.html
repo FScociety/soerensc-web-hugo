@@ -5,11 +5,9 @@
   {{- range . }}
     {{- if or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}
       {{- if .Children }}
-        <nav class="menu_selected_level">
-          <ul>
+          <ul class="menu_selected_level">
             {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .Children) }}
           </ul>
-        </nav>
       {{- end }}
     {{- end }}
   {{- end }}

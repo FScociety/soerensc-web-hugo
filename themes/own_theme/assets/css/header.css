@@ -2,40 +2,33 @@ header {
   background-color: rgba(0, 0, 0, 0);
   text-align: center;
   /*padding: 0 0.5rem 2rem 0.5rem;*/
-  grid-column: 1 / -1;
-
 }
 
-header nav.menu_selected_level ul li a {
-  padding: 5px 10px;
+header nav {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: var(--accent-bg);
 }
 
-header nav ul {
-  list-style-type: none; /* Removes bullet points */
-  padding: 0; /* Removes default padding */
-  margin: 5; /* Removes default margin */
-  display: flex; /* Aligns children in a row */
-  flex-wrap: nowrap; /* Prevents wrapping into a new line */
+header ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
   justify-content: center;
 }
 
 header nav ul li a {
     display: inline-block;
-    padding: 5px 40px;
+    padding: 0px 40px;
     margin: 0px 10px;
-    background-color: var(--accent-bg);
     color: var(--text);
     text-decoration: none;
-    border-radius: var(--standard-border-radius);
-    border: 1px solid var(--text-light);
-    transition: background-color 0.3s;
   }
 
 header nav ul li a:hover {
-    border: 1px solid var(--accent);
+    color: var(--accent);
   }
 
 header nav ul li a.active, a.ancestor {
     color: var(--accent);
-    border: 1px solid var(--accent);
   }

@@ -31,15 +31,18 @@ body {
   background-color: var(--bg);
   font-size: 1.15rem;
   line-height: 1.5;
-  margin: 0;
   text-align: center;
-  padding: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
 }
 
 .site-container {
   max-width: 1000px;
+  min-width: 0px;
   display: block;
-  margin: 0 auto;
 }
 
 img {

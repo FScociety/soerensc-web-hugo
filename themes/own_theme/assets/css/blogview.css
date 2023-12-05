@@ -10,6 +10,7 @@
     text-decoration: none;
     color: var(--text);
     flex: 1 1 calc(50% - 40px); /* Adjust the 50% for different widths */
+    min-width: 0px;
 }
 
 .project-grid-container a .project-item {
