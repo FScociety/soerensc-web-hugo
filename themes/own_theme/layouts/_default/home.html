@@ -11,10 +11,10 @@
     }
   </style>
 
-  <main class="main">
+  <div class="site-container">
     {{ $coverPath := print .RelPermalink "media/COVER.gif"}}
     <img class="static" src="{{ $coverPath }}" alt="No Cover Image">
 
     {{ .Content}}
-  </main>
+  </div>
 {{ end }}
