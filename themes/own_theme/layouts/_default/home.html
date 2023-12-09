@@ -1,20 +1,25 @@
 {{ define "main" }}
   <style>
-    img {
-      position: fixed;
+    .hero-header {
       width: 100%;
-      top:0px;
-      left: 0px;
-      height: 10rem;
-      z-index: -1;
+    }
+
+    img {
+      width: 100%;
       object-fit: cover;
     }
   </style>
 
-  <div class="site-container">
+<div class="main-page">
+  <div class="hero-header">
     {{ $coverPath := print .RelPermalink "media/COVER.gif"}}
     <img class="static" src="{{ $coverPath }}" alt="No Cover Image">
-
-    {{ .Content}}
   </div>
+
+  <div class="site-container">
+    <div class="content-container">
+      {{ .Content}}
+    </div>
+    </div>
+</div>
 {{ end }}
