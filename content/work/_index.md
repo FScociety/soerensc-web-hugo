@@ -2,4 +2,5 @@
 title: Work
 ---
 
-Das ist ein Portfolio
+Eine Übersicht über Verschiedene Arbeiten die ich mache
+

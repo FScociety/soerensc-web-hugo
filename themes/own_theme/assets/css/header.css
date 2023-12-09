@@ -1,14 +1,19 @@
 header {
   text-align: center;
-  padding-bottom: 1rem;
-  /*padding: 0 0.5rem 2rem 0.5rem;*/
-  background-color: var(--accent-bg);
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+}
+
+header .header-container {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
 }
 
 header nav {
   display: flex;
   flex-wrap: nowrap;
+  background-color: var(--accent-bg);
 }
 
 header ul {
@@ -17,14 +22,16 @@ header ul {
   width: 100%;
   list-style-type: none;
   justify-content: center;
-  margin: 10px 0px 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 header nav ul li a {
     display: inline-block;
-    padding: 4px 40px;
-    color: var(--text);
+    padding: 5px 15px;
+    color: var(--text-light);
     text-decoration: none;
+    margin: 0px 0px 0px 20px;
   }
 
 header nav ul li a:hover, a.active, a.ancestor {

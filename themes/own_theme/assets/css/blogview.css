@@ -30,14 +30,11 @@
     border-bottom-right-radius: 0px;
 }
 
-.project-grid-container a .project-item .information-container {
-    /* No specific styles provided, add if needed */
-}
-
 .project-grid-container a .project-item .information-container .title-container {
     text-align: center;
     line-height: 1rem;
-    white-space: nowrap;
+    word-break: break-word;
+    overflow-wrap: break;
     font-weight: normal;
     font-size: 1.5rem;
     margin-top: 10px;
