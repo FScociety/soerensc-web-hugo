@@ -1,6 +1,5 @@
 header {
   text-align: center;
-  margin-bottom: 100px;
 }
 
 header .header-container {
@@ -22,16 +21,14 @@ header ul {
   width: 100%;
   list-style-type: none;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 header nav ul li a {
     display: inline-block;
-    padding: 5px 15px;
+    padding: 0px 15px;
     color: var(--text-light);
     text-decoration: none;
-    margin: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 40px;
   }
 
 header nav ul li a:hover, a.active, a.ancestor {

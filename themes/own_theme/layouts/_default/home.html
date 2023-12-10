@@ -1,25 +1,90 @@
 {{ define "main" }}
-  <style>
-    .hero-header {
-      width: 100%;
-    }
+<style>
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
 
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-  </style>
+  .hero-header {
+    height: 100vh;
+    width: 100%;
+    position: relative; /* Ensure this is positioned relatively */
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: aliceblue;
+    z-index: 1; /* Lower z-index so the overlay can be on top */
+  }
+
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--bg) 0%, rgba(0,0,0,0) 100%);
+    z-index: 2; /* Higher z-index to overlay on the video */
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+  }
+
+  .text-overlay h1 {
+    font-size: 6rem;
+    margin-bottom: 0;
+  }
+
+  .text-overlay a {
+    font-size: 3.5vw;
+    text-decoration: none;
+    border: 0.25vw solid var(--accent);
+    border-radius: var(--standard-border-radius);
+    padding: 10px 20px;
+  }
+
+  .arrow-down {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3; 
+    font-size: 2em;
+  }
+
+  .arrow-down h2 {
+    font-size: 6vw;
+  }
+
+</style>
 
 <div class="main-page">
   <div class="hero-header">
-    {{ $coverPath := print .RelPermalink "media/COVER.gif"}}
-    <img class="static" src="{{ $coverPath }}" alt="No Cover Image">
+    {{ $coverPath := print .RelPermalink .Params.backdrop }}
+    <video data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" src="{{ $coverPath }}" alt="No Cover Image"></video>
+    <div class="gradient-overlay"></div>
+    <div class="text-overlay">
+      <a href="https://www.youtube.com/watch?v=rP8DSzsbc2A" target="_blank">watch my showreel</a>
+    </div>
+    <div class="arrow-down">
+      <h2>↓</h2>
+    </div>
   </div>
-
   <div class="site-container">
     <div class="content-container">
-      {{ .Content}}
+      {{ .Content }}
     </div>
-    </div>
+  </div>
 </div>
 {{ end }}
