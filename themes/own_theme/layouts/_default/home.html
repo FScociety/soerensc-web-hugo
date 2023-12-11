@@ -1,10 +1,5 @@
 {{ define "main" }}
 <style>
-  img {
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-  }
 
   .hero-header {
     height: 100vh;
@@ -76,7 +71,7 @@
     {{ if (strings.HasSuffix $coverPath ".mp4") }}
     <video class="cover" data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" src="{{ $coverPath }}" alt="No Cover Image"></video>
     {{ else }}
-    <img src="{{ $coverPath }}" alt="No Cover Image">
+    <img class="cover" src="{{ $coverPath }}" alt="No Cover Image">
     {{ end }}
     <div class="gradient-overlay"></div>
     <div class="text-overlay">

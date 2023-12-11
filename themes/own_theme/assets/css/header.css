@@ -28,7 +28,7 @@ header nav ul li a {
     color: var(--text-light);
     text-decoration: none;
     border-radius: 10px;
-    border: 1px solid var(--bg-light)
+    border: 1px solid var(--accent-bg);
   }
 
 header nav ul li a.active, a.ancestor {
@@ -41,7 +41,7 @@ header nav ul li a:hover {
 }
 
 .menu-top-level {
-  margin: 10px 0px 20px 0px;
+  margin: 10px 0px 0px 0px;
 }
 
 .menu-top-level a {
@@ -50,7 +50,7 @@ header nav ul li a:hover {
 }
 
 .menu-sub-level {
-  margin: 0px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
 }
 
 .menu-sub-level a {
