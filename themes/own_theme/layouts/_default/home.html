@@ -3,6 +3,7 @@
   img {
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
   }
 
   .hero-header {
@@ -11,7 +12,7 @@
     position: relative; /* Ensure this is positioned relatively */
   }
 
-  video {
+  .cover {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,7 +73,11 @@
 <div class="main-page">
   <div class="hero-header">
     {{ $coverPath := print .RelPermalink .Params.backdrop }}
-    <video data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" src="{{ $coverPath }}" alt="No Cover Image"></video>
+    {{ if (strings.HasSuffix $coverPath ".mp4") }}
+    <video class="cover" data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" src="{{ $coverPath }}" alt="No Cover Image"></video>
+    {{ else }}
+    <img src="{{ $coverPath }}" alt="No Cover Image">
+    {{ end }}
     <div class="gradient-overlay"></div>
     <div class="text-overlay">
       <a href="https://www.youtube.com/watch?v=rP8DSzsbc2A" target="_blank">watch my showreel</a>

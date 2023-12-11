@@ -1,7 +1,7 @@
 ---
 title: Homepage
 layout: home
-backdrop: "/media/COVER.gif"
+backdrop: "media/COVER.png"
 ---
 
 Das ist die homepage

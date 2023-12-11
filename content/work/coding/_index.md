@@ -1,5 +1,5 @@
 ---
 title: Coding
-layout: blogview
+layout: project-menu
 weight: 50
 ---

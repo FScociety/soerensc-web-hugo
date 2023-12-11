@@ -1,6 +1,6 @@
 ---
 title: Short Films
-layout: blogview
+layout: project-menu
 weight: 10
 ---
 

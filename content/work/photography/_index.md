@@ -1,5 +1,5 @@
 ---
 title: Photography
-layout: blogview
+layout: project-menu
 weight: 40
 ---

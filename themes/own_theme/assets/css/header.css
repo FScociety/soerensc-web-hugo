@@ -25,12 +25,35 @@ header ul {
 
 header nav ul li a {
     display: inline-block;
-    padding: 0px 15px;
     color: var(--text-light);
     text-decoration: none;
-    margin: 0px 0px 0px 40px;
+    border-radius: 10px;
+    border: 1px solid var(--bg-light)
   }
 
-header nav ul li a:hover, a.active, a.ancestor {
-    color: var(--accent);
-  }
+header nav ul li a.active, a.ancestor {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+header nav ul li a:hover {
+  color: var(--accent);
+}
+
+.menu-top-level {
+  margin: 10px 0px 20px 0px;
+}
+
+.menu-top-level a {
+  margin: 0px 10px;
+  padding: 0px 20px;
+}
+
+.menu-sub-level {
+  margin: 0px 0px 10px 0px;
+}
+
+.menu-sub-level a {
+  margin: 0px 5px;
+  padding: 0px 10px;
+}
