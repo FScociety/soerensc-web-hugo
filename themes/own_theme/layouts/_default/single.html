@@ -1,20 +1,77 @@
 {{ define "main" }}
   <style>
-    .site-container .title-container {
-        background-color: var(--bg);
-        border-radius: var(--standard-border-radius);
-        padding: 0.5rem;
-        border-color: var(--text);
-        margin: 1rem 0 2rem 0;
+    .site-container {
+      background-color: var(--bg);
+      border-radius: var(--standard-border-radius);
+      padding: 0.5rem;
+      border-color: var(--text);
+      margin: 1rem 0 2rem 0;
+      padding: 200px 0px 0px 0px;
     }
+
+  .background-container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    }
+
+  .background-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--bg) 0%, rgba(0,0,0,0) 100%);
+    z-index: 2; /* Higher z-index to overlay on the video */
+  }
+
+  .content-container {
+    position: relative;
+    z-index: 10;
+    background-color: var(--bg);
+    border-radius: var(--standard-border-radius);
+    box-shadow: 0 0 20px var(--bg);
+  }
+
+  .title-container {
+    display: inline-block;
+    padding: 20px 0px 0px 0px;
+    border-radius: var(--standard-border-radius);
+  }
+
+  .title-container h1 {
+    margin: 5px;
+  }
+
+  .title-container h3 {
+    margin: 5px;
+    display: inline-block;
+    background-color: var(--light-bg);
+    padding: 5px 10px;
+    border-radius: var(--standard-border-radius);
+    font-weight: normal;
+  }
   </style>
 
   <div class="site-container">
+    <div class="background-container">
+      <img src="media/COVER.png">
+      <div class="gradient-overlay"></div>
+    </div>
     <div class="content-container">
       <div class="title-container">
         <h1>{{ .Title }}</h1>
-        <p>{{ .Params.year}}</p>
-        <h4>{{ .Params.programs_used}}</h4>
+        <h3>{{ .Params.year}}</h3>
+        <p>{{ .Params.programs_used}}</p>
       </div>
       <div class="content-container">
         {{ .Content }}

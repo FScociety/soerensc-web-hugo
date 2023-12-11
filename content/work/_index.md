@@ -4,13 +4,12 @@ layout: home
 backdrop: "/media/COVER.mp4"
 ---
 
-# Eine Übersicht über Verschiedene Arbeiten die ich mache
-
 {{< row link="shorts">}}
     {{< image src="media/short_films_cover.png" >}}
-    {{< text align="right" >}}
-        Short films
-    {{< /text >}}
+    {{< markdown >}}
+# Short films
+Over the last couple of years i have a created some shortfilms
+    {{< /markdown >}}
 {{< /row >}}
 
 {{< row link="stils">}}
