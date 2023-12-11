@@ -5,9 +5,9 @@
       <div class="project-grid-container">
         {{ range sort .Pages "Weight" "desc"}}
         <a href="{{ .RelPermalink }}">
-          <div class="project-item">
-            {{ $coverPath := print .RelPermalink "media/COVER.png"}}
-            {{ $coverPath_active := print .RelPermalink "media/COVER.gif"}}
+          <div class="project-item selectable">
+            {{ $coverPath := print .RelPermalink "media/COVER.png" }}
+            {{ $coverPath_active := print .RelPermalink "/media/COVER.gif" }}
 
             {{ if not (fileExists $coverPath_active) }}
               {{ $coverPath_active = $coverPath }}
@@ -23,10 +23,12 @@
             <div class="information-container">
               <div class="title-container">
                 {{ .LinkTitle }}
-                {{ if eq .Params.year "wip" }}
-                  <span class="wip">In Development</span>
-                {{ else }}
-                  <span>{{ .Params.year }}</spa>
+                {{ if .Params.year }}
+                  {{ if eq .Params.year "wip" }}
+                    <span class="wip">In Development</span>
+                  {{ else }}
+                    <span>{{ .Params.year }}</spa>
+                  {{ end }}
                 {{ end }}
               </div>
               <p> Random Text zum Testen</p>
@@ -35,7 +37,6 @@
         </a>
         {{ end }}
       </div>
-    <a>{{ .Pages }}</a>
   </div>
 </div>
 {{ end }}

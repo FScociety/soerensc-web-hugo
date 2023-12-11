@@ -1,13 +1,12 @@
 <style>
-    .row-container {
+    .row-content {
         display: grid;
         grid-template-columns: 50% 50%;
         align-items: start;
         margin: 0px 0px 50px 0px;
         padding: 10px 10px 5px 10px;
-        /* background-color: var(--accent-bg);
+        background-color: var(--accent-bg);
         border-radius: var(--standard-border-radius);
-        */ 
     }
 
     img {
@@ -22,15 +21,16 @@
 </style>
 
 <!-- /*{{ if eq (.Get "align") "right" }} text-right{{ else }}text-left{{ end }}*/ -->
-
+<div class="row-container">
 {{ if .Get "link" }}
     <a href="{{ .Get "link" }}">
-        <div class="row-container">
+        <div class="row-content selectable">
             {{ .Inner }}
         </div>
     </a>
 {{ else }}
-    <div class="row-container">
+    <div class="row-content">
         {{ .Inner }}
     </div>
 {{ end }}
+</div>

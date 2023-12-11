@@ -75,9 +75,18 @@ h6 {
 
 p {
   margin: 1.5rem 0;
-  color: var(--text-light)
+  color: var(--text-light);
+  font-size: 1.5rem;
 }
 
 a {
-  color: var(--accent)
+  color: var(--accent);
+}
+
+.selectable {
+  transition: scale 0.15s;
+}
+
+.selectable:hover {
+  scale: 0.98;
 }

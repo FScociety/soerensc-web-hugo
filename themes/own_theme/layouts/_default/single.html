@@ -40,6 +40,7 @@
     background-color: var(--bg);
     border-radius: var(--standard-border-radius);
     box-shadow: 0 0 20px var(--bg);
+    padding: 0px 20px;
   }
 
   .title-container {
@@ -60,17 +61,20 @@
     border-radius: var(--standard-border-radius);
     font-weight: normal;
   }
+  
   </style>
 
   <div class="site-container">
     <div class="background-container">
-      <img src="media/COVER.png">
+      <img src="media/BACKDROP.png">
       <div class="gradient-overlay"></div>
     </div>
     <div class="content-container">
       <div class="title-container">
         <h1>{{ .Title }}</h1>
-        <h3>{{ .Params.year}}</h3>
+        {{ if .Params.year }}
+          <h3>{{ .Params.year}}</h3>
+        {{ end }}
         <p>{{ .Params.programs_used}}</p>
       </div>
       <div class="content-container">
