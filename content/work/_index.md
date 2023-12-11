@@ -6,35 +6,35 @@ backdrop: "/media/COVER.mp4"
 
 # Eine Übersicht über Verschiedene Arbeiten die ich mache
 
-{{< row >}}
+{{< row link="shorts">}}
     {{< image src="media/short_films_cover.png" >}}
     {{< text align="right" >}}
         Short films
     {{< /text >}}
 {{< /row >}}
 
-{{< row >}}
+{{< row link="stils">}}
     {{< text align="left" >}}
         Stils
     {{< /text >}}
     {{< image src="media/stils_cover.jpg" >}}
 {{< /row >}}
 
-{{< row >}}
-    {{< image src="media/photography_cover.png" >}}
+{{< row link="small_animations">}}
+    {{< image src="media/small_animations_cover.png" >}}
     {{< text align="right" >}}
         Small Animations
     {{< /text >}}
 {{< /row >}}
 
-{{< row >}}
+{{< row link="photography">}}
     {{< text align="left" >}}
         Photography
     {{< /text >}}
     {{< image src="media/photography_cover.png" >}}
 {{< /row >}}
 
-{{< row >}}
+{{< row link="coding">}}
     {{< image src="media/coding_cover.png" >}}
     {{< text align="right" >}}
         coding

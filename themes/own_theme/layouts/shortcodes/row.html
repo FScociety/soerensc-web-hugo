@@ -3,7 +3,10 @@
         display: grid;
         grid-template-columns: 50% 50%;
         align-items: start;
-        margin: 0px 0px 100px 0px;
+        margin: 0px 0px 50px 0px;
+        background-color: var(--accent-bg);
+        padding: 10px 10px 5px 10px;
+        border-radius: var(--standard-border-radius);
     }
 
     img {
@@ -11,10 +14,22 @@
         object-fit: contain;
     }
 
+    a {
+        text-decoration: none;
+    }
+
 </style>
 
 <!-- /*{{ if eq (.Get "align") "right" }} text-right{{ else }}text-left{{ end }}*/ -->
 
-<div class="row-container">
-    {{ .Inner}}
-</div>
+{{ if .Get "link" }}
+    <a href="{{ .Get "link" }}">
+        <div class="row-container">
+            {{ .Inner }}
+        </div>
+    </a>
+{{ else }}
+    <div class="row-container">
+        {{ .Inner }}
+    </div>
+{{ end }}

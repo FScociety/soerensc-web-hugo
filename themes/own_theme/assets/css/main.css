@@ -48,11 +48,6 @@ img {
   border-radius: var(--standard-border-radius);
 }
 
-img:hover {
-  scale: 0.98;
-  transition: 0.2s scale;
-}
-
 /* Format headers */
 h1 {
   font-size: 3rem;
