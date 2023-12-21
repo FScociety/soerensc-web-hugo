@@ -1,13 +1,13 @@
 {{ define "main" }}
   <style>
-    .site-container {
-      background-color: var(--bg);
-      border-radius: var(--standard-border-radius);
-      padding: 0.5rem;
-      border-color: var(--text);
-      margin: 1rem 0 2rem 0;
-      padding: 200px 0px 0px 0px;
-    }
+  .site-container {
+    background-color: var(--bg);
+    border-radius: var(--standard-border-radius);
+    padding: 0.5rem;
+    border-color: var(--text);
+    margin: 1rem 0 2rem 0;
+    padding: 100px 0px 0px 0px;
+  }
 
   .background-container {
     position: absolute;
@@ -40,7 +40,7 @@
     background-color: var(--bg);
     border-radius: var(--standard-border-radius);
     box-shadow: 0 0 20px var(--bg);
-    padding: 0px 20px;
+    padding: 0px 25px;
   }
 
   .title-container {
@@ -49,15 +49,15 @@
     border-radius: var(--standard-border-radius);
   }
 
-  .title-container h1 {
+  .project-title {
     margin: 5px;
   }
 
-  .title-container h3 {
+  .project-year  {
     margin: 5px;
     display: inline-block;
     background-color: var(--light-bg);
-    padding: 5px 10px;
+    padding: 5px 10px 0px 10px;
     border-radius: var(--standard-border-radius);
     font-weight: normal;
   }
@@ -71,13 +71,13 @@
     </div>
     <div class="content-container">
       <div class="title-container">
-        <h1>{{ .Title }}</h1>
+        <h1 class="project-title">{{ .Title }}</h1>
         {{ if .Params.year }}
-          <h3>{{ .Params.year}}</h3>
+          <h2 class="project-year">{{ .Params.year}}</h2>
         {{ end }}
         <p>{{ .Params.programs_used}}</p>
       </div>
-      <div class="content-container">
+      <div class="post-content-container">
         {{ .Content }}
       </div>
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}

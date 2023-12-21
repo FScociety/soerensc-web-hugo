@@ -1,7 +1,7 @@
 ---
 title: Work
 layout: home
-backdrop: "/media/COVER.mp4"
+backdrop: "media/COVER.mp4"
 ---
 
 {{< row link="shorts">}}

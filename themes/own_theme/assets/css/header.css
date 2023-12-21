@@ -24,19 +24,13 @@ header ul {
 }
 
 header nav ul li a {
-    display: inline-block;
-    color: var(--text-light);
-    text-decoration: none;
-    border-radius: 10px;
-    border: 1px solid var(--accent-bg);
-  }
-
-header nav ul li a.active, a.ancestor {
-  color: var(--accent);
-  border: 1px solid var(--accent);
+  display: inline-block;
+  color: var(--text-light);
+  text-decoration: none;
+  border-radius: 10px;
 }
 
-header nav ul li a:hover {
+header nav ul li a.active, a.ancestor a:hover {
   color: var(--accent);
 }
 

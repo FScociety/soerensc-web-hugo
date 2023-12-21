@@ -50,7 +50,8 @@ img {
 
 /* Format headers */
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
+  margin: 0px;
 }
 
 h2 {
@@ -88,5 +89,20 @@ a {
 }
 
 .selectable:hover {
-  scale: 0.98;
+  scale: 0.99;
+}
+
+.row-content {
+  /* flex-direction: row-reverse; */
+  grid-template-columns: 50% 50%;
+  margin: 0px 0px 50px 0px;
+  padding: 10px 10px 5px 10px;
+  background-color: var(--accent-bg);
+  border-radius: var(--standard-border-radius);
+}
+
+@media screen and (min-width: 800px) {
+  .row-content {
+    display: grid;
+  }
 }

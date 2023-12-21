@@ -28,13 +28,19 @@
     z-index: 2; /* Higher z-index to overlay on the video */
   }
 
-  .text-overlay {
+  .text-overlay-container {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 3;
-    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .text-overlay {
+    width: 100%;
   }
 
   .text-overlay h1 {
@@ -43,7 +49,7 @@
   }
 
   .text-overlay a {
-    font-size: 3.5vw;
+    font-size: 6vw;
     text-decoration: none;
     border: 0.25vw solid var(--accent);
     border-radius: var(--standard-border-radius);
@@ -56,7 +62,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 3; 
-    font-size: 2em;
+    font-size: 2vw;
   }
 
   .arrow-down h2 {
@@ -85,8 +91,10 @@
     <img class="cover" src="{{ $coverPath }}" alt="No Cover Image">
     {{ end }}
     <div class="gradient-overlay"></div>
-    <div class="text-overlay selectable">
-      <a href="https://www.youtube.com/watch?v=rP8DSzsbc2A" target="_blank">watch my showreel</a>
+    <div class="text-overlay-container">
+      <div class="text-overlay selectable">
+        <a href="https://www.youtube.com/watch?v=rP8DSzsbc2A" target="_blank">watch my showreel</a>
+      </div>
     </div>
     <div class="arrow-down">
       <p>Discover my work</p>
