@@ -11,8 +11,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-      with:
-        submodules: true  # Fetch Hugo themes (if you're using them as submodules)
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
