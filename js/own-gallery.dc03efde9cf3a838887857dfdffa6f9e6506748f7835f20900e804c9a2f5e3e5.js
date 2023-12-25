@@ -1,0 +1,1 @@
+(()=>{window.onload=function(){let l=document.getElementsByClassName("own-gallery");Array.from(l).forEach(o=>{let e=o.getElementsByTagName("img"),n=0;for(let t of e)if(t.complete)n+=t.naturalWidth/t.naturalHeight;else{t.onload=()=>{window.onload()};return}let a=o.clientWidth/n;for(let t of e)t.style.height=`${a}px`,t.style.width=`${a*(t.naturalWidth/t.naturalHeight)}px`})};})();
