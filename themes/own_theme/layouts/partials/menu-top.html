@@ -13,7 +13,7 @@
 {{- $activeSubMenu := false }}
 
 {{- with index site.Menus $menuID }}
-  <nav aria-label="Main menu">
+  <nav class="nav-top-level">
     <ul class="menu-top-level">
       {{- range . }}
         {{- $isActive := or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}
@@ -35,7 +35,7 @@
   </nav>
 
   {{- if $activeSubMenu }}
-    <nav aria-label="Submenu">
+    <nav class="nav-sub-level">
       <ul class="menu-sub-level">
         {{- range $subMenu }}
           {{- $subIsActive := or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}

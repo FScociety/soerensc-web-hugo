@@ -3,16 +3,17 @@ header {
 }
 
 header .header-container {
-  position: fixed;
   z-index: 100;
   width: 100%;
   top: 0;
+  position: absolute;
 }
 
 header nav {
   display: flex;
   flex-wrap: nowrap;
-  background-color: var(--accent-bg);
+  /* background-color: var(--accent-bg); */
+  background-color: rgba(0, 0, 0, 0);
 }
 
 header ul {
@@ -27,27 +28,32 @@ header nav ul li a {
   display: inline-block;
   color: var(--text-light);
   text-decoration: none;
-  border-radius: 10px;
+  background-color: var(--bg);
+  border-radius: var(--standard-border-radius);
 }
 
-header nav ul li a.active, a.ancestor a:hover {
+header nav ul li a:hover {
+  color: var(--accent);
+}
+
+header nav ul li a.active, a.ancestor{
   color: var(--accent);
 }
 
 .menu-top-level {
-  margin: 10px 0px 0px 0px;
-}
-
-.menu-top-level a {
-  margin: 0px 10px;
-  padding: 0px 20px;
+  margin: 10px 0px 5px 0px;
 }
 
 .menu-sub-level {
-  margin: 10px 0px 10px 0px;
+  margin: 5px 0px 10px 0px;
 }
 
 .menu-sub-level a {
   margin: 0px 5px;
-  padding: 0px 10px;
+  padding: 5px 10px;
+}
+
+.menu-top-level a {
+  margin: 0px 10px;
+  padding: 5px 20px;
 }

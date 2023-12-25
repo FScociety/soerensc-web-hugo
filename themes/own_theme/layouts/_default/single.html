@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 50%;
+    height: 400px;
     }
 
   .background-container img {
@@ -41,6 +41,12 @@
     border-radius: var(--standard-border-radius);
     box-shadow: 0 0 20px var(--bg);
     padding: 0px 25px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .content-container {
+      padding: 0px;
+    }
   }
 
   .title-container {
@@ -77,6 +83,7 @@
         {{ end }}
         <p>{{ .Params.programs_used}}</p>
       </div>
+      <br>
       <div class="post-content-container">
         {{ .Content }}
       </div>
