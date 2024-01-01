@@ -1,8 +1,0 @@
-.own-gallery {
-    display: flex;
-}
-
-.own-gallery img {
-    /* Stellt sicher, dass das Bild seine Proportionen beibehält */
-    scale: 0.95;
-}
