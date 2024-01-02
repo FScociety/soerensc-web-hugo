@@ -1,0 +1,54 @@
+@import "_vars.scss";
+
+.menu {
+  z-index: 900;
+
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-left: 0;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px auto;
+    max-width: 750px;
+  }
+
+  li {
+    margin: 15px 20px;
+  }
+  
+  a {
+    color: $text-light;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $text;
+  }
+
+  a.active, a.ancestor {
+    color: $text;
+  }
+  
+}
+
+.top-level {
+  position: relative;
+  background-color: $bg;
+
+  a {
+    font-size: 1.3rem;
+  }
+}
+
+.sub-level {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(40px);
+  background-color: rgba($bg-light, 0.65);
+
+  ul {
+    justify-content: space-between;
+  }
+}

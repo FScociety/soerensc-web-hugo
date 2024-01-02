@@ -1,25 +1,23 @@
-{{- with resources.Get "css/main.css" }}
-  {{- if eq hugo.Environment "development" }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-  {{- else }}
-    {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-    {{- end }}
-  {{- end }}
-{{- end }}
-
-{{- with resources.Get "css/project-menu.css" }}
+{{- with resources.Get "css/main.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- end }}
 
-{{- with resources.Get "css/header.css" }}
+{{- with resources.Get "css/project-menu.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- end }}
 
-{{- with resources.Get "css/footer.css" }}
+{{- with resources.Get "css/header.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- end }}
 
-{{- with resources.Get "css/lite-yt-embed.css" }}
+{{- with resources.Get "css/footer.scss" | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- end }}
+
+{{- with resources.Get "css/lite-yt-embed.scss" | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- end }}
+
+{{- with resources.Get "css/home.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- end }}

@@ -1,5 +1,5 @@
 <!-- /*{{ if eq (.Get "align") "right" }} text-right{{ else }}text-left{{ end }}*/ -->
-<div class="row-container">
+<div class="row-container {{ if eq (.Get "fill") "true" }} fill{{ end }}">
 {{ if .Get "link" }}
     <a href="{{ .Get "link" }}">
         <div class="row-content selectable">

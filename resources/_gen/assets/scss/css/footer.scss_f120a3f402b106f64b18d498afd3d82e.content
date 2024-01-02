@@ -1,0 +1,6 @@
+footer {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: #ababab;
+  /* border-top: 1px solid var(--border); */
+  background-color: #2b2b2b; }

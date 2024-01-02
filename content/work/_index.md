@@ -4,7 +4,7 @@ layout: home
 backdrop: "media/COVER.mp4"
 ---
 
-{{< row link="shorts">}}
+{{< row link="shorts" fill="true" >}}
     {{< image src="media/short_films_cover.png" >}}
     {{< markdown >}}
 ## Short films
@@ -12,7 +12,7 @@ Here are some short films I've made over the years. I really like to do every ro
     {{< /markdown >}}
 {{< /row >}}
 
-{{< row link="stils">}}
+{{< row link="stils" fill="true" >}}
     {{< markdown >}}
 ## Still renders
 Some of the still renders i created over the years. I really like to create interesting worlds.
@@ -20,7 +20,7 @@ Some of the still renders i created over the years. I really like to create inte
     {{< image src="media/stils_cover.jpg" >}}
 {{< /row >}}
 
-{{< row link="small_animations">}}
+{{< row link="small_animations" fill="true" >}}
     {{< image src="media/small_animations_cover.png" >}}
     {{< markdown >}}
 ## Small Animations
@@ -28,7 +28,7 @@ A collection of small animations experiments
     {{< /markdown >}}
 {{< /row >}}
 
-{{< row link="photography">}}
+{{< row link="photography" fill="true" >}}
     {{< markdown >}}
 ## Photography
 I'm usually creating digital stuff in 3D, but I also like to switch it up with some photography. It's more about capturing moments as they are and not spending hours tryin to creating some.
@@ -36,7 +36,7 @@ I'm usually creating digital stuff in 3D, but I also like to switch it up with s
     {{< image src="media/photography_cover.png" >}}
 {{< /row >}}
 
-{{< row link="coding">}}
+{{< row link="coding" fill="true" >}}
     {{< image src="media/coding_cover.png" >}}
     {{< markdown >}}
 ## Programming

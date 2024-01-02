@@ -1,0 +1,9 @@
+@import "_vars.scss";
+
+footer {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    color: $text-light;
+    /* border-top: 1px solid var(--border); */
+    background-color: $accent-bg;
+}

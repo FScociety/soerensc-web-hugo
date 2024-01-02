@@ -1,9 +1,11 @@
+@import "_vars.scss";
+
 .content-container {
-    margin-top: 100px;
     margin-bottom: 25px;
 }
 
-.project-grid-container {
+.project-grid-container
+{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
@@ -13,7 +15,7 @@
 
 .project-grid-container a {
     text-decoration: none;
-    color: var(--text);
+    color: $text;
     flex: 1 1 calc(50% - 40px); /* Adjust the 50% for different widths */
     min-width: 0px;
 }
@@ -22,32 +24,33 @@
     position: relative;
     width: 100%;
     height: 100%;
-    border-radius: var(--standard-border-radius);
+    border-radius: $standard-border-radius;
 }
 
 .project-grid-container a .project-item img {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    border-radius: var(--standard-border-radius);
+    border-radius: $standard-border-radius;
 }
 
 .project-grid-container a .project-item .information-container .title-container {
-    font-weight: lighter;
+    font-weight: bold;
     text-align: center;
     word-break: break-word;
     overflow-wrap: break;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2rem;
-    margin-top: 10px;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
 }   
 
 .project-grid-container a .project-item .information-container .title-container span {
     font-weight: 100;
-    background-color: var(--accent-bg);
-    color: var(--text);
+    background-color: $accent-bg;
+    color: $text;
     padding: 4px 8px;
-    border-radius: var(--standard-border-radius);
+    border-radius: $standard-border-radius;
     margin: 0.5rem;
     font-size: 1rem;
     vertical-align: middle;

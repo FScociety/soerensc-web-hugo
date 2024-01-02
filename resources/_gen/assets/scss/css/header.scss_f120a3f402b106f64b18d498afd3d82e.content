@@ -1,0 +1,34 @@
+.menu {
+  z-index: 900; }
+  .menu ul {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-left: 0;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px auto;
+    max-width: 750px; }
+  .menu li {
+    margin: 15px 20px; }
+  .menu a {
+    color: #ababab;
+    text-decoration: none; }
+  .menu a:hover {
+    color: #ffffff; }
+  .menu a.active, .menu a.ancestor {
+    color: #ffffff; }
+
+.top-level {
+  position: relative;
+  background-color: #191919; }
+  .top-level a {
+    font-size: 1.3rem; }
+
+.sub-level {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(40px);
+  background-color: rgba(35, 35, 35, 0.65); }
+  .sub-level ul {
+    justify-content: space-between; }
