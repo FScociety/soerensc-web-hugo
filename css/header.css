@@ -1,30 +1,53 @@
-header {
-  text-align: center;
+.menu {
+  z-index: 900;
 }
 
-header .header-container {
-  z-index: 100;
-  width: 100%;
-  top: 0;
-  position: absolute;
-}
-
-header nav {
-  display: flex;
-  flex-wrap: nowrap;
-  /* background-color: var(--accent-bg); */
-  background-color: rgba(0, 0, 0, 0);
-}
-
-header ul {
+.menu ul {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
+  padding-left: 0;
+  justify-content: space-between;
   list-style-type: none;
-  justify-content: center;
+  margin: 0px auto;
+  padding: 10px 0px;
+  max-width: 750px;
 }
 
-header nav ul li a {
+.menu a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: var(--accent);
+}
+
+.menu a.active, a.ancestor {
+  color: var(--accent);
+}
+
+.top-level {
+  position: relative;
+  background-color: var(--bg);
+}
+
+.sub-level {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(var(--bg), 0.5);
+}
+
+.sub-level ul {
+  justify-content: space-between;
+}
+
+li {
+  margin: 0px 20px;
+}
+
+/* header nav ul li a {
   display: inline-block;
   color: var(--text-light);
   text-decoration: none;
@@ -39,21 +62,4 @@ header nav ul li a:hover {
 header nav ul li a.active, a.ancestor{
   color: var(--accent);
 }
-
-.menu-top-level {
-  margin: 10px 0px 5px 0px;
-}
-
-.menu-sub-level {
-  margin: 5px 0px 10px 0px;
-}
-
-.menu-sub-level a {
-  margin: 0px 5px;
-  padding: 5px 10px;
-}
-
-.menu-top-level a {
-  margin: 0px 10px;
-  padding: 5px 20px;
-}
+*/ 
