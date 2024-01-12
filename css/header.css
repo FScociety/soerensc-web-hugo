@@ -29,6 +29,13 @@
   position: sticky;
   top: 0;
   backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
   background-color: rgba(35, 35, 35, 0.65); }
   .sub-level ul {
     justify-content: space-between; }
+
+@media screen and (max-width: 800px) {
+  .sub-level {
+    display: none; } }
+
+/* https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/ */
