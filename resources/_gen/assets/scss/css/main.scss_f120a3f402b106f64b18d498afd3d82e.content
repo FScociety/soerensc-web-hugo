@@ -48,6 +48,10 @@ p {
 a {
   color: #3584e4; }
 
+@media screen and (max-width: 830px) {
+  h1 {
+    font-size: 3rem; } }
+
 /* Reusable Parts */
 /* $$$$$$$ */
 .selectable {
@@ -70,16 +74,18 @@ a {
   /* flex-direction: row-reverse; */
   grid-template-columns: 50% 50%;
   margin: 0px 0px 50px 0px;
-  padding: 10px 10px 5px 10px;
-  /* background-color: $accent-bg; */
-  border-radius: 10px; }
+  padding: 10px 10px 10px 10px;
+  /* background-color: $accent-bg; */ }
+  .row-content img {
+    height: 100%; }
 
 .row-container a {
   text-decoration: none;
   color: #ffffff; }
 
 .row-container.fill {
-  background-color: #232323; }
+  background-color: #232323;
+  border-radius: 10px; }
 
 @media screen and (min-width: 800px) {
   .row-content {

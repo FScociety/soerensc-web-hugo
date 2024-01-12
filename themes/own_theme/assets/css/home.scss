@@ -58,19 +58,19 @@
     transform: translateX(-50%);
     z-index: 3; 
     font-size: 2vw;
+
+    p {
+      text-align: center;
+    }
   }
 
-  .arrow-down h2 {
-    font-size: 6vw;
-  }
+  .row-container {
+    p {
+      text-align: left;
+      padding: 0px 30px;
+    }
 
-  .row-container h2 {
-    text-align: left;
-    padding: 0px 30px;
-    margin-top: 0px;
-  }
-
-  .row-container p {
-    text-align: left;
-    padding: 0px 30px;
+    h2 {
+      padding: 0px 30px;
+    }
   }
