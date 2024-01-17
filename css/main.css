@@ -12,6 +12,9 @@ body {
   text-align: left;
   margin: 0px; }
 
+main {
+  padding: 0 25px; }
+
 img {
   border-radius: 10px;
   width: 100%;
@@ -48,7 +51,11 @@ p {
 a {
   color: #3584e4; }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1500px) {
+  h1 {
+    font-size: 4rem; } }
+
+@media screen and (max-width: 400px) {
   h1 {
     font-size: 3rem; } }
 
@@ -68,7 +75,8 @@ a {
   min-width: 0px;
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 25px; }
 
 .row-content {
   /* flex-direction: row-reverse; */
