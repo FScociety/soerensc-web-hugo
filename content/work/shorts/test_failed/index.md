@@ -2,7 +2,9 @@
 title: "Test: Failed"
 draft: false
 year: "2021"
-programs_used: "Blender | Premiere Pro"
+programs_used: 
+    - Blender
+    - Premire-Pro
 weight: 40
 ---
 

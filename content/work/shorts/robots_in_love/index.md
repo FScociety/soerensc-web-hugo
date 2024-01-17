@@ -2,7 +2,10 @@
 title: "Robots in Love"
 draft: false
 year: "2021"
-programs_used: "Blender | Premire Pro | Embergen"
+programs_used: 
+    - Blender
+    - Premire-Pro
+    - Embergen
 weight: 50
 ---
 

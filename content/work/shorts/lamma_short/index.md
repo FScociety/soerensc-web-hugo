@@ -2,7 +2,10 @@
 title: "Lama Short"
 draft: false
 year: "wip"
-programs_used: "Blender | After Effects | Davinci Resolve"
+programs_used:
+    - Blender
+    - After-Effects
+    - Davinci-Resolve
 weight: 70
 ---
 

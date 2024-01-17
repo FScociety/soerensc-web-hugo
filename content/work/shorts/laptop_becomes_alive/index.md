@@ -2,7 +2,9 @@
 title: "Laptop becomes alive"
 draft: false
 year: "2020"
-programs_used: "Blender | Premire Pro"
+programs_used:
+    - Blender
+    - Premire-Pro
 weight: 1
 ---
 

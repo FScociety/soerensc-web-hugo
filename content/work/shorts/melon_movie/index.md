@@ -2,7 +2,11 @@
 title: "Melon Movie"
 draft: false
 year: "2021"
-programs_used: "Blender | After Effects | Premiere Pro | Photoshop"
+programs_used:
+    - Blender
+    - After-Effects
+    - Premire-Pro
+    - Photoshop
 weight: 60
 ---
 

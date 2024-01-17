@@ -2,7 +2,11 @@
 title: "Naturalism Explainer Video"
 draft: false
 year: "2021"
-programs_used: "Blender | After Effects | Davinci Resolve | Minecraft"
+programs_used:
+    - Blender
+    - After-Effects
+    - Davinci-Resolve
+    - Minecraft
 weight: 20
 ---
 

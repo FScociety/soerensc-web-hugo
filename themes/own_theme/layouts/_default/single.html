@@ -11,7 +11,12 @@
         {{ if .Params.year }}
           <h2 class="project-year">{{ .Params.year}}</h2>
         {{ end }}
-        <p>{{ .Params.programs_used}}</p>
+        <div class="programs_used">
+          {{ range .Params.programs_used }}
+          {{ $program := . | urlize }}
+          <img class="logo" src="/logos/{{ $program }}-icon.svg" alt="{{ $program | humanize }} Icon">
+          {{ end }}    
+        </div>
       </div>
       <br>
       <div class="post-content-container">

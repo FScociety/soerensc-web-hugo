@@ -2,7 +2,9 @@
 title: "Black Hole Animation"
 draft: false
 year: "2020"
-programs_used: "Blender | After Effects"
+programs_used:
+    - Blender
+    - After-Effects
 weight: 10
 ---
 

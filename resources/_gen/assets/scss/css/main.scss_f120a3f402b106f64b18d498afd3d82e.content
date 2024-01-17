@@ -129,6 +129,12 @@ a {
     border-radius: 10px;
     box-shadow: 0 0 20px #191919;
     padding: 0px 25px; }
+    .site-container.short-film .content-container .title-container .programs_used {
+      display: flex; }
+      .site-container.short-film .content-container .title-container .programs_used img.logo {
+        height: 40px;
+        width: 40px;
+        margin: 10px; }
 
 .site-container.project-menu {
   margin-top: 25px; }

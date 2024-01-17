@@ -169,6 +169,18 @@ a {
     border-radius: $standard-border-radius;
     box-shadow: 0 0 20px $bg;
     padding: 0px 25px;
+
+    .title-container {
+      .programs_used {
+        display: flex;
+
+        img.logo {
+          height: 40px;
+          width: 40px;
+          margin: 10px;
+        }
+      }
+    }
   }
 }
 

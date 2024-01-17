@@ -1,12 +1,9 @@
 .project-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-content: center;
   width: 100%;
-  gap: 20px; }
-  @media screen and (max-width: 1500px) {
-    .project-grid-container {
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); } }
+  gap: 30px; }
   @media screen and (max-width: 400px) {
     .project-grid-container {
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); } }

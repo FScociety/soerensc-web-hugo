@@ -1,6 +1,7 @@
 ---
 title: "Blender Workflow Addons"
-programs_used: "Python | Blender"
+programs_used:
+    - Blender
 ---
 
 While doing my internship at Faber Courtial I created some addons for blender, to connect blender more easily into the studio workflow.
