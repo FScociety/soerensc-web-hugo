@@ -23,7 +23,7 @@ I created it, so you could make exports of unconvetional objects easier by defin
 
 A modified version of the Quixel Bridge import script for blender. For every imported material it creates a nice node group, which makes material mixing easier.
 
-{{< image src="media/quixel_bridge.PNG" >}}
+{{< image src="media/quixel_bridge.webp" >}}
 
 ## DynamicUV 
 
@@ -32,4 +32,4 @@ A modified version of the Quixel Bridge import script for blender. For every imp
 Inspirered by the 3dsMax dynamic UV Unwrapping modifiers I wanted to recreate this functionality in blender.
 So i created a box and a planar uv unwrapper in geometry nodes and wrote a wrapper script around them to add them to your object.
 
-{{< image src="media/dynamic_uv.PNG" >}}
+{{< image src="media/dynamic_uv.webp" >}}

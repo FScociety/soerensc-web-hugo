@@ -32,11 +32,11 @@ The story is about a lama that is asleep at first. Meanwhile a washing machine i
     {{< text align="left" >}}
         This time I put a lot of emphasis on the visual drama. The style was inspired by the analog film "Cinestill 800 T". It has very vivid colors and has around bright lights the typical orange glow, also called halation. By using this style I am trying to create a certain degree of realism and believability. With the editing i try to get rid of the problem that 3D animated images often look very clinical.
     {{< /text >}}
-    {{< image src="media/breakdown_basement.gif" >}}
+    {{< image src="media/breakdown_basement.webm" >}}
 {{< /row >}}
 
 {{< row >}}
-    {{< image src="media/breakdown_living_room.gif" >}}
+    {{< image src="media/breakdown_living_room.webm" >}}
     {{< text align="right" >}}
         In a few scenes I placed the lama in environments captured with a real camera. It was very important to me that the two worlds (real image and CGI) are combined convincingly. For this I rendered different layers that help to connect the two worlds: Shadow, Indirect, Diffuse, Reflective and Emitting Light. On top of everything I also added impurities like halation, noise and overexposure. 
     {{< /text >}}

@@ -19,7 +19,7 @@ The story is relatively short. You see a spaceship (Jupiter) flying into a porta
 ## Jupiter Model
 
 {{< row >}}
-    {{< image src="media/breakdown_jupiter_model.gif" >}}
+    {{< image src="media/breakdown_jupiter_model.webm" >}}
     <p>I kept the spaceship very close to the Lost in Space template. It was difficult to get the exact dimensions right, since there were no blueprints or similar online. My only templates were excerpts from the series.</P>
 {{< /row >}}
 
@@ -27,5 +27,5 @@ The story is relatively short. You see a spaceship (Jupiter) flying into a porta
 
 {{< row >}}
     <p>The black hole was created in a separate project. It's a mix of geometry and a combination of different shaders to achieve the atmospheric look</P>
-    {{< image src="media/breakdown_black_hole.gif" >}}
+    {{< image src="media/breakdown_black_hole.webm" >}}
 {{< /row>}}

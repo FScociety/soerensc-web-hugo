@@ -30,6 +30,13 @@
                 object-fit: cover;
                 border-radius: $standard-border-radius;
             }
+
+            video {
+                width: 100%;
+                aspect-ratio: 4 / 3;
+                object-fit: cover;
+                border-radius: $standard-border-radius;
+            }
     
             .information-container .title-container {
                 font-weight: bold;

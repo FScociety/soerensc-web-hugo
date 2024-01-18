@@ -1,3 +1,11 @@
+{{ $src := .Get "src" }}
 <div class="gallery-image">
-    <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}">
+    {{ if strings.HasSuffix $src ".webm" }}
+        <video autoplay muted loop>
+            <source src="{{ $src }}" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    {{ else }}
+        <img src="{{ $src }}" alt="{{ .Get "alt" }}">
+    {{ end }}
 </div>

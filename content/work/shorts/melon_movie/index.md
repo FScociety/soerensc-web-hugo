@@ -22,8 +22,8 @@ The story is about a melon. In the beginning, it is carried to different places 
 
 {{< row >}}
     {{< own_gallery >}}
-        {{< image src="media/story_board_01.jpg" >}}
-        {{< image src="media/story_board_02.jpg" >}}
+        {{< image src="media/story_board_01.webp" >}}
+        {{< image src="media/story_board_02.webp" >}}
     {{< /own_gallery >}}
     {{< text align="right" >}}
         To get a rough overview of the scenes, I made some shot sketches for large story blocks. This was especially helpful for the drone shots, since I only had the drone available one afternoon, so I had to know beforehand what I was filming so that nothing would be missing when editing. It also helped to give the movie a general structure.
@@ -36,15 +36,15 @@ The story is about a melon. In the beginning, it is carried to different places 
     {{< text align="left" >}}
         The melon was my first completely original character. Texturing, modeling and rigging, I did everything. When rigging, one particular difficulty was with the eyes. They had to look at a point in space that could be moved to any point. But I was able to solve the whole thing with a few bone constraints.
     {{< /text >}}
-    {{< image src="media/breakdown_melon_model.gif" >}}
+    {{< image src="media/breakdown_melon_model.webm" >}}
 {{< /row >}}
 
 ## Poster
 
 {{< row >}}
     {{< own_gallery >}}
-        {{< image src="media/breakdown_poster.gif" >}}
-        {{< image src="media/poster_bts.gif" >}}
+        {{< image src="media/breakdown_poster.webm" >}}
+        {{< image src="media/poster_bts.webm" >}}
     {{< /own_gallery >}}
     {{< text align="right" >}}
         For the film, I have designed a poster. Unlike in the rest of the film, the melon here is a real model. I think that the poster feels more real compared to a CGI melon.
@@ -56,15 +56,15 @@ The story is about a melon. In the beginning, it is carried to different places 
         The model was 3D printed by a friend of mine, which meant that I only had to paint it. This also had its difficulties, since It was my first time painting a model, but I'm satisfied with the result.
     {{< /text >}}
     {{< own_gallery >}}
-        {{< image src="media/photo_shot.png" >}}
-        {{< image src="media/photo_shot_bts.png" >}}
+        {{< image src="media/photo_shot.webp" >}}
+        {{< image src="media/photo_shot_bts.webp" >}}
     {{< /own_gallery >}}
 {{< /row >}}
 
 ## Animation
 
 {{< row >}}
-    {{< image src="media/breakdown_sink.gif" >}}
+    {{< image src="media/breakdown_sink.webm" >}}
     {{< text align="right" >}}
         The particular difficulty was the many VFX shots. 90% of the shots in the film are a mix of real footage and CGI. That took a lot of work because I didn't know if the scene was going to look good while I was shooting it. Also, I had limited spontaneity as opposed to pure CGI.
     {{< /text >}}
@@ -74,5 +74,5 @@ The story is about a melon. In the beginning, it is carried to different places 
     {{< text align="left" >}}
         Later in the film, birds send a message to the melon. The technical realization of the birds was not straightforward, but it worked out in the end. The scene is very much inspired by a scene from the movie "The Amazing Life of Walter Mitty".
     {{< /text >}}
-    {{< image src="media/breakdown_birds.gif" >}}
+    {{< image src="media/breakdown_birds.webm" >}}
 {{< /row >}}
