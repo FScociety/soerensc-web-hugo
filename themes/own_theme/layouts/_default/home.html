@@ -2,7 +2,7 @@
 <div class="main-page">
   <div class="hero-header">
     {{ $coverPath := print .RelPermalink .Params.backdrop }}
-    {{ if (strings.HasSuffix $coverPath ".mp4") }}
+    {{ if (strings.HasSuffix $coverPath ".webm") }}
     <video class="cover lazy" data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" src="{{ $coverPath }}" alt="No Cover Image"></video>
     {{ else }}
     <img class="cover" src="{{ $coverPath }}" alt="No Cover Image">
