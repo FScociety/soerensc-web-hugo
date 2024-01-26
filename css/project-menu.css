@@ -52,5 +52,5 @@
       .project-grid-container a .project-item .cover-static {
         position: absolute;
         width: 100%; }
-    .project-grid-container a .project-item:hover .cover-static {
+    .project-grid-container a .project-item:hover .cover-container.animatable .cover-static {
       opacity: 0; }
