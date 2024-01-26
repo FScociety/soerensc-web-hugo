@@ -1,7 +1,7 @@
 ---
 title: Work
 layout: home
-backdrop: "media/COVER.webm"
+backdrop: "media/COVER.webp"
 ---
 
 Hello World

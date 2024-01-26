@@ -1,7 +1,6 @@
 ---
-title: Work
-layout: home
-backdrop: "media/COVER.webm"
+title: Blog
+layout: single
 ---
 
 

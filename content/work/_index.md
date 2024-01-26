@@ -1,6 +1,6 @@
 ---
 title: Work
-layout: home
+layout: work
 backdrop: "media/COVER.webm"
 ---
 
