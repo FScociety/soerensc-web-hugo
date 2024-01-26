@@ -13,7 +13,7 @@ body {
   margin: 0px; }
 
 main {
-  padding: 0 25px; }
+  /* padding: 0 25px; */ }
 
 img {
   border-radius: 10px;
@@ -76,6 +76,7 @@ a {
 /* $$$$$$$$- */
 .content-container {
   width: 100%;
+  padding: 0 25px;
   max-width: 1000px;
   min-width: 0px;
   display: block;
