@@ -72,8 +72,10 @@
         }
     
         .project-item:hover {
-            .cover-static {
-                opacity: 0;
+            .cover-container.animatable {
+                .cover-static {
+                    opacity: 0;
+                }
             }
         }
     }

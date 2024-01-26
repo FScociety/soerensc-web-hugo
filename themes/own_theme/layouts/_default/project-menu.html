@@ -9,17 +9,26 @@
             {{ $coverPath := print .RelPermalink "media/COVER.webp" }}
             {{ $coverPath_active := print .RelPermalink "/media/COVER.webm" }}
 
-            {{ if not (fileExists $coverPath_active) }}
-              {{ $coverPath_active = $coverPath }}
+            {{ if (fileExists $coverPath_active) }}
+              <div class="cover-container animatable">
+                <div class="cover-static">
+                  <img class="static" src="{{ $coverPath }}" alt="No Cover Image">
+                </div>
+                <div class="cover-active">
+                  <video autoplay muted loop class="active" src="{{ $coverPath_active }}" alt="">
+                </div>
+              </div>
+            {{ else }} 
+              <div class="cover-container">
+                <div class="cover-static">
+                  <img class="static" src="{{ $coverPath }}" alt="No Cover Image">
+                </div>
+                <div class="cover-active">
+                  <video autoplay muted loop class="active" src="{{ $coverPath_active }}" alt="">
+                </div>
+              </div>
             {{ end }}
-            <div class="cover-container">
-              <div class="cover-static">
-                <img class="static" src="{{ $coverPath }}" alt="No Cover Image">
-              </div>
-              <div class="cover-active">
-                <video autoplay muted loop class="active" src="{{ $coverPath_active }}" alt="">
-              </div>
-            </div>
+
             <div class="information-container">
               <div class="title-container">
                 {{ .LinkTitle }}
