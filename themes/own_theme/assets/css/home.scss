@@ -59,13 +59,13 @@
 
   .arrow-down {
     position: absolute;
-    bottom: 0px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3; 
-    font-size: 2vw;
 
     p {
+      font-size: 30px;
       text-align: center;
     }
   }

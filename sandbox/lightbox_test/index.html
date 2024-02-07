@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<div class="row">
+  <div class="col">
+   <img src="src/cinestill_01.webp" onclick="openLightbox();toSlide(1)" class="preview">
+  </div>
+  <div class="col">
+   <img src="src/cinestill_02.webp" onclick="openLightbox();toSlide(2)" class="preview">
+  </div>
+  <div class="col">
+   <img src="src/cinestill_03.webp" onclick="openLightbox();toSlide(3)" class="preview">
+  </div>
+ </div>
+ 
+ <div id="Lightbox" class="modal">
+ 
+  <div class="modal-content">
+   <div class="slide">
+    <img src="src/cinestill_01.webp" class="image-slide" alt="Toy car on the road." />
+   </div>
+   <div class="slide">
+    <img src="src/cinestill_02.webp" class="image-slide" alt="Toy car exploring offroad." />
+   </div>
+   <div class="slide">
+    <img src="src/cinestill_03.webp" class="image-slide" alt="Toy car in the city." />
+   </div>
+ 
+   <a class="previous button" onclick="changeSlide(-1)">&#10094;</a>
+   <a class="next button" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <span class="close button" onclick="closeLightbox()">&times;</span>
+ </div>
+
+ <script src="script.js"></script>
