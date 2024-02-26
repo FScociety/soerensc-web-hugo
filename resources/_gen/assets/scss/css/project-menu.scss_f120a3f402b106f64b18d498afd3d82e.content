@@ -17,7 +17,7 @@ p {
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); } }
   .project-grid-container a {
     text-decoration: none;
-    color: #ffffff;
+    color: #ffff;
     flex: 1 1 calc(50% - 40px);
     /* Adjust the 50% for different widths */
     min-width: 0px; }
@@ -46,17 +46,19 @@ p {
         padding: 0px;
         margin: 10px 0px 0px 0px; }
         .project-grid-container a .project-item .information-container .title-container span {
-          font-weight: 100;
-          /* background-color: $accent-bg; */
-          background-color: black;
-          color: #ffffff;
-          padding: 4px 8px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-weight: lighter;
+          background-color: #141414;
+          color: #ffff;
+          padding: 0px 8px;
           border-radius: 10px;
           margin: 0.5rem;
-          font-size: 1rem;
+          font-size: 1.5rem;
           vertical-align: middle; }
         .project-grid-container a .project-item .information-container .title-container .wip {
-          background-color: green; }
+          background-color: #3a8100; }
       .project-grid-container a .project-item .cover-static {
         position: absolute;
         width: 100%; }

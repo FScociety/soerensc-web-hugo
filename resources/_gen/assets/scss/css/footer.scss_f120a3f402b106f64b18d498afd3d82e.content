@@ -1,6 +1,11 @@
 footer {
-  text-align: center;
-  padding-bottom: 1.5rem;
-  color: #ababab;
-  /* border-top: 1px solid var(--border); */
-  background-color: #1e1e1e; }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px; }
+  footer .footer-container {
+    max-width: 1000px;
+    text-align: center;
+    padding: 10px;
+    color: #ababab;
+    /* border-top: 1px solid var(--border); */
+    background-color: #1e1e1e; }

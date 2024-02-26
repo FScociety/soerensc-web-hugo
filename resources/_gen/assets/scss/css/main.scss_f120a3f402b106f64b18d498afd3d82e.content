@@ -5,7 +5,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  color: #ffffff;
+  color: #ffff;
   background-color: #141414;
   font-size: 1.15rem;
   line-height: 1.5;
@@ -66,11 +66,14 @@ a {
 
 /* Reusable Parts */
 /* $$$$$$$ */
-.selectable {
+.selectable, .selectable-reverse {
   transition: scale 0.15s; }
 
 .selectable:hover {
   scale: 0.99; }
+
+.selectable-reverse:hover {
+  scale: 1.025; }
 
 /* Specific Elements */
 /* $$$$$$$$- */
@@ -96,7 +99,7 @@ a {
 
 .row-container a {
   text-decoration: none;
-  color: #ffffff; }
+  color: #ffff; }
 
 .row-container.fill {
   background-color: #1e1e1e;

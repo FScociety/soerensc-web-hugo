@@ -1,9 +1,17 @@
 @import "_vars.scss";
 
 footer {
-    text-align: center;
-    padding-bottom: 1.5rem;
-    color: $text-light;
-    /* border-top: 1px solid var(--border); */
-    background-color: $bg-light;
+    display: flex;
+    justify-content: center;
+
+    .footer-container {
+        max-width: 1000px;
+        text-align: center;
+        padding: 10px;
+        color: $text-light;
+        /* border-top: 1px solid var(--border); */
+        background-color: $bg-light;
+    }
+
+    margin-bottom: 100px;
 }

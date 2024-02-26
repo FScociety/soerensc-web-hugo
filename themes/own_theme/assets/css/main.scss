@@ -88,13 +88,19 @@ a {
 /* Reusable Parts */
 /* $$$$$$$ */
 
-.selectable {
+.selectable, .selectable-reverse {
   transition: scale 0.15s;
 }
 
 .selectable:hover {
   scale: 0.99;
 }
+
+.selectable-reverse:hover {
+  scale: 1.025;
+}
+
+
 
 /* Specific Elements */
 /* $$$$$$$$- */

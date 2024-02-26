@@ -59,19 +59,21 @@ p {
                 margin: 10px 0px 0px 0px;
     
                 span {
-                    font-weight: 100;
-                    /* background-color: $accent-bg; */
-                    background-color: black;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-weight:lighter;
+                    background-color: $bg;
                     color: $text;
-                    padding: 4px 8px;
+                    padding: 0px 8px;
                     border-radius: $standard-border-radius;
                     margin: 0.5rem;
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                     vertical-align: middle;
                 }
     
                 .wip {
-                    background-color:green;
+                    background-color: rgb(58, 129, 0)
                 }
             }   
     
