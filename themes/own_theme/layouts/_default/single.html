@@ -8,14 +8,19 @@
     <div class="content-container">
       <div class="title-container">
         <h1 class="project-title">{{ .Title }}</h1>
-        {{ if .Params.year }}
-          <h2 class="project-year">{{ .Params.year}}</h2>
-        {{ end }}
-        <div class="programs_used">
-          {{ range .Params.programs_used }}
-          {{ $program := . | urlize }}
-          <img class="logo" src="/logos/{{ $program }}-icon.svg" alt="{{ $program | humanize }} Icon">
-          {{ end }}    
+        <div class="details">
+          {{ if .Params.year }}
+            <p class="project-year">{{ .Params.year}}</p>
+          {{ end }}
+          <div class="programs_used">
+            {{ if .Params.programs_used }}
+              <p>Programs used: </p>
+              {{ range .Params.programs_used }}
+              {{ $program := . | urlize }}
+              <img class="logo" src="/logos/{{ $program }}-icon.svg" alt="{{ $program | humanize }} Icon">
+              {{ end }}    
+            {{ end }}
+          </div>
         </div>
       </div>
       <br>

@@ -21,3 +21,7 @@
 {{- with resources.Get "css/home.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- end }}
+
+{{- with resources.Get "css/single.scss" | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- end }}

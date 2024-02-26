@@ -1,7 +1,35 @@
 @import "_vars.scss";
 
-.menu {
-  z-index: 900;
+header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 9999;
+  top: 20px;
+
+  .header-container {
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    background-color: rgba($bg-light, 0.65);
+    padding: 15px 15px;
+    border-radius: 20px;
+    max-width: 1000px;
+    //border: 1px solid rgba(255,255,255,.08)
+  }
+
+  a {
+    color: $text-light;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: $standard-border-radius;
+  }
+
+  a.active, a.anchor, a:hover {
+    color: $text;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 
   ul {
     display: flex;
@@ -11,30 +39,27 @@
     justify-content: space-between;
     list-style-type: none;
     margin: 0px auto;
-    max-width: 750px;
   }
 
-  li {
-    margin: 15px 20px;
-  }
-  
-  a {
-    color: $text-light;
-    text-decoration: none;
+
+  .top-level {
+    a {
+      font-size: 1.5rem;
+    }
   }
 
-  a:hover {
-    color: $text;
-  }
+  .sub-level {
 
-  a.active, a.ancestor {
-    color: $text;
+    margin-top: 5px;
+
+    a {
+      font-size: 1rem;
+    }
   }
-  
 }
 
-.top-level {
-  position: relative;
+/* .top-level {
+  position: fixed;
   background-color: $bg;
 
   a {
@@ -43,16 +68,16 @@
 }
 
 .sub-level {
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
-  background-color: rgba($bg-light, 0.65);
+  display: flex;
+  justify-content: center;
 
-  ul {
-    justify-content: space-between;
+  nav {
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    background-color: rgba($bg-lighter, 0.65);
+    border-radius: 500px
   }
-}
+} */
 
 @media screen and (max-width: 800px) {
   .sub-level {

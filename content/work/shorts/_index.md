@@ -4,6 +4,6 @@ layout: project-menu
 weight: 10
 ---
 
-# Short films
+# Short films.
 
 A collection of shortfilms I created over the years.
