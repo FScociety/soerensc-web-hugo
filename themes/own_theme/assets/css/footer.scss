@@ -7,11 +7,12 @@ footer {
     .footer-container {
         max-width: 1000px;
         text-align: center;
-        padding: 10px;
+        padding: 30px;
         color: $text-light;
         /* border-top: 1px solid var(--border); */
         background-color: $bg-light;
+        border-radius: $standard-border-radius;
     }
 
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }

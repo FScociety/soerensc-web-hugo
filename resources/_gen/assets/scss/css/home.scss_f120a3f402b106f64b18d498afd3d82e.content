@@ -1,19 +1,19 @@
 .hero-header {
-  height: 60vh;
+  height: 70vh;
   position: relative;
   /* Ensure this is positioned relatively */
   display: flex;
-  margin: 10px 10px 100px 10px;
+  margin: 0px 0px 100px 0px;
   justify-content: center; }
 
 .cover {
   position: absolute;
-  width: 90%;
   height: 100%;
   object-fit: cover;
   background-color: aliceblue;
   z-index: 1;
-  /* Lower z-index so the overlay can be on top */ }
+  /* Lower z-index so the overlay can be on top */
+  border-radius: 0px; }
 
 .gradient-overlay {
   position: absolute;
@@ -45,9 +45,16 @@
     text-decoration: none;
     border-radius: 10px;
     padding: 10px 20px; }
+  .text-overlay p {
+    margin: 0px;
+    font-size: 1.4rem; }
   .text-overlay svg {
     width: 20%;
     height: 20%; }
+
+.site-container h2 {
+  translate: 0px -20px;
+  text-align: center; }
 
 .arrow-down {
   position: absolute;

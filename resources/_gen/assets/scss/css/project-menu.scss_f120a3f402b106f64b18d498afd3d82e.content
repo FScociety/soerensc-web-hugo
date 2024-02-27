@@ -1,10 +1,10 @@
-h1, p {
-  text-align: center;
-  font-size: 8rem; }
+.site-container.project-menu {
+  margin-top: 130px; }
 
 p {
   font-size: 1.3rem;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  text-align: center; }
 
 .project-grid-container {
   display: grid;

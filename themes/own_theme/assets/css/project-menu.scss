@@ -1,13 +1,13 @@
 @import "_vars.scss";
 
-h1, p {
-    text-align: center;
-    font-size: 8rem;
+.site-container.project-menu {
+    margin-top: 130px;
 }
 
 p {
     font-size: 1.3rem;
     margin-bottom: 6rem;
+    text-align: center;
 }
 
 .project-grid-container {

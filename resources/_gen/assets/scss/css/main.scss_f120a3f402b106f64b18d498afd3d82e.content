@@ -12,9 +12,6 @@ body {
   text-align: left;
   margin: 0px; }
 
-main {
-  padding: 120px 0px; }
-
 img {
   border-radius: 10px;
   width: 100%;
@@ -27,14 +24,19 @@ video {
 
 /* Format headers */
 /* $$$$$$$ */
+::selection {
+  color: #141414;
+  background: #ffff; }
+
 h1 {
-  font-size: 5rem;
+  font-size: 8rem;
   margin: 0px;
   font-weight: bold;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+  text-align: center; }
 
 h2 {
-  font-size: 2.6rem; }
+  font-size: 5rem; }
 
 h3 {
   font-size: 2rem; }
@@ -58,11 +60,11 @@ a {
 
 @media screen and (max-width: 1500px) {
   h1 {
-    font-size: 4rem; } }
+    font-size: 5rem; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   h1 {
-    font-size: 3rem; } }
+    font-size: 2rem; } }
 
 /* Reusable Parts */
 /* $$$$$$$ */

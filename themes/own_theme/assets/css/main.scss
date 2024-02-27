@@ -17,10 +17,6 @@ body {
   margin: 0px;
 }
 
-main {
-  padding: 120px 0px;
-}
-
 img {
   border-radius: $standard-border-radius;
   width: 100%;
@@ -36,15 +32,21 @@ video {
 /* Format headers */
 /* $$$$$$$ */
 
+::selection {
+  color: $bg;
+  background: $text;
+}
+
 h1 {
-  font-size: 5rem;
+  font-size: 8rem;
   margin: 0px;
   font-weight:bold; 
   font-family: $sans-font;
+  text-align: center;
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 5rem;
 }
 
 h3 {
@@ -75,13 +77,13 @@ a {
 
 @media screen and (max-width: 1500px) {
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 

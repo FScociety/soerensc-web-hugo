@@ -12,7 +12,7 @@ header {
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
     background-color: rgba($bg-light, 0.65);
-    padding: 15px 15px;
+    //padding: 15px 15px;
     border-radius: 20px;
     max-width: 1000px;
     //border: 1px solid rgba(255,255,255,.08)
@@ -21,7 +21,7 @@ header {
   a {
     color: $text-light;
     text-decoration: none;
-    margin: 10px;
+    margin: 15px 15px;
     padding: 5px 10px;
     border-radius: $standard-border-radius;
   }
@@ -43,17 +43,27 @@ header {
 
 
   .top-level {
+    margin-bottom: 7.5px;
+    margin-top: 10px;
+
     a {
       font-size: 1.5rem;
     }
   }
 
   .sub-level {
+    margin-top: 7.5px;
+    background-color: rgba(white, 0.05);
+    border-radius: 0px 0px 20px 20px;
 
-    margin-top: 5px;
+    li {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
 
     a {
       font-size: 1rem;
+      margin-bottom: 10px;
     }
   }
 }

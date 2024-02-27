@@ -7,19 +7,14 @@
   
     .backdrop-container {
       width: 100%;
-      height: 400px;
+      height: 450px;
       position: relative;
     
-      img {
+      img, video {
         width: 100%;
-        height: 400px;
+        height: 450px;
         object-fit: cover;
-      }
-  
-      video {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
+        border-radius: 0px;
       }
   
       .gradient-overlay {
@@ -42,10 +37,6 @@
       border-radius: $standard-border-radius;
       box-shadow: 0 0 20px $bg;
     }
-  }
-  
-  .site-container.project-menu {
-    margin-top: 25px;
   }
   
   .title-container {
@@ -77,5 +68,5 @@
     background-color: $light-bg;
     border-radius: $standard-border-radius;
     font-weight: normal;
-    margin: 0px;
+    padding: 5px;
   }
