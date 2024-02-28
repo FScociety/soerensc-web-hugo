@@ -10,3 +10,9 @@ footer {
     /* border-top: 1px solid var(--border); */
     background-color: #1e1e1e;
     border-radius: 10px; }
+
+@media screen and (max-width: 1000px) {
+  footer {
+    margin-bottom: 0px; }
+    footer .footer-container {
+      border-radius: 0px; } }

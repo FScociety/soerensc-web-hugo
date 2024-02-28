@@ -12,7 +12,7 @@ header {
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
     background-color: rgba($bg-light, 0.65);
-    //padding: 15px 15px;
+    margin: 0px 10px 0px 10px;
     border-radius: 20px;
     max-width: 1000px;
     //border: 1px solid rgba(255,255,255,.08)
@@ -68,30 +68,20 @@ header {
   }
 }
 
-/* .top-level {
-  position: fixed;
-  background-color: $bg;
-
-  a {
-    font-size: 1.3rem;
-  }
-}
-
-.sub-level {
-  display: flex;
-  justify-content: center;
-
-  nav {
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
-    background-color: rgba($bg-lighter, 0.65);
-    border-radius: 500px
-  }
-} */
-
 @media screen and (max-width: 800px) {
-  .sub-level {
-    display: none;
+  header {
+    .header-container {
+
+      .top-level {
+        a {
+          font-size: 1rem;
+        }
+      }
+  
+      .sub-level {
+        display: none;
+      }
+    }
   }
 }
 

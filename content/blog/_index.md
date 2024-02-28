@@ -1,6 +1,6 @@
 ---
-title: I'm Soeren
-layout: about
+title: Notes
+layout: project-menu
 weight: 50
 ---
 

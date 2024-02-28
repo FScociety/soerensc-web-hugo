@@ -1,66 +1,64 @@
 .site-container.project-menu {
   margin-top: 130px; }
-
-p {
-  font-size: 1.3rem;
-  margin-bottom: 6rem;
-  text-align: center; }
-
-.project-grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  justify-content: center;
-  width: 100%;
-  gap: 30px; }
-  @media screen and (max-width: 400px) {
-    .project-grid-container {
-      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); } }
-  .project-grid-container a {
-    text-decoration: none;
-    color: #ffff;
-    flex: 1 1 calc(50% - 40px);
-    /* Adjust the 50% for different widths */
-    min-width: 0px; }
-    .project-grid-container a .project-item {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px; }
-      .project-grid-container a .project-item img {
+  .site-container.project-menu p {
+    font-size: 1.3rem;
+    margin-bottom: 6rem;
+    text-align: center; }
+  .site-container.project-menu .project-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    width: 100%;
+    gap: 30px; }
+    @media screen and (max-width: 400px) {
+      .site-container.project-menu .project-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); } }
+    .site-container.project-menu .project-grid-container a {
+      text-decoration: none;
+      color: #ffff;
+      flex: 1 1 calc(50% - 40px);
+      /* Adjust the 50% for different widths */
+      min-width: 0px; }
+      .site-container.project-menu .project-grid-container a .project-item {
+        position: relative;
         width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
+        height: 100%;
         border-radius: 10px; }
-      .project-grid-container a .project-item video {
-        width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-        border-radius: 10px; }
-      .project-grid-container a .project-item .information-container .title-container {
-        font-weight: bold;
-        text-align: center;
-        word-break: break-word;
-        overflow-wrap: break;
-        font-size: 1.3rem;
-        line-height: 2rem;
-        padding: 0px;
-        margin: 10px 0px 0px 0px; }
-        .project-grid-container a .project-item .information-container .title-container span {
+        .site-container.project-menu .project-grid-container a .project-item img {
+          width: 100%;
+          aspect-ratio: 4 / 3;
+          object-fit: cover;
+          border-radius: 10px; }
+        .site-container.project-menu .project-grid-container a .project-item video {
+          width: 100%;
+          aspect-ratio: 4 / 3;
+          object-fit: cover;
+          border-radius: 10px; }
+        .site-container.project-menu .project-grid-container a .project-item .information-container .title-container {
+          font-weight: bold;
+          text-align: center;
+          word-break: break-word;
+          overflow-wrap: break;
+          font-size: 1.3rem;
+          line-height: 2rem;
+          padding: 0px;
+          margin: 10px 0px 0px 0px; }
+          .site-container.project-menu .project-grid-container a .project-item .information-container .title-container span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-weight: lighter;
+            background-color: #141414;
+            color: #ffff;
+            padding: 0px 8px;
+            border-radius: 10px;
+            margin: 0.5rem;
+            font-size: 1.5rem;
+            vertical-align: middle; }
+          .site-container.project-menu .project-grid-container a .project-item .information-container .title-container .wip {
+            background-color: #3a8100; }
+        .site-container.project-menu .project-grid-container a .project-item .cover-static {
           position: absolute;
-          top: 0;
-          right: 0;
-          font-weight: lighter;
-          background-color: #141414;
-          color: #ffff;
-          padding: 0px 8px;
-          border-radius: 10px;
-          margin: 0.5rem;
-          font-size: 1.5rem;
-          vertical-align: middle; }
-        .project-grid-container a .project-item .information-container .title-container .wip {
-          background-color: #3a8100; }
-      .project-grid-container a .project-item .cover-static {
-        position: absolute;
-        width: 100%; }
-    .project-grid-container a .project-item:hover .cover-container.animatable .cover-static {
-      opacity: 0; }
+          width: 100%; }
+      .site-container.project-menu .project-grid-container a .project-item:hover .cover-container.animatable .cover-static {
+        opacity: 0; }
