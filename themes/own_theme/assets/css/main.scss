@@ -147,3 +147,13 @@ a {
     display: grid;
   }
 }
+
+@import "layouts/header.scss";
+
+@import "pages/project-menu.scss";
+@import "pages/single.scss";
+@import "pages/work.scss";
+
+@import "components/lite-yt-embed.scss";
+
+@import "layouts/footer.scss";

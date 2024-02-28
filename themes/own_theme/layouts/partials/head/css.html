@@ -1,27 +1,3 @@
 {{- with resources.Get "css/main.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- end }}
-
-{{- with resources.Get "css/project-menu.scss" | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{- end }}
-
-{{- with resources.Get "css/header.scss" | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{- end }}
-
-{{- with resources.Get "css/footer.scss" | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{- end }}
-
-{{- with resources.Get "css/lite-yt-embed.scss" | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{- end }}
-
-{{- with resources.Get "css/work.scss" | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{- end }}
-
-{{- with resources.Get "css/single.scss" | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{- end }}

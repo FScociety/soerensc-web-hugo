@@ -5,35 +5,35 @@ theme = ["own_theme", "hugo-shortcode-gallery-master"]
 
 [[menu.main]]
 name = 'Work'
-pageRef = '/work'
+pageRef = '/'
 weight = 10
     [[menu.main]]
     name = 'Shorts'
-    pageRef = 'shorts'
+    pageRef = 'work/shorts'
     weight = 10
     parent = 'Work'
 
     [[menu.main]]
     name = 'Stills'
-    pageRef = 'stils'
+    pageRef = 'work/stils'
     weight = 20
     parent = 'Work'
     
     [[menu.main]]
     name = 'Animations'
-    pageRef = 'small_animations'
+    pageRef = 'work/animations'
     weight = 30
     parent = 'Work'
 
     [[menu.main]]
     name = 'Photography'
-    pageRef = 'photography'
+    pageRef = 'work/photography'
     weight = 40
     parent = 'Work'
 
     [[menu.main]]
     name = 'Coding'
-    pageRef = 'coding'
+    pageRef = 'work/coding'
     weight = 50
     parent = 'Work'
 

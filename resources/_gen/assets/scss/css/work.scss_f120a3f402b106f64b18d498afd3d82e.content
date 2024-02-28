@@ -12,7 +12,6 @@
   object-fit: cover;
   background-color: aliceblue;
   z-index: 1;
-  /* Lower z-index so the overlay can be on top */
   border-radius: 0px; }
 
 .gradient-overlay {
@@ -22,8 +21,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, #141414 0%, rgba(0, 0, 0, 0) 100%);
-  z-index: 2;
-  /* Higher z-index to overlay on the video */ }
+  z-index: 2; }
 
 .text-overlay-container {
   position: absolute;
@@ -71,16 +69,6 @@
     translate: 0px -20px;
     text-align: center; }
 
-.arrow-down {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3; }
-  .arrow-down p {
-    font-size: 30px;
-    text-align: center; }
-
 .row-container p {
   text-align: left;
   padding: 0px 30px; }
@@ -113,6 +101,15 @@
     width: 100%;
     height: 100%;
     object-fit: cover; }
+  .bento-grid .bento-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, #141414 0%, rgba(0, 0, 0, 0) 50%); }
+  .bento-grid .bento-item {
+    position: relative; }
   .bento-grid .bento-item.id-1 {
     grid-column: 1/7;
     grid-row: 1/5; }
@@ -136,12 +133,12 @@
 @media screen and (max-width: 700px) {
   .bento-grid {
     display: block; }
-    .bento-grid div {
-      margin: 25px 0px 25px 0px; }
     .bento-grid .bento-item {
-      aspect-ratio: 4 / 2; }
+      aspect-ratio: 4 / 2;
+      margin: 25px 0px 25px 0px; }
     .bento-grid .bento-item.id-1 p, .bento-grid .bento-item.id-2 p, .bento-grid .bento-item.id-3 p, .bento-grid .bento-item.id-4 p, .bento-grid .bento-item.id-5 p {
-      font-size: 3rem; } }
+      font-size: 2rem;
+      margin: 5px; } }
 
 @media screen and (max-width: 300px) {
   .bento-grid .bento-item.id-1 p, .bento-grid .bento-item.id-2 p, .bento-grid .bento-item.id-3 p, .bento-grid .bento-item.id-4 p, .bento-grid .bento-item.id-5 p {

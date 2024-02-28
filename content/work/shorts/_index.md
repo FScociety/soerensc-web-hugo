@@ -1,9 +1,10 @@
 ---
-title: Short Films
-layout: project-menu
+title: Short films.
+description: "
+A collection of shortfilms I created over the years.
+"
+layout: blank
 weight: 10
 ---
 
-# Short films.
-
-A collection of shortfilms I created over the years.
+{{< project-list />}}
