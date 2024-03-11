@@ -49,7 +49,7 @@
         
                 .information-container .title-container {
                     font-weight: bold;
-                    text-align: center;
+                    text-align: left;
                     word-break: break-word;
                     overflow-wrap: break;
                     font-size: 1.3rem;
@@ -81,7 +81,7 @@
                     width: 100%;
                 }
             }
-        
+
             .project-item:hover {
                 .cover-container.animatable {
                     .cover-static {
