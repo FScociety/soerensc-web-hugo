@@ -1,0 +1,12 @@
+{{ $src := .src }}
+
+<div class="gallery-image">
+    {{ if or (strings.HasSuffix $src ".webm") (strings.HasSuffix $src ".mp4") }}
+        <video autoplay muted loop class="media">
+            <source src="{{ $src }}" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    {{ else }}
+        <img src="{{ $src }}" alt=.alt class="media">
+    {{ end }}
+</div>

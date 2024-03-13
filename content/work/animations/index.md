@@ -1,8 +1,10 @@
 ---
 title: "Animations."
 description: "
-While I created some short films, I also love to do smaller projects / animations. Here is a small collection of these.
+lol
 "
 layout: blank
 weight: 30
 ---
+
+{{< own_gallery folder="media/gallery/*" rowHeight= 300 />}}

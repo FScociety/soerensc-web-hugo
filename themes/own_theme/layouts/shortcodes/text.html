@@ -1,18 +1,3 @@
-<style>
-    .text p {
-        text-align: left;
-        margin-top: 0px;
-    }
-
-    .left {
-        margin: 0px 20px 0px 0px;
-    }
-
-    .right {
-        margin: 0px 0px 0px 20px;
-    }
-</style>
-
 <div class="text {{ .Get "align" }}">
     <p>
         {{ .Inner | safeHTML }}

@@ -3,8 +3,9 @@
   <div class="content-container">
       {{ .Inner }}
       <div class="project-grid-container">
+        {{ $page_index := 1 }}
         {{ range sort .Page.Pages "Weight" "desc"}}
-        <a href="{{ .RelPermalink }}">
+        <a href="{{ .RelPermalink }}" {{ if eq $page_index 1 }} class="hero" {{ end }}>
           <div class="project-item selectable">
             {{ $coverPath := print .RelPermalink "media/COVER.webp" }}
             {{ $coverPath_active := print .RelPermalink "/media/COVER.webm" }}
@@ -31,7 +32,9 @@
 
             <div class="information-container">
               <div class="title-container">
-                {{ .LinkTitle }}
+                <p>
+                  {{ .LinkTitle }}
+                </p>
                 {{ if .Params.year }}
                   {{ if eq .Params.year "wip" }}
                     <span class="wip">In Development</span>
@@ -43,6 +46,7 @@
             </div>
           </div>
         </a>
+        {{ $page_index = add $page_index 1 }}
         {{ end }}
       </div>
   </div>

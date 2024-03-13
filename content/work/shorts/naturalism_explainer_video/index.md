@@ -8,9 +8,10 @@ programs_used:
     - Davinci-Resolve
     - Minecraft
 weight: 20
----
-
+summary: "
 For the German class in the 11th grade we were supposed to make an explanatory video about literature era. Together with a buddy we made a video about naturalism. We thought it would be a fun idea to film the whole thing in Minecraft. This allowed us to choose the location freely, because we just had to build them to use them.
+"
+---
 
 {{< youtube-lite src="MT40-yj7bMU" >}}
 

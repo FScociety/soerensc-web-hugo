@@ -1,3 +1,20 @@
-<div id="own-gallery" class="own-gallery">
+{{ $folder := .Get "folder" }}
+{{ $images := (.Page.Resources.ByType "image") }}
+{{ $rowHeight := .Get "rowHeight" | default 30}}
+
+<div id="own-gallery" class="own-gallery" data-rowheight="{{ $rowHeight }}">
+    {{ if $folder }}
+        {{ $images = (.Page.Resources.Match $folder) }}
+
+        {{ range $image := $images }}
+            {{ with $image }}
+                {{ $alt := .Name }}
+                {{ $src := .RelPermalink }}
+                {{ $imageParams := dict "src" $src "alt" $alt }}
+                {{ partial "image.html" $imageParams }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    
     {{ .Inner }}
 </div>

@@ -7,11 +7,12 @@ programs_used:
     - After-Effects
     - Davinci-Resolve
 weight: 70
+summary: "
+The lama short film (title yet to be determined) is my current project that I have been working on since the winter of 2021. The lama is a 3D scan of a real llama stuffed animal. For this, I took around 350 photos of the stuffed animal in good lighting conditions. For this it was important to capture all possible perspectives.
+"
 ---
 
-The lama short film (title yet to be determined) is my current project that I have been working on since the winter of 2021. The lama is a 3D scan of a real llama stuffed animal. For this, I took around 350 photos of the stuffed animal in good lighting conditions. For this it was important to capture all possible perspectives.
-
-{{< gallery match="media/stils_gallery/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
+{{< own_gallery folder="media/stils_gallery/*" rowHeight=150 />}}
 
 ## Story
 
@@ -20,7 +21,7 @@ The story is about a lama that is asleep at first. Meanwhile a washing machine i
 ## Lama Model
 
 {{< row >}}
-    {{< gallery match="media/stils_gallery/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
+    {{< own_gallery folder="media/scans_gallery/*" rowHeight=150 />}}
     {{< text align="right" >}}
         The lama is a 3D scan of a real lama stuffed animal. This took several hundred pictures from every possible perspective. In RealityCapture I then merged the whole thing into a 3D model and then reworked it in Blender.
     {{< /text >}}
