@@ -15,7 +15,7 @@ A simple addon to ease the automation and scripting workflow in blender.
 It allows you to expose variables of your python script and run them from the 3d viewport.
 I created it, so you could make exports of unconvetional objects easier by defining a custom script for it.
 
-{{< gallery match="media/easy_automation/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
+{{< own_gallery folder="media/easy_automation/*" rowHeight= 300 />}}
 
 ## QuixelAddonFork
 
