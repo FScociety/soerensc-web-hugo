@@ -1,15 +1,37 @@
 .timeline-container {
+    
+    margin-left: -300px;
+    margin-right: -300px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    @media screen and (max-width: 1600px) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    margin: 0px 15px 15px 0px;
 
     .timeline {
-        background-color: green;
+        background-color: $bg-lighter;
         border-radius: $standard-border-radius;
         padding: 5px;
 
         h4, p {
             margin: 0px;
         }
+
+        p {
+            font-size: 1rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        display: block;
     }
 }

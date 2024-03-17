@@ -532,16 +532,29 @@ lite-youtube.lyt-activated > .lty-playbtn {
       .row-container .row-content .text {
         padding: 0px 30px; } }
 .timeline-container {
+  margin-left: -300px;
+  margin-right: -300px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  margin: 0px 15px 15px 0px; }
+  grid-template-columns: repeat(10, 1fr); }
+  @media screen and (max-width: 1600px) {
+    .timeline-container {
+      margin-left: 0px;
+      margin-right: 0px; } }
   .timeline-container .timeline {
-    background-color: green;
+    background-color: #282828;
     border-radius: 10px;
     padding: 5px; }
     .timeline-container .timeline h4, .timeline-container .timeline p {
       margin: 0px; }
-
+    .timeline-container .timeline p {
+      font-size: 1rem; }
+    .timeline-container .timeline h4 {
+      font-size: 1.2rem; }
+  @media screen and (max-width: 1000px) {
+    .timeline-container {
+      display: block; } }
 footer {
   display: flex;
   justify-content: center;
