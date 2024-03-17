@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 25px;
@@ -75,7 +75,7 @@ p {
 }
 
 a {
-  color: $accent;
+  color: $text;
 }
 
 @media screen and (max-width: 1500px) {
@@ -110,6 +110,10 @@ a {
 /* Specific Elements */
 /* $$$$$$$$- */
 
+.site-container {
+  margin-top: 130px;
+}
+
 .content-container {
   padding: 0 25px;
   max-width: 1000px;
@@ -125,9 +129,12 @@ a {
 @import "pages/project-menu.scss";
 @import "pages/single.scss";
 @import "pages/work.scss";
+@import "pages/about.scss";
 
 @import "components/lite-yt-embed.scss";
 @import "components/own-gallery.scss";
 @import "components/row.scss";
+@import "components/post-content.scss";
+@import "components/cv-timeline.scss";
 
 @import "layouts/footer.scss";

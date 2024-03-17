@@ -1,0 +1,15 @@
+.timeline-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 0px 15px 15px 0px;
+
+    .timeline {
+        background-color: green;
+        border-radius: $standard-border-radius;
+        padding: 5px;
+
+        h4, p {
+            margin: 0px;
+        }
+    }
+}

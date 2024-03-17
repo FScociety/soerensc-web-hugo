@@ -6,12 +6,14 @@
     </div>
 
     <div class="content-container">
-      <div class="title-container">
-        <h1 class="project-title">{{ .Title }}</h1>
-        <div class="details">
+      <div class="project-header-container">
+        <div class="title-container">
+          <h1 class="project-title">{{ .Title }}</h1>
           {{ if .Params.year }}
-            <p class="project-year">{{ .Params.year}}</p>
+          <p class="project-year">{{ .Params.year}}</p>
           {{ end }}
+        </div>
+        <div class="details">
           <div class="programs_used">
             {{ if .Params.programs_used }}
               {{ range .Params.programs_used }}

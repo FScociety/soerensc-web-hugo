@@ -1,0 +1,10 @@
+{{ $length := .Get "parts" }}
+{{ $start := .Get "start" }}
+{{ $end := .Get "end" }}
+
+<div class="timeline-container" style="grid-template-columns: repeat({{ $length }}, 1fr);"> 
+    <div class="timeline" style="grid-column: {{ $start}}/{{ $end }};">
+        <h4>{{ .Get "name" }}</h4>
+        <p>{{ .Get "date" }}</p>
+    </div>
+</div>

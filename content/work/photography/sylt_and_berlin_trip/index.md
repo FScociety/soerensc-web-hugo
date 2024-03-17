@@ -2,4 +2,4 @@
 title: "Sylt and Berlin"
 ---
 
-{{< own_gallery folder="media/*" rowHeight=300 />}}
+{{< own_gallery folder="media/gallery/*" rowHeight=300 />}}
