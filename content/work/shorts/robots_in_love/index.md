@@ -7,9 +7,10 @@ programs_used:
     - Premire-Pro
     - Embergen
 weight: 50
+summary: "
+For art class, we were asked to create a work on the theme 'Together we are strong'. The medium wasn't specified. Because of my experience with Blender, I thought about creating a 3D animated short film.
+"
 ---
-
-For art class, we were asked to create a work on the theme "Together we are strong". The medium wasn't specified. Because of my experience with Blender, I thought about creating a 3D animated short film.
 
 {{< youtube-lite src="KPq-dPOjAKM" >}}
 

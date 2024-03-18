@@ -46,7 +46,10 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 25px;
 }
 
 h3 {
@@ -72,7 +75,7 @@ p {
 }
 
 a {
-  color: $accent;
+  color: $text;
 }
 
 @media screen and (max-width: 1500px) {
@@ -107,6 +110,10 @@ a {
 /* Specific Elements */
 /* $$$$$$$$- */
 
+.site-container {
+  margin-top: 130px;
+}
+
 .content-container {
   padding: 0 25px;
   max-width: 1000px;
@@ -117,43 +124,17 @@ a {
   margin-bottom: 25px;
 }
 
-.row-content {
-  /* flex-direction: row-reverse; */
-  grid-template-columns: 50% 50%;
-  margin: 0px 0px 50px 0px;
-  padding: 10px 10px 10px 10px;
-  /* background-color: $accent-bg; */
-
-  img {
-    height: 100%;
-  }
-  video {
-    height: 100%;
-  }
-}
-
-.row-container a {
-  text-decoration: none;
-  color: $text;
-}
-
-.row-container.fill {
-  background-color: $bg-light;
-  border-radius: $standard-border-radius;
-}
-
-@media screen and (min-width: 800px) {
-  .row-content {
-    display: grid;
-  }
-}
-
 @import "layouts/header.scss";
 
 @import "pages/project-menu.scss";
 @import "pages/single.scss";
 @import "pages/work.scss";
+@import "pages/about.scss";
 
 @import "components/lite-yt-embed.scss";
+@import "components/own-gallery.scss";
+@import "components/row.scss";
+@import "components/post-content.scss";
+@import "components/cv-timeline.scss";
 
 @import "layouts/footer.scss";

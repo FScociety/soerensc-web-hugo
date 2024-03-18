@@ -44,7 +44,7 @@ weight = 20
 
 [[menu.main]]
 name = 'Notes'
-pageRef = 'blog'
+pageRef = 'notes'
 weight = 30
 
 [[menu.main]]

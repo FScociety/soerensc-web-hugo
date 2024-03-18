@@ -6,9 +6,10 @@ programs_used:
     - Blender
     - Premire-Pro
 weight: 1
----
-
+summary: "
 A funny thought ...
+"
+---
 
 {{< youtube-lite src="3xzHRtRIY8I" >}}
 

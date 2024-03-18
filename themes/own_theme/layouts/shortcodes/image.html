@@ -1,11 +1,12 @@
+<!-- Image Source Path -->
 {{ $src := .Get "src" }}
-<div class="gallery-image">
-    {{ if strings.HasSuffix $src ".webm" }}
-        <video autoplay muted loop>
-            <source src="{{ $src }}" type="video/webm">
-            Your browser does not support the video tag.
-        </video>
-    {{ else }}
-        <img src="{{ $src }}" alt="{{ .Get "alt" }}">
-    {{ end }}
-</div>
+
+<!-- (Optional) Image Description -->
+{{ $alt := "no alt" }}
+{{ with .Get "alt" }}
+    {{ $alt = . }}
+{{ end }}
+
+<!-- Pack values into disctionary and send them to image partial -->
+{{ $imageParams := dict "src" $src "alt" $alt }}
+{{ partial "image.html" $imageParams }}

@@ -9,3 +9,9 @@
     <script src="{{ .RelPermalink }}"></script>
   {{- end }}
 {{- end }}
+
+{{- with resources.Get "js/own-gallery-V2.js" }}
+  {{- with . | js.Build }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{- end }}
+{{- end }}

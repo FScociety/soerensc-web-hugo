@@ -1,6 +1,7 @@
 @import "_vars.scss";
 
 .site-container.project-view {
+    margin-top: 0px;
     background-color: $bg;
     border-radius: $standard-border-radius;
     border-color: $text;
@@ -39,34 +40,50 @@
     }
   }
   
+.project-header-container {
+  display: block;
+  padding: 20px 0px 0px 0px;
+  border-radius: $standard-border-radius;
+
   .title-container {
-    display: block;
-    padding: 20px 0px 0px 0px;
-    border-radius: $standard-border-radius;
-
-    .programs_used {
-        display: flex;
-
-        img.logo {
-          height: 40px;
-          width: 40px;
-          margin: 10px;
-        }
-      }
-  }
-  
-  .details {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    .project-title {
+      font-size: 5rem;
+      margin-right:20px;
+      display: inline;
+    }
   
-    .div {
-      margin: 0px 20px;
+    .project-year  {
+      background-color: $light-bg;
+      border-radius: $standard-border-radius;
+      padding: 10px 5px 5px 5px;
+      margin: 0px;
+      margin-top: -15px;
+      display: inline;
+      line-height: 100%;
+      font-size: 3rem;
     }
   }
-  
-  .project-year  {
-    background-color: $light-bg;
-    border-radius: $standard-border-radius;
-    font-weight: normal;
-    padding: 5px;
+
+  .details {
+
+    .programs_used {
+
+      display: flex;
+      justify-content: center;
+
+      img.logo {
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+      }
+    }
   }
+
+  .summary {
+    text-align: center;
+  }
+}
