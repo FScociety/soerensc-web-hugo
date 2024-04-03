@@ -7,7 +7,6 @@ function calcMediaGallery() {
     Array.from(containers).forEach(container => {
         const media_elements = container.querySelectorAll('.media');
         const min_row_height = container.dataset.rowheight;
-        console.log(container);
 
         const max_width = container.clientWidth;
         let row_width = 0;

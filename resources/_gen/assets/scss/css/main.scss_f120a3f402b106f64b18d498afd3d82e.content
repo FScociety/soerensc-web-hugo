@@ -254,6 +254,9 @@ header {
       font-size: 5rem;
       margin-right: 20px;
       display: inline; }
+      @media only screen and (max-width: 1000px) {
+        .project-header-container .title-container .project-title {
+          font-size: 3rem; } }
     .project-header-container .title-container .project-year {
       background-color: #535353;
       border-radius: 10px;
@@ -270,8 +273,9 @@ header {
       height: 40px;
       width: 40px;
       margin: 10px; }
-  .project-header-container .summary {
-    text-align: center; }
+
+.summary {
+  text-align: center; }
 
 .hero-header {
   height: 70vh;
@@ -545,13 +549,17 @@ lite-youtube.lyt-activated > .lty-playbtn {
   .timeline-container .timeline {
     background-color: #282828;
     border-radius: 10px;
-    padding: 5px; }
+    padding: 10px;
+    margin: 5px; }
     .timeline-container .timeline h4, .timeline-container .timeline p {
       margin: 0px; }
     .timeline-container .timeline p {
       font-size: 1rem; }
     .timeline-container .timeline h4 {
       font-size: 1.2rem; }
+  .timeline-container .end {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px; }
   @media screen and (max-width: 1000px) {
     .timeline-container {
       display: block; } }

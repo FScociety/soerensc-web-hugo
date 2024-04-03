@@ -47,3 +47,17 @@ The explanatory video shows me "Sören", who starts his paper on naturalism much
 
 ## Scene Building
 
+{{< own_gallery >}}
+    {{< image src="media/bibliothek_01_wip.webp" >}}
+    {{< image src="media/bibliothek_01_final.webp" >}}
+{{< /own_gallery >}}
+
+{{< own_gallery >}}
+    {{< image src="media/bibliothek_02_wip.webp" >}}
+    {{< image src="media/bibliothek_02_final.webp" >}}
+{{< /own_gallery >}}
+
+{{< own_gallery >}}
+    {{< image src="media/classroom_wip.webp" >}}
+    {{< image src="media/classroom_final.webp" >}}
+{{< /own_gallery >}}

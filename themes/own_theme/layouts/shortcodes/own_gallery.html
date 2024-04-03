@@ -1,12 +1,12 @@
 {{ $folder := .Get "folder" }}
-{{ $images := (.Page.Resources.ByType "image") }}
+{{ $media := (.Page.Resources.ByType "image") }}
 {{ $rowHeight := .Get "rowHeight" | default 30}}
 
 <div id="own-gallery" class="own-gallery" data-rowheight="{{ $rowHeight }}">
     {{ if $folder }}
-        {{ $images = (.Page.Resources.Match $folder) }}
+        {{ $media = (.Page.Resources.Match $folder) }}
 
-        {{ range $image := $images }}
+        {{ range $image := $media }}
             {{ with $image }}
                 {{ $alt := .Name }}
                 {{ $src := .RelPermalink }}

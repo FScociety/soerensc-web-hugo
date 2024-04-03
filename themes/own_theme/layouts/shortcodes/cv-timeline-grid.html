@@ -1,0 +1,6 @@
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+
+<div class="timeline-container" style="grid-template-columns: repeat({{ $width }}, 1fr);"> 
+    {{ .Inner }}
+</div>
