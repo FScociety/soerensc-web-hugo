@@ -68,6 +68,8 @@
       <p>
         More indepth notes about my work and thoughts
       </p>
+
+      {{ partial "post_list_preview.html" (dict "menuName" "work/shorts") }}      
   
       <div class="content-container">
         {{ .Content }}

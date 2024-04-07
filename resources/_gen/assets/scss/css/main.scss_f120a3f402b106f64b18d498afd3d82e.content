@@ -64,11 +64,15 @@ a {
 
 @media screen and (max-width: 1500px) {
   h1 {
-    font-size: 5rem; } }
+    font-size: 5rem; }
+  h2 {
+    font-size: 2rem; }
+  h3 {
+    font-size: 1.5rem; } }
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 3rem; } }
+    font-size: 3.5rem; } }
 
 /* Reusable Parts */
 /* $$$$$$$ */
@@ -563,6 +567,15 @@ lite-youtube.lyt-activated > .lty-playbtn {
   @media screen and (max-width: 1000px) {
     .timeline-container {
       display: block; } }
+.text.left {
+  text-align: left; }
+
+.text.right {
+  text-align: right; }
+
+.text.center {
+  text-align: center; }
+
 footer {
   display: flex;
   justify-content: center;

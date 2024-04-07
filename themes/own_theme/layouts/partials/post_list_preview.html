@@ -1,0 +1,16 @@
+<!-- {{- $menuName := .menuName }} -->
+{{ $menuName := "Shorts" }}
+
+
+<div class="post_list_preview">
+    <p> {{ .Page }} </p>
+
+    {{ range site.Menus }}
+    {{ end }}
+
+    {{ with index site.Menus $menuName }} 
+        {{ range . }}  
+            <p>lol ich bin eins text</p>
+        {{ end }}
+    {{ end }}
+</div>

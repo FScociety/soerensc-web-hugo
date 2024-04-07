@@ -82,11 +82,18 @@ a {
   h1 {
     font-size: 5rem;
   }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -136,5 +143,6 @@ a {
 @import "components/row.scss";
 @import "components/post-content.scss";
 @import "components/cv-timeline.scss";
+@import "components/text.scss";
 
 @import "layouts/footer.scss";
