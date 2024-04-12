@@ -3,14 +3,16 @@
 
 
 <div class="post_list_preview">
-    <p> {{ .Page }} </p>
 
-    {{ range site.Menus }}
-    {{ end }}
-
-    {{ with index site.Menus $menuName }} 
-        {{ range . }}  
-            <p>lol ich bin eins text</p>
+    {{ with index site.Menus "main" }}
+        {{ range . }}
+            {{ if eq .Name "Notes" }} 
+                {{ range .Page.Pages }}
+                    <a href=" {{ .RelPermalink }} ">
+                        <p>{{ .Title }}</p>
+                    </a>
+                {{ end }}
+            {{ end }}
         {{ end }}
     {{ end }}
 </div>
