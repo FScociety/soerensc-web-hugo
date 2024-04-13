@@ -1,0 +1,24 @@
+<!-- {{- $menuName := .menuName }} -->
+{{ $menuName := "Shorts" }}
+
+
+<div class="post_list_preview">
+
+    {{ with index site.Menus "main" }}
+        {{ range . }}
+            {{ if eq .Name "Notes" }} 
+                <ul class="post_list_preview">
+                    {{ range $index, $page := .Page.Pages | first 3 }}
+                        <li class="post_item{{ if eq $index 0 }} hero{{ end }}">
+                                <a href=" {{ .RelPermalink }} ">
+                                    {{ $coverPath := print .RelPermalink "media/COVER.webp" }}
+                                    <img class="selectable" src="{{ $coverPath }}">
+                                    <p>{{ .Title }}</p>
+                                </a>
+                            </li>
+                    {{ end }}
+                </ul>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</div>
