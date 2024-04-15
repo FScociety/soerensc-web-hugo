@@ -24,9 +24,9 @@ A modified version of the Quixel Bridge import script for blender. For every imp
 ## [DynamicUV](https://github.com/FScociety/Dynamic-UV)
 
 {{< row >}}
-    {{< text align="right" >}}
-        Inspirered by the 3dsMax dynamic UV Unwrapping modifiers I wanted to recreate this functionality in blender.
-        So i created a box and a planar uv unwrapper in geometry nodes and wrote a wrapper script around them to add them to your object.
+    {{< text >}}
+Inspirered by the 3dsMax dynamic UV Unwrapping modifiers I wanted to recreate this functionality in blender.
+So i created a box and a planar uv unwrapper in geometry nodes and wrote a wrapper script around them to add them to your object.
     {{< /text >}}
     {{< image src="media/dynamic_uv.webp" >}}
 {{< /row >}}
