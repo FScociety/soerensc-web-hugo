@@ -357,7 +357,8 @@ header {
   max-width: 1000px;
   grid-template-columns: repeat(10, 1fr);
   grid-auto-rows: minmax(100px, auto);
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  margin-bottom: 75px; }
   .bento-grid div, .bento-grid a {
     background-color: #0a0a0a;
     border-radius: 10px;
@@ -406,6 +407,17 @@ header {
     grid-row: 5/7; }
     .bento-grid .bento-item.id-5 p {
       font-size: 3rem; }
+
+.post-list-preview .post-list-item {
+  background-color: #282828;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px; }
+  .post-list-preview .post-list-item a {
+    text-decoration: none;
+    font-weight: bold; }
+    .post-list-preview .post-list-item a p {
+      margin: 0px; }
 
 @media screen and (max-width: 700px) {
   .bento-grid {
@@ -531,7 +543,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
     grid-template-columns: 50% 50%;
     padding: 10px 10px 10px 10px; }
     .row-container .row-content .text {
-      padding: 0px; }
+      padding: 10px 0px; }
       .row-container .row-content .text h1, .row-container .row-content .text h2, .row-container .row-content .text h3, .row-container .row-content .text h4, .row-container .row-content .text p {
         margin-top: 0px; }
   @media screen and (min-width: 800px) {
