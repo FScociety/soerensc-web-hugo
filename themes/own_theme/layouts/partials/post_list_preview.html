@@ -2,11 +2,16 @@
 {{ $menuName := "Shorts" }}
 
 
+<<<<<<< HEAD
 <div class="post_list_preview">
+=======
+<div class="post-list-preview">
+>>>>>>> main
 
     {{ with index site.Menus "main" }}
         {{ range . }}
             {{ if eq .Name "Notes" }} 
+<<<<<<< HEAD
                 <ul class="post_list_preview">
                     {{ range $index, $page := .Page.Pages | first 3 }}
                         <li class="post_item{{ if eq $index 0 }} hero{{ end }}">
@@ -18,6 +23,15 @@
                             </li>
                     {{ end }}
                 </ul>
+=======
+                {{ range .Page.Pages }}
+                <div class="post-list-item selectable">
+                    <a class="selectable" href=" {{ .RelPermalink }} ">
+                        <p>{{ .Title }}</p>
+                    </a>
+                </div>
+                {{ end }}
+>>>>>>> main
             {{ end }}
         {{ end }}
     {{ end }}

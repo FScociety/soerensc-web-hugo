@@ -1,0 +1,9 @@
+{{ $start := .Get "start" }}
+{{ $end := .Get "end" }}
+{{ $height := .Get "height" }}
+{{ $type := .Get "type" }}
+
+<div class="timeline {{ $type }}" style="grid-column: {{ $start}}/{{ $end }}; grid-row: {{ $height}};">
+    <h4>{{ .Get "name" }}</h4>
+    <p>{{ .Get "date" }}</p>
+</div>

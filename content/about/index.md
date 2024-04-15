@@ -27,15 +27,24 @@ Past:   1
 Future: 10
 -->
 
-{{< cv-timeline name="High School" date="2012-2022" parts=10 start=1 end=7 >}}
-{{< cv-timeline name="3D Animation Projects" date="2017-2024" parts=10 start=2 end=9 >}}
-{{< cv-timeline name="Coding Projects" date="2018-2024" parts=10 start=3 end=9 >}}
-{{< cv-timeline name="Shortfilms For Youth Service" date="2018-2021" parts=10 start=3 end=6 >}}
-{{< cv-timeline name="IT Intern" date="08/2018" parts=10 start=3 end=4 >}}
-{{< cv-timeline name="IT Intern" date="07/2019" parts=10 start=4 end=5 >}}
-{{< cv-timeline name="Technical Artist Intern" date="08/2019" parts=10 start=4 end=5 >}}
-{{< cv-timeline name="3D Artist Intern" date="2022-2023" parts=10 start=7 end=8 >}}
-{{< cv-timeline name="Studying At FilmAKA BW" date="2023-Future" parts=10 start=8 end=10 >}}
+
+
+{{< cv-timeline-grid width=10 >}}
+    {{< cv-timeline-item name="Technical Artist Intern" date="08/2019" parts=10 start=5 end=6 height=1 >}}
+    {{< cv-timeline-item name="IT Intern" date="07/2019" parts=10 start=4 end=5 height=1 >}}
+    {{< cv-timeline-item name="IT Intern" date="08/2018" parts=10 start=3 end=4 height=1 >}}
+    {{< cv-timeline-item name="Study at Filmakademie BW" date="2023-Future" start=8 end=10 height=1 type="end" >}}
+    {{< cv-timeline-item name="3D Artist Intern" date="2022-2023" start=7 end=8 height=1 >}}
+    <!-- {{< cv-timeline-item name="Shortfilms For Youth Service" date="2018-2021" parts=10 start=3 end=6 >}} -->
+    {{< cv-timeline-item name="Coding Projects" date="2018-2024" parts=10 start=3 end=9 >}}
+    {{< cv-timeline-item name="3D Animation Projects" date="2017-2024" parts=10 start=2 end=9 >}}
+    {{< cv-timeline-item name="High School" date="2012-2022" start=1 end=7 >}}
+
+
+
+
+
+{{< /cv-timeline-grid >}}
 
 ## About this website
 

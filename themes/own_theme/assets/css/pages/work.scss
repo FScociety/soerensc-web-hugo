@@ -85,8 +85,9 @@
     }
   
     .site-container {
+
       h2 {
-        translate: 0px -20px;
+        translate: 0px -20px;             
         text-align: center;
       }
     }
@@ -98,6 +99,7 @@
     grid-template-columns: repeat(10, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 20px;
+    margin-bottom: 75px;
 
     div, a {
       background-color: rgb(10, 10, 10);
@@ -174,6 +176,7 @@
     }
   }
 
+<<<<<<< HEAD
   .post_list_preview {
     list-style-type: none;
     display: grid;
@@ -219,6 +222,27 @@
   }
   
   
+=======
+  .post-list-preview {
+
+    .post-list-item {
+      background-color: $bg-lighter;
+      border-radius: $standard-border-radius;
+      padding: 20px;
+      margin: 10px;
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+
+        p {
+          margin: 0px;
+        }
+
+      }
+    }
+  }
+>>>>>>> main
 
 @media screen and (max-width: 700px) {
   .bento-grid {

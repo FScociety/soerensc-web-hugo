@@ -4,4 +4,4 @@ layout: blank
 weight: 50
 ---
 
-{{< project-list />}}
+{{< post_list />}}

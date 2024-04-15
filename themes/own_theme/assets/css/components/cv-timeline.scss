@@ -16,7 +16,8 @@
     .timeline {
         background-color: $bg-lighter;
         border-radius: $standard-border-radius;
-        padding: 5px;
+        padding: 10px;
+        margin: 5px;
 
         h4, p {
             margin: 0px;
@@ -29,6 +30,11 @@
         h4 {
             font-size: 1.2rem;
         }
+    }
+
+    .end {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
     }
 
     @media screen and (max-width: 1000px) {
