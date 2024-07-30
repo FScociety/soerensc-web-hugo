@@ -4,4 +4,4 @@ layout: blank
 weight: 50
 ---
 
-{{< post_list />}}
+{{< post_list display="small"/>}}

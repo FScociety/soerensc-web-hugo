@@ -1,34 +1,27 @@
-<!-- layouts/shortcodes/projectGrid.html -->
+{{ $display := .Get "display" | default "normal" }}
+
 <div class="site-container project-menu">
   <div class="content-container">
       {{ .Inner }}
-      <div class="project-grid-container">
+      <div class="project-grid-container {{ $display }} ">
         {{ $page_index := 1 }}
-        {{ range sort .Page.Pages "Weight" "desc"}}
+        {{ range (sort .Page.Pages "Weight" "asc").Reverse }}
         <a href="{{ .RelPermalink }}" {{ if eq $page_index 1 }} class="hero" {{ end }}>
           <div class="project-item selectable">
             {{ $coverPath := print .RelPermalink "media/COVER.webp" }}
             {{ $coverPath_active := print .RelPermalink "/media/COVER.webm" }}
 
-            {{ if (fileExists $coverPath_active) }}
-              <div class="cover-container animatable">
+
+              <div class="cover-container {{ if (fileExists $coverPath_active) }} animatable {{ end }}">
                 <div class="cover-static">
                   <img class="static" src="{{ $coverPath }}" alt="No Cover Image">
                 </div>
-                <div class="cover-active">
-                  <video autoplay muted loop class="active" src="{{ $coverPath_active }}" alt="">
-                </div>
+                {{ if eq $display "normal"}}
+                  <div class="cover-active">
+                    <video autoplay muted loop class="active" src="{{ $coverPath_active }}" alt="">
+                  </div>
+                {{ end }}
               </div>
-            {{ else }} 
-              <div class="cover-container">
-                <div class="cover-static">
-                  <img class="static" src="{{ $coverPath }}" alt="No Cover Image">
-                </div>
-                <div class="cover-active">
-                  <video autoplay muted loop class="active" src="{{ $coverPath_active }}" alt="">
-                </div>
-              </div>
-            {{ end }}
 
             <div class="information-container">
               <div class="title-container">

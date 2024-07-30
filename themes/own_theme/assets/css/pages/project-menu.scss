@@ -12,7 +12,54 @@
         max-width: 1170px;
     }
 
-    .project-grid-container {
+    .project-grid-container.normal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+        
+        
+        @media screen and (max-width: 400px) { // minwidth + 2 * main_padding
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        }
+    }
+
+    .project-grid-container.small {
+        a {
+            .project-item {
+                display: flex;
+                height: 100px;
+                background-color: $bg-light;
+                padding: 10px;
+                margin: 10px;
+
+                .cover-container {
+                    aspect-ratio: 4/3;
+                    margin-right: 15px;
+
+                    div {
+                        width: 100%;
+                    }
+                
+                    .cover-static {
+                        width: 100%;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+    
+                            object-fit: cover;
+                            border-radius: $standard-border-radius;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .project-grid-container.normal {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         justify-content: center;
@@ -92,7 +139,48 @@
                 }
             }
         }
+    
+    }
 
+    .project-grid-container {
+        a {
+            text-decoration: none;
+            color: $text;
+            min-width: 0px;
+  
+            .project-item {
+                border-radius: $standard-border-radius;
+        
+        
+                .information-container .title-container {
+                    font-weight: bold;
+                    text-align: left;
+                    word-break: break-word;
+                    overflow-wrap: break;
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                    padding: 0px;
+                    margin: 10px 0px 0px 0px;
+
+                    p {
+                        margin: 0px;
+                        text-align: left;
+                        display: inline;
+                    }
+        
+                    span {
+                        background-color: $bg-lighter;
+                        color: $text-light;
+                        padding: 5px 10px;
+                        border-radius: $standard-border-radius;
+                        font-size: 1rem;
+                        vertical-align: middle;
+                    }
+        
+
+                }   
+            }
+        }
     }
 }
 

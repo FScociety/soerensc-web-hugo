@@ -7,7 +7,7 @@
     {{ with index site.Menus "main" }}
         {{ range . }}
             {{ if eq .Name "Notes" }} 
-                {{ range .Page.Pages }}
+                {{ range .Page.Pages.Reverse }}
                 <div class="post-list-item selectable">
                     <a class="selectable" href=" {{ .RelPermalink }} ">
                         <p>{{ .Title }}</p>
