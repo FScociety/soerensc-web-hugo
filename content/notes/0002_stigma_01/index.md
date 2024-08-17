@@ -1,5 +1,5 @@
 ---
-title: "My first time on set vfx superviser"
+title: "STIGMA I: My first time on set vfx superviser"
 layout: blank
 ---
 
