@@ -1,6 +1,6 @@
 ---
 title: I'm Soeren.
-layout: about
+layout: blank 
 weight: 50
 ---
 

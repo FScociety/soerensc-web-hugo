@@ -1,80 +1,17 @@
 {{ define "main" }}
+
 <div class="main-page">
-  <div class="hero-header">
-    {{ $coverPath := print .RelPermalink .Params.backdrop }}
-    {{ if (strings.HasSuffix $coverPath ".webm") }}
-    <video class="cover lazy" data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="true" preload="none" muted="" data-object-fit="cover" src="{{ $coverPath }}" poster="/media/COVER.webp" alt="No Cover Image"></video>
-    {{ else }}
-    <img class="cover" src="{{ $coverPath }}" alt="No Cover Image">
-    {{ end }}
-    <div class="gradient-overlay"></div>
-    <div class="text-overlay-container">
-      <div class="text-overlay">
-        <h1>Hi. Iam Soeren.</h1>
-        <p>
-          3D, photography, coding I love it all. 
-        </p>
-        <a class="showreel selectable" href="https://www.youtube.com/watch?v=rP8DSzsbc2A" target="_blank">
-          <p>Watch the Showreel</p>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/External_link_font_awesome.svg/1024px-External_link_font_awesome.svg.png">
-        </a>
-      </div>
-    </div>
-    </div>
-  </div>
+  {{ template "_default/work/intro.html" . }}   
+
   <div class="site-container">
     <div class="content-container">
-      <div class="bento-grid">
-        <div class="bento-item id-1">
-          <a href="/work/shorts">
-              <img src="media/short_films_cover.webp" class="selectable-reverse">
-              <div class="bento-gradient"></div>
-              <p>Shorts</p>
-          </a>
-        </div>
-        <div class="bento-item id-2">
-          <a href="/work/stils">
-            <img src="media/stils_cover.webp" class="selectable-reverse">
-            <div class="bento-gradient"></div>
-            <p>Stills</p>
-          </a>
-        </div>
-        <div class="bento-item id-3">
-          <a href="/work/animations">
-            <img src="media/small_animations_cover.webp" class="selectable-reverse">
-            <div class="bento-gradient"></div>
-            <p>Animations</p>
-          </a>
-        </div>
-        <div class="bento-item id-4">
-          <a href="/work/photography">
-            <img src="media/photography_cover.webp" class="selectable-reverse">
-            <div class="bento-gradient"></div>
-            <p>Photography</p>
-          </a>
-        </div>
-        <div class="bento-item id-5">
-          <a href="/work/coding">
-            <img src="media/coding_cover.webp" class="selectable-reverse">
-            <div class="bento-gradient"></div>
-            <p>Coding</p>
-          </a>
-        </div>
-      </div>
-  
-      <h1>
-        Notes.
-      </h1>
-      <p class="text center">
-        More indepth notes about my work and thoughts
-      </p>
+     
+      {{ template "_default/work/bento-grid.html" . }}
 
-      {{ partial "post_list_preview.html" (dict "menuName" "work/shorts") }}      
-  
-      <div class="content-container">
-        {{ .Content }}
-      </div>
+      {{ template "_default/work/notes.html" . }}  
+
     </div>
   </div>
 </div>
+
 {{ end }}
