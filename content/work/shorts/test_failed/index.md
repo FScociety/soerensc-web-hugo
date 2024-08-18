@@ -6,10 +6,12 @@ programs_used:
     - Blender
     - Premire-Pro
 weight: 40
-summary: "
-A little thought experiment that I wanted to explore in a short video.
-"
 ---
+
+
+{{< text align=center >}}
+A little thought experiment that I wanted to explore in a short video.
+{{</ text >}}
 
 {{< youtube-lite src="8OqXyam7NjA">}}
 

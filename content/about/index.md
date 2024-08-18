@@ -45,8 +45,9 @@ Future: 10
 
 ## About this website
 
-This website is build on the CMS [Hugo](https://gohugo.io/). 
-Styling was made with [Sass](https://sass-lang.com). 
+This website is build using [Hugo](https://gohugo.io/). 
+
+Styling was made with [Sass](https://sass-lang.com).
 For lightweight youtube embeding [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) was used. 
 
 The rest is plain HTML, CSS and JS written by me. The source code is available on [github](https://github.com/FScociety/fscociety.github.io). It is also hosted there, THANKS!

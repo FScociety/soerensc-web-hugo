@@ -6,10 +6,11 @@ programs_used:
     - Blender
     - Premire-Pro
 weight: 1
-summary: "
-A funny thought ...
-"
 ---
+
+{{< text align=center >}}
+A funny thought ...
+{{</ text >}}
 
 {{< youtube-lite src="3xzHRtRIY8I" >}}
 

@@ -1,6 +1,7 @@
 ---
-title: "My first time on set vfx superviser"
+title: "STIGMA I On set vfx superviser"
 layout: blank
+summary: "Talking about my first experience as a on set vfx supervisor"
 ---
 
 ## Intro

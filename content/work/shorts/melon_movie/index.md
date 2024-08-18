@@ -8,10 +8,11 @@ programs_used:
     - Premire-Pro
     - Photoshop
 weight: 60
-summary: "
-My biggest project so far. I worked on it for a total of 1 year.
-"
 ---
+
+{{< text align=center >}}
+My biggest project so far. I worked on it for a total of 1 year.
+{{</ text >}}
 
 {{< youtube-lite src="JR3cwxSdOB4" >}}
 

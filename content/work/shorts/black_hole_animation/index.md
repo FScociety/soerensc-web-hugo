@@ -6,10 +6,12 @@ programs_used:
     - Blender
     - After-Effects
 weight: 10
-summary: "
-As a fan of the Netflix series 'Lost in Space' I tried to model the spaceship 'Jupiter'. I also wanted to make a small animation and this short film was the result.
-"
 ---
+
+{{< text align=center >}}
+As a fan of the Netflix series 'Lost in Space' I tried to model the spaceship 'Jupiter'.
+I also wanted to make a small animation and this short film was the result.
+{{</ text >}}
 
 {{< youtube-lite src="FPQ4QwuLxF4" >}}
 

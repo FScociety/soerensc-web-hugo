@@ -1,6 +1,7 @@
 ---
-title: "STIGMA II: workflow of a big fluid simulation in blender"
+title: "STIGMA II: How to manage big sims in blender"
 layout: blank
+summary: "My workflow of handling a big fluid simulation in blender"
 ---
 
 ## Introduction

@@ -7,10 +7,14 @@ programs_used:
     - After-Effects
     - Davinci-Resolve
 weight: 70
-summary: "
-The lama short film (title yet to be determined) is my current project that I have been working on since the winter of 2021. The lama is a 3D scan of a real llama stuffed animal. For this, I took around 350 photos of the stuffed animal in good lighting conditions. For this it was important to capture all possible perspectives.
-"
 ---
+
+{{< text align=center >}}
+The lama short film (title yet to be determined) is my current project that I have been working on since the winter of 2021.
+The lama is a 3D scan of a real llama stuffed animal.
+For this, I took around 350 photos of the stuffed animal in good lighting conditions.
+For this it was important to capture all possible perspectives.
+{{</ text >}}
 
 {{< own_gallery folder="media/stils_gallery/*" rowHeight=150 />}}
 

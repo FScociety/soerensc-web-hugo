@@ -4,8 +4,10 @@ programs_used:
     - Blender
 ---
 
+{{< text align=center >}}
 While doing my internship at Faber Courtial I created some addons for blender, to connect blender more easily into the studio workflow.
 3 of them I was allowed to release to the public.
+{{</ text >}}
 
 ## [EasyAutomation](https://github.com/FScociety/EasyAutomation)
 

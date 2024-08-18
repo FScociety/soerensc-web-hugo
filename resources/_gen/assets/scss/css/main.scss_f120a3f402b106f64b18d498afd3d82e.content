@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  color: #ffff;
+  color: white;
   background-color: #141414;
   font-size: 1.15rem;
   line-height: 1.5;
@@ -27,7 +27,7 @@ video {
 /* $$$$$$$ */
 ::selection {
   color: #141414;
-  background: #ffff; }
+  background: white; }
 
 h1 {
   font-size: 8rem;
@@ -60,7 +60,7 @@ p {
   font-size: 1.5rem; }
 
 a {
-  color: #ffff; }
+  color: white; }
 
 @media screen and (max-width: 1500px) {
   h1 {
@@ -120,7 +120,7 @@ header {
     padding: 5px 10px;
     border-radius: 10px; }
   header a.active, header a.anchor, header a:hover {
-    color: #ffff;
+    color: white;
     background-color: rgba(255, 255, 255, 0.1); }
   header ul {
     display: flex;
@@ -190,6 +190,10 @@ header {
         object-fit: cover;
         border-radius: 10px; }
 
+.site-container.project-menu .project-grid-container.small p {
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
 .site-container.project-menu .project-grid-container.normal {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -202,7 +206,7 @@ header {
   .site-container.project-menu .project-grid-container.normal a {
     text-decoration: none;
     flex-direction: column;
-    color: #ffff;
+    color: white;
     flex: 1 1 calc(50% - 40px);
     /* Adjust the 50% for different widths */
     min-width: 0px; }
@@ -245,7 +249,7 @@ header {
 
 .site-container.project-menu .project-grid-container a {
   text-decoration: none;
-  color: #ffff;
+  color: white;
   min-width: 0px; }
   .site-container.project-menu .project-grid-container a .project-item {
     border-radius: 10px; }
@@ -274,7 +278,7 @@ header {
   margin-top: 0px;
   background-color: #141414;
   border-radius: 10px;
-  border-color: #ffff; }
+  border-color: white; }
   .site-container.project-view .backdrop-container {
     width: 100%;
     height: 450px;
@@ -373,10 +377,10 @@ header {
   align-items: center; }
   .text-overlay-container .text-overlay {
     width: 100%;
-    color: #ffff;
+    color: white;
     text-align: center; }
     .text-overlay-container .text-overlay a {
-      color: #ffff;
+      color: white;
       font-size: 0vw;
       text-decoration: none;
       border-radius: 10px;
@@ -396,7 +400,7 @@ header {
       align-items: center;
       text-decoration: none; }
       .text-overlay-container .text-overlay .showreel p {
-        color: #ffff;
+        color: white;
         white-space: nowrap;
         line-height: 1;
         font-size: 1rem; }
@@ -429,7 +433,7 @@ header {
     font-weight: bold;
     margin: 20px;
     position: absolute;
-    color: #ffff; }
+    color: white; }
   .bento-grid img {
     width: 100%;
     height: 100%;
@@ -591,7 +595,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
   margin-top: 50px; }
   .row-container a {
     text-decoration: none;
-    color: #ffff; }
+    color: white; }
   .row-container .fill {
     background-color: #1e1e1e;
     border-radius: 10px; }
