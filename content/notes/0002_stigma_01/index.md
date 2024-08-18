@@ -1,6 +1,6 @@
 ---
 title: "STIGMA I: On set vfx superviser"
-layout: blank
+layout: single
 summary: "Talking about my first experience as a on set vfx supervisor"
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "STIGMA II: How to manage big sims in blender"
-layout: blank
+title: "STIGMA II: Big blood sim in blender"
+layout: single
 summary: "My workflow of handling a big fluid simulation in blender"
 ---
 

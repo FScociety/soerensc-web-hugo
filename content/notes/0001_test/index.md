@@ -1,6 +1,6 @@
 ---
 title: "First Post"
-layout: blank
+layout: single
 summary: "This is a test summary. Nothing special"
 ---
 
