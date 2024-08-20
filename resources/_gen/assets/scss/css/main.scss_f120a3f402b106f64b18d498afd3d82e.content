@@ -107,9 +107,7 @@ header {
   z-index: 9999;
   top: 20px; }
   header .header-container {
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
-    background-color: rgba(30, 30, 30, 0.65);
+    background-color: #1e1e1e;
     margin: 0px 10px 0px 10px;
     border-radius: 20px;
     max-width: 1000px; }
@@ -121,7 +119,7 @@ header {
     border-radius: 10px; }
   header a.active, header a.anchor, header a:hover {
     color: white;
-    background-color: rgba(255, 255, 255, 0.1); }
+    font-weight: bold; }
   header ul {
     display: flex;
     flex-wrap: nowrap;
