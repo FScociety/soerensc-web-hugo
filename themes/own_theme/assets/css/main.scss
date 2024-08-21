@@ -17,18 +17,6 @@ body {
   margin: 0px;
 }
 
-img {
-  border-radius: $standard-border-radius;
-  width: 100%;
-  object-fit: contain;
-}
-
-video {
-  border-radius: $standard-border-radius;
-  width: 100%;
-  object-fit: contain;
-}
-
 /* Format headers */
 /* $$$$$$$ */
 
@@ -143,5 +131,6 @@ a {
 @import "components/row.scss";
 @import "components/cv-timeline.scss";
 @import "components/text.scss";
+@import "components/image.scss";
 
 @import "layouts/footer.scss";

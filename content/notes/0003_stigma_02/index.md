@@ -4,6 +4,9 @@ layout: single
 summary: "My workflow of handling a big fluid simulation in blender"
 ---
 
+{{< image src="media/BACKDROP.webp" scale="75" >}}
+
+
 ## Introduction
 This is a followup to the last article "My first experience as an on set VFX sup". (Insert link here)
 

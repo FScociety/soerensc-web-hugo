@@ -1,4 +1,6 @@
 {{ $src := .src }}
+{{ $alt := .alt }}
+{{ $scale := .scale }}
 
 <div class="gallery-image">
     {{ if or (strings.HasSuffix $src ".webm") (strings.HasSuffix $src ".mp4") (strings.HasSuffix $src ".mov" )}}
@@ -6,6 +8,6 @@
             <source src="{{ $src }}" type="video/webm">
         </video>
     {{ else }}
-        <img src="{{ $src }}" class="media">
+      <img src="{{ $src }}" class="media scale_{{ $scale }}">
     {{ end }}
 </div>

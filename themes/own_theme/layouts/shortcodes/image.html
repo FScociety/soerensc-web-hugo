@@ -7,6 +7,9 @@
     {{ $alt = . }}
 {{ end }}
 
+<!-- Image scaling -->
+{{ $scale := .Get "scale" }}
+
 <!-- Pack values into disctionary and send them to image partial -->
-{{ $imageParams := dict "src" $src "alt" $alt }}
+{{ $imageParams := dict "src" $src "alt" $alt "scale" $scale }}
 {{ partial "image.html" $imageParams }}

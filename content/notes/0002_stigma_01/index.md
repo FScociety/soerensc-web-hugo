@@ -4,11 +4,38 @@ layout: single
 summary: "Talking about my first experience as a on set vfx supervisor"
 ---
 
+{{< image src="media/BACKDROP.webp" scale="75" >}}
+
 ## Intro
 
-I am currently studying VFX in the second semester at Animationsinstitut Baden Württemberg here in Germany. About a month ago I finished a for me big VFX short for a short film produced by the uni. The shoot I did in the end, was a big blood simulation filling up a drawing room. I learned a lot during the process and wanted to share it in this post.
+I am currently studying VFX in the second semester at Animationsinstitut Baden Würrtemberg here in Germany.
+Till about two months' ago I was working for a student project produced by the uni.
+*A link will be added, when the movie is released.*
+For this project I did a big fluid simulation in post and was doing on set supervision.
+This post is going to cover my experience on set.
 
-## On set
+
+
+## 3d scanning ( why I love lumaAI )
+
+From the beginning I knew it would be best to collect as many scans as possible.
+I collected 3d scans of every actor, the room, 2 assets.
+I used LumaAI for every scan. For this project it had some nice advantages:
+- Free ( compared to polycam )
+
+- really robust with no manual work needed. For some subject it works like magic compared realitycapture where i often had to help to manual add aligning points
+
+- everything can be done with your phone and the processing takes happen on their servers
+
+- Fast and easy to preview. It would often take only 20 minutes for the scan to be ready. I would also know if it worked and would be still on set to think about solutions.
+
+Seriously I **love** LumaAI and have no idea how they can be profitable, I think they aren't and are just burning through VC money
+
+**One Tip:** I would not recommend to use the app for capturing. From my experience you can just take a video with your phone and upload the file to the app. It still works really great but you can still upload the capture to other platforms if needed.
+
+
+
+## old shit!
 
 I had the luck to be VFX sup on set to make sure everything would work out in post. It was my first time doing this kind of job in a real production enviroment. For help I had a vfx colleage from the second year who give me small introduction to the equipment: 360 degree camera, lens grid, color checker and a chroma ball.
 He also prepared a nice list of the important shots and what things to capture on set. This was really helpful.
