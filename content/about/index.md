@@ -5,11 +5,11 @@ weight: 50
 ---
 
 {{< row >}}
-    {{< image src="media/soeren.JPG" >}}
-    {{% text align="right" %}}
-### I'm a 19y VFX student based in Germany, Ludwigsburg.
+{{< image src="media/soeren.JPG" >}}
+{{< text align="left" >}} //IDK why but when i add titles it creates an empty <p> in front of it
+### I'm a 20y VFX student based in Germany, Ludwigsburg.
 I also do coding, photographing as a hobby. Since I was young I liked to create things and tell stories.
-    {{% /text %}}
+{{< /text >}}
 {{< /row >}}
 
 ## What did I do so far?
