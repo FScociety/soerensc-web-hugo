@@ -1,14 +1,12 @@
 ---
-title: "STIGMA II: Big blood sim in blender"
+title: "Big blood simulation in blender"
 layout: single
 summary: "My workflow of handling a big fluid simulation in blender"
 ---
 
+### This is still work in progress
+
 {{< image src="media/BACKDROP.webp" scale="75" >}}
-
-
-## Introduction
-This is a followup to the last article "My first experience as an on set VFX sup". (Insert link here)
 
 ## Software choice
 I went with blender and the flip fluids addon. 

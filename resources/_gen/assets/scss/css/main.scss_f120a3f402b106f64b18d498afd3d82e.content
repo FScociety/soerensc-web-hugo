@@ -103,14 +103,14 @@ header {
     max-width: 1000px; }
   header a {
     color: #ababab;
+    font-weight: 450;
     text-decoration: none;
     margin: 15px 15px;
     padding: 5px 10px;
     border-radius: 10px;
     width: 100px; }
   header a.active, header a.anchor, header a:hover {
-    color: white;
-    font-weight: bold; }
+    color: white; }
   header ul {
     display: flex;
     flex-wrap: nowrap;

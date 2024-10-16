@@ -22,7 +22,7 @@ The story is relatively short. You see a spaceship (Jupiter) flying into a porta
 ## Jupiter Model
 
 {{< row >}}
-    {{< image src="media/breakdown_jupiter_model.webm" >}}
+    {{< image src="media/breakdown_jupiter_model.gif" >}}
     <p>I kept the spaceship very close to the Lost in Space template. It was difficult to get the exact dimensions right, since there were no blueprints or similar online. My only templates were excerpts from the series.</P>
 {{< /row >}}
 
