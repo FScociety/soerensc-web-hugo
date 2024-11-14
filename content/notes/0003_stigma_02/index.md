@@ -4,17 +4,11 @@ layout: single
 summary: "My workflow of handling a big fluid simulation in blender"
 ---
 
-### This is still work in progress
+{{< image src="media/final.webm" scale=50 >}}
 
-{{< image src="media/BACKDROP.webp" scale="75" >}}
-
-## Software choice
-I went with blender and the flip fluids addon. 
-Why not houdini you may ask?
-I never used it before but actually wanted to try it out for this project, but sadly licenses came in my way.
-Our school has houdini licenses, but as a first year students you don't have access to on campus pcs so no license either.
-I think there was a non commerial license, but it had restrictions which were unfeasible for the project.
-For comp I went with nuke, they generesly had a free student license for my personal pc. ( This was my second project in nuke so a lot of things there very new to me ).
+## Software Choice
+Blender and the flip-fluids addon were used for all the 3d stuff and nuke for compositing.
+I thought about using houdini but I didn't have a license.
 
 ## Structure
 The shot had different components :
@@ -63,7 +57,7 @@ For example:
 
 When using this structure you can link to the file without versioning and will work with new versions.
 
-TODO: GEONODE bin ich mir noch nicht ganz so sicher und muss nochmal in die files schaune
+TODO: GEONODE bin ich mir noch nicht ganz so sicher und muss nochmal in die files schauen
 
 ### using geo node for linking.
 
@@ -71,7 +65,15 @@ TODO: GEONODE bin ich mir noch nicht ganz so sicher und muss nochmal in die file
 After splitting file into three different parts I had to think of a way on how to bring the simulation from the simulation to the rendering file. I did some experimentation with the flip fluids addon, but had no success in linking the domain object from the simulation file into the rendering file. Also importing the raw simulation cache with a new domain object didn't work, so I choose to export alembic caches. These made the hole process a lot slower and basicly doubled my cache size,
 but with the time constrains I couldn't find anything *smarter*.
 
-## handling the compute
+## Hardware
+
+In the beginning of the project I only had my personal pc (i7 8700k 64gb gtx 1080).
+After some tests, it was clear my pc was at its limit. A big problem was that i trying to simulating and rendering simulatinoiusly to speed up my workflow.
+But with only one pc this was not really possible. I had the luck to be able to rent a second pc from a friend and place.
+I was a little slower but this way i could render the last simulation bake to test the lighting and shading while i was already baking the new simulation.
+This speed up my workflow a lot.
+In the final stage of the project i got acces to a new pc which really rescured the project ( amd threadripper 128gb nvidia a6400 ).
+This speed up rendering and baking a lot and allowed me to go to a voxel resolution of 1024.
 
 In the beginng 
 

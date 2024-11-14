@@ -2,12 +2,12 @@
 {{ $alt := .alt }}
 {{ $scale := .scale }}
 
-<div class="gallery-image">
+<div class="gallery-image scale_{{ $scale }}">
     {{ if or (strings.HasSuffix $src ".webm") (strings.HasSuffix $src ".mp4") (strings.HasSuffix $src ".mov" )}}
         <video autoplay muted loop class="media">
             <source src="{{ $src }}" type="video/webm">
         </video>
     {{ else }}
-      <img src="{{ $src }}" class="media scale_{{ $scale }}">
+      <img src="{{ $src }}" class="media">
     {{ end }}
 </div>

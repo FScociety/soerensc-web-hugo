@@ -1,25 +1,16 @@
-img {
-  border-radius: $standard-border-radius;
-  width: 100%;
-  object-fit: contain;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-img.scale_25 {
+gallery-image scale_25 {
   width: 25%;
 }
 
-img.scale_50 {
+gallery-image {
   width: 50%;
 }
 
-img.scale_75 {
+gallery-image scale_75 {
   width: 75%;
 }
 
-img.scale_100 {
+gallery-image scale_100 {
   width: 100%;
 }
 
@@ -29,3 +20,11 @@ video {
   object-fit: contain;
 }
 
+img {
+  border-radius: $standard-border-radius;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
