@@ -1,5 +1,7 @@
 ---
-title: "Cinestill 800T Experiments"
+title: "Fun with cinestill 800T"
+camera: Canon A1
+date: 2022-10-05
 ---
 
 <!--

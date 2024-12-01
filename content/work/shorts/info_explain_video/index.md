@@ -3,6 +3,8 @@ title: "Computer sciene explainer video"
 draft: false
 year: "2021"
 weight: 30
+date: 2021-08-11
+summary: "stop motion lego visualisation of a way of deleting an element in a list"
 ---
 
 {{< text align=center >}}

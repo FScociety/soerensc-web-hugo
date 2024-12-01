@@ -8,6 +8,8 @@ programs_used:
     - Davinci-Resolve
     - Minecraft
 weight: 20
+date: 2021-09-30
+summary: "German literature epoche explained in minecraft"
 ---
 
 {{< text align=center >}}

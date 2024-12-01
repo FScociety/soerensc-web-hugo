@@ -56,9 +56,9 @@ h6 {
   font-size: 0.96rem;
 }
 
-p, li {
+p {
   margin: 1.5rem 0;
-  color: $text-light;
+  color: $text-darker;
   font-size: 1.5rem;
 }
 
@@ -88,18 +88,21 @@ a {
 /* Reusable Parts */
 /* $$$$$$$ */
 
-.selectable, .selectable-reverse {
-  transition: scale 0.15s;
+.select-sensor {
+  .zoomer, .zoomer-rev {
+    transition: scale 0.15s;
+  }   
 }
 
-.selectable:hover {
-  scale: 0.99;
-}
+  .select-sensor:hover {
+    .zoomer {
+      scale: 0.99;
+    }
 
-.selectable-reverse:hover {
-  scale: 1.025;
-}
-
+    .zoomer-rev {
+      scale: 1.025;
+    }
+  }
 
 
 /* Specific Elements */

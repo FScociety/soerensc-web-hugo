@@ -6,6 +6,8 @@ programs_used:
     - Blender
     - After-Effects
 weight: 10
+date: 2022-07-05
+summary: "small animation test in space"
 ---
 
 {{< text align=center >}}

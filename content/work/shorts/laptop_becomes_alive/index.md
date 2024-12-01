@@ -6,6 +6,8 @@ programs_used:
     - Blender
     - Premire-Pro
 weight: 1
+date: 2022-05-04
+summary: "a laptop becoming a life and getting angry at humans misbehaviour towards machines"
 ---
 
 {{< text align=center >}}

@@ -6,6 +6,7 @@ programs_used:
     - Blender
     - Premire-Pro
 weight: 40
+summary: "infinite power experiment"
 ---
 
 

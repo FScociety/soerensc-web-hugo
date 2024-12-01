@@ -1,18 +1,16 @@
 ---
 title: "Melon Movie"
 draft: false
-year: "2021"
 programs_used:
     - Blender
     - After-Effects
     - Premire-Pro
     - Photoshop
 weight: 60
+summary: "A short movie about a melon piece exploring the world"
+date: 2021-05-15
+year: 2021
 ---
-
-{{< text align=center >}}
-My biggest project so far. I worked on it for a total of 1 year.
-{{</ text >}}
 
 {{< youtube-lite src="JR3cwxSdOB4" >}}
 

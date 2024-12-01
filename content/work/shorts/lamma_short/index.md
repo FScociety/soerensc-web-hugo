@@ -1,12 +1,13 @@
 ---
 title: "Lama Short"
 draft: false
-year: "wip"
+year: "on hold"
 programs_used:
     - Blender
     - After-Effects
     - Davinci-Resolve
 weight: 70
+summary: "a lama plushy going crazy"
 ---
 
 {{< text align=center >}}

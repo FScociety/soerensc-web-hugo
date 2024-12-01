@@ -2,6 +2,10 @@
 title: "Big blood simulation in blender"
 layout: single
 summary: "My workflow of handling a big fluid simulation in blender"
+date: 2024-11-14
+programs_used:
+    - Blender
+    - Nuke
 ---
 
 {{< image src="media/final.webm" scale=50 >}}

@@ -7,32 +7,30 @@
         {{ $page_index := 1 }}
         {{ range (sort .Page.Pages "Weight" "asc").Reverse }}
         <a href="{{ .RelPermalink }}" {{ if eq $page_index 1 }} class="hero" {{ end }}>
-          <div class="project-item selectable">
+          <div class="project-item select-sensor">
             {{ $coverPath := print .RelPermalink "media/COVER.webp" }}
             {{ $coverPath_active := print .RelPermalink "/media/COVER.webm" }}
-
-
               <div class="cover-container {{ if (fileExists $coverPath_active) }} animatable {{ end }}">
                 <div class="cover-static">
-                  <img class="static" src="{{ $coverPath }}" alt="No Cover Image">
+                  <img class="static zoomer-rev" src="{{ $coverPath }}" alt="No Cover Image">
                 </div>
                 {{ if eq $display "normal"}}
                   <div class="cover-active">
-                    <video autoplay muted loop class="active" src="{{ $coverPath_active }}" alt="">
+                    <video autoplay muted loop class="active zoomer-rev" src="{{ $coverPath_active }}" alt="">
                   </div>
                 {{ end }}
               </div>
 
             <div class="information-container">
               <div class="title-container">
-                <p>
+                <span class="title">
                   {{ .LinkTitle }}
-                </p>
+                </span>
                 {{ if .Params.year }}
                   {{ if eq .Params.year "wip" }}
-                    <span class="wip">In Development</span>
+                    <span class="year wip">In Development</span>
                   {{ else }}
-                    <span>{{ .Params.year }}</span>
+                    <span class="year">{{ .Params.year }}</span>
                   {{ end }}
                 {{ end }}
               </div>

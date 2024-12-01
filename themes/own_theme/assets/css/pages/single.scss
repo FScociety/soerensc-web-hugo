@@ -40,26 +40,20 @@
     }
   }
   
-.project-header-container {
+.hero-container{
   display: block;
   padding: 20px 0px 0px 0px;
-  border-radius: $standard-border-radius;
 
-  .title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .project-title {
+    font-size: 5rem;
+    margin-right:20px;
+    display: inline;
+    text-align: start;
 
-    .project-title {
-      font-size: 5rem;
-      margin-right:20px;
-      display: inline;
-
-      @media only screen and (max-width: 1000px) {
-        font-size: 3rem;
-      }
+    @media only screen and (max-width: 1000px) {
+      font-size: 3rem;
     }
-  
+
     .project-year  {
       background-color: $light-bg;
       border-radius: $standard-border-radius;
@@ -77,17 +71,36 @@
     .programs_used {
 
       display: flex;
-      justify-content: center;
+      justify-content: left;
 
       img.logo {
+        top: 0px;
         height: 40px;
         width: 40px;
         margin: 10px;
       }
     }
-  }
-}
 
-.summary {
-  text-align: center;
+    .camera_details {
+
+      display: flex;      
+      margin:auto;
+      justify-content: left;
+      
+      .camera_icon {
+        height: 2rem;
+        width: 2rem;
+        filter: brightness(50%);
+        margin: 5px;
+      }
+
+      .camera_name {
+        margin: 5px;
+      }
+    }
+  }
+  .summary {
+    text-align: start;
+    color: $text;
+  }
 }

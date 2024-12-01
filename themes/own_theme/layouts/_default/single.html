@@ -6,24 +6,26 @@
     </div>
 
     <div class="content-container">
-      <div class="project-header-container">
-        <div class="title-container">
-          <h1 class="project-title">{{ .Title }}</h1>
-          {{ if .Params.year }}
-          <p class="project-year">{{ .Params.year}}</p>
+      <div class="hero-container">
+        <p class="">{{ .Date | time.Format ":date_medium" }}</p>
+        <h1 class="project-title">{{ .Title }}</h1>
+        <p class="summary">{{ .Params.summary }}</p>
+        <div class="details">
+          {{ if .Params.programs_used }}
+            <div class="programs_used">
+                {{ range .Params.programs_used }}
+                {{ $program := . | urlize }}
+                <img class="logo" src="/logos/{{ $program }}-icon.svg" alt="{{ $program | humanize }} Icon">
+                {{ end }}    
+            </div>
+          {{ end }}
+          {{ if .Params.camera}}
+            <div class="camera_details">
+              <img class="camera_icon" src="/icons/generic-camera.svg">
+              <p class="camera_name">{{ .Params.camera }}</p>
+            </div>
           {{ end }}
         </div>
-        <div class="details">
-          <div class="programs_used">
-            {{ if .Params.programs_used }}
-              {{ range .Params.programs_used }}
-              {{ $program := . | urlize }}
-              <img class="logo" src="/logos/{{ $program }}-icon.svg" alt="{{ $program | humanize }} Icon">
-              {{ end }}    
-            {{ end }}
-          </div>
-        </div>
-        <p class="summary">{{ .Params.introduction }}</p>
       </div>
       <br>
       <div class="post-content-container">
