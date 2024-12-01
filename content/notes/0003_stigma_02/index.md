@@ -6,27 +6,23 @@ summary: "My workflow of handling a big fluid simulation in blender"
 
 {{< image src="media/final.webm" scale=50 >}}
 
-## Software Choice
-Blender and the flip-fluids addon were used for all the 3d stuff and nuke for compositing.
-I thought about using houdini but I didn't have a license.
+## Software choice
+I choose Blender and the flip-fluids addon for all the 3d stuff and nuke for compositing.
+I thought about using houdini but I had no experience and no license, so i went with the safe route.
 
-## Structure
-The shot had different components :
+## Shot structure
 
-- CG double of the room assembled from 3D scans and hand models. 
-Which I used for shadow catching, fluid collision, occlusion for static objects
-
-- fluid simulation
-
-- roto of moving foreground characters. It was unrealistic to match move them in 3d, so I took the rough 3d scans of the character just for reflection and not occlusion.
+1. Set reconstruction based on 3d scans of the room and the characters
+2. A fluid simulation using the 3d mesh as a collision
+3. Roto of the characters and compositing. 
 
 ## Workflow
 
 ### Splitting into different files
-For the entire 3d process i used blender, which was handy cause I had experience in handling big files in it. 
+For the entire 3d process i used blender, which I have a lot of experience.
 Though this project was a new challenge. 
 In the beginning I naivly had everything in one file, but then I started to play around with the sim everything became slow.
-The modelling was impact the most, it was clear to me I have to split the project into different files.
+The modelling was really painfull, so it was clear to me I have to split the project into different files.
 I choose for 3 files:
 
 - rendering.blend
@@ -72,13 +68,16 @@ After some tests, it was clear my pc was at its limit. A big problem was that i 
 But with only one pc this was not really possible. I had the luck to be able to rent a second pc from a friend and place.
 I was a little slower but this way i could render the last simulation bake to test the lighting and shading while i was already baking the new simulation.
 This speed up my workflow a lot.
-In the final stage of the project i got acces to a new pc which really rescured the project ( amd threadripper 128gb nvidia a6400 ).
-This speed up rendering and baking a lot and allowed me to go to a voxel resolution of 1024.
+In the final stage of the project i got acces to a new pc in uni which really rescured the project ( amd threadripper 128gb nvidia a6400 ).
+This speed up rendering and baking a lot and allowed me to go to a final voxel resolution of 1024.
+In uni i also had acces to 5 other pcs with varying configuration to render over night which also speed up my ability to test things.
 
-In the beginng 
+### Syncronisation
 
-When I was doing the software choice it looked like I was stuck with my home pc ( i7800k 64gb gtx 1080 ).
-But to my rescue in the process I actually got a seat to use a uni pc ( amd threadripper 128gb a6400 ).
+For this project to work it was crucial to sync the project files between the machines.
+I mostly used syncthing which was amazing. I takes some time to recognize new files but is really robust.
+I also used it to sync to the uni machine, I was lucky to have a fast internet without that it would probably would be much more tedious to sync big new simulations.
+The pc in the uni synced it then through a project share to other devices.
 
 ### setup before the upgrade
 
