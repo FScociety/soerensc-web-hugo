@@ -5,4 +5,4 @@ layout: blank
 
 {{< text align="center" >}}
 [mastodon](https://fosstodon.org/@soerensc)
-{{</ text >}}
+{{</ text >}}w

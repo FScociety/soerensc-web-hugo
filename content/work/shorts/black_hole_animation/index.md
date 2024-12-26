@@ -7,7 +7,7 @@ programs_used:
     - After-Effects
 weight: 10
 date: 2022-07-05
-summary: "small animation test in space"
+summary: "A small animation done to test my modelled version of the jupiter space ship from lost in space."
 ---
 
 {{< text align=center >}}

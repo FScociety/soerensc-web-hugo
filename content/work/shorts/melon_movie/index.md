@@ -7,7 +7,7 @@ programs_used:
     - Premire-Pro
     - Photoshop
 weight: 60
-summary: "A short movie about a melon piece exploring the world"
+summary: "A short movie about a melon piece becoming alive and exploring the world."
 date: 2021-05-15
 year: 2021
 ---

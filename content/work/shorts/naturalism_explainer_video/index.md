@@ -9,7 +9,7 @@ programs_used:
     - Minecraft
 weight: 20
 date: 2021-09-30
-summary: "German literature epoche explained in minecraft"
+summary: "A school project about a german literature epoche explained in minecraft."
 ---
 
 {{< text align=center >}}

@@ -7,7 +7,7 @@ programs_used:
     - After-Effects
     - Davinci-Resolve
 weight: 70
-summary: "a lama plushy going crazy"
+summary: "A experimentation of doing a short about a lama becoming alive."
 ---
 
 {{< text align=center >}}

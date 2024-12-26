@@ -6,7 +6,7 @@ programs_used:
     - Blender
     - Premire-Pro
 weight: 40
-summary: "infinite power experiment"
+summary: "A visual experimentation of what happens if you plug a multi-socket plug into itself."
 ---
 
 

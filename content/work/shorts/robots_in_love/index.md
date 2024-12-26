@@ -8,7 +8,7 @@ programs_used:
     - Embergen
 weight: 50
 date: 2021-04-02
-summary: "small love story about robots fighting against big metal balls"
+summary: "A Small love story about robots fighting against big metal balls."
 ---
 
 {{< text align=center >}}
