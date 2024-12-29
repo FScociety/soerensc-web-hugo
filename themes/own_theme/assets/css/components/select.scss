@@ -1,0 +1,15 @@
+.select-sensor {
+    .zoomer, .zoomer-rev {
+        transition: scale 0.15s;
+    }   
+}
+
+.select-sensor:hover {
+    .zoomer {
+    scale: 0.99;
+    }
+
+    .zoomer-rev {
+    scale: 1.025;
+    }
+}

@@ -1,6 +1,6 @@
 ---
 title: "Big blood simulation in blender"
-layout: single
+layout: article
 summary: "My workflow of handling a big fluid simulation in blender"
 date: 2024-11-14
 programs_used:

@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="site-container project-view">
+  <div class="site-container {{ if .Params.style }} style-{{ .Params.style }} {{ else }} style-post {{ end }}">
     <div class="backdrop-container">
       <img src="media/BACKDROP.webp">
       <div class="gradient-overlay"></div>
@@ -7,7 +7,10 @@
 
     <div class="content-container">
       <div class="hero-container">
-        <p class="">{{ .Date | time.Format ":date_medium" }}</p>
+        {{ if .Params.date }}
+          <p class="project-date">{{ .Date | time.Format ":date_medium" }}</p>
+        {{ end }}
+
         <h1 class="project-title">{{ .Title }}</h1>
         <p class="summary">{{ .Params.summary }}</p>
         <div class="details">

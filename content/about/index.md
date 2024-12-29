@@ -2,11 +2,12 @@
 title: I'm Soeren.
 layout: blank 
 weight: 50
+style: about
 ---
 
 {{< row >}}
 {{< image src="media/soeren.JPG" >}}
-{{< text align="left" >}} //IDK why but when i add titles it creates an empty <p> in front of it
+{{< text align="left" >}}
 ### I'm a 20y VFX student based in Germany, Ludwigsburg.
 I also do coding, photographing as a hobby. Since I was young I liked to create things and tell stories.
 {{< /text >}}

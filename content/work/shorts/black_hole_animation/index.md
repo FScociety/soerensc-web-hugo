@@ -6,7 +6,7 @@ programs_used:
     - Blender
     - After-Effects
 weight: 10
-date: 2022-07-05
+date: 2020-07-05
 summary: "A small animation done to test my modelled version of the jupiter space ship from lost in space."
 ---
 

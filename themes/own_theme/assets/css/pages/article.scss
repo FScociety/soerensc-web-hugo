@@ -1,0 +1,106 @@
+@import "_vars.scss";
+
+  .site-container.style-post {
+      margin-top: 0px;
+      background-color: $bg;
+      border-radius: $standard-border-radius;
+      border-color: $text;
+    
+      .backdrop-container {
+        width: 100%;
+        height: 450px;
+        position: relative;
+      
+        img, video {
+          width: 100%;
+          height: 450px;
+          object-fit: cover;
+          border-radius: 0px;
+        }
+    
+        .gradient-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to top, $bg 0%, rgba(0,0,0,0) 100%);
+          z-index: 2; /* Higher z-index to overlay on the video */
+        }
+      }
+    
+      .content-container {
+        position: relative;
+        margin-top: -200px;
+        margin-bottom: 50px;
+        z-index: 10;
+        background-color: $bg;
+        border-radius: $standard-border-radius;
+        box-shadow: 0 0 20px $bg;
+      }
+    }
+    
+  .hero-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 10px;
+
+    .project-date {
+      font-size: 1.2rem;
+      margin: 0px;
+    }
+
+    .project-title {
+      font-size: 5rem;
+      line-height: 100%;
+      text-align: start;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      @media only screen and (max-width: 1000px) {
+        font-size: 3rem;
+      }
+    }
+
+    .summary {
+      text-align: start;
+      color: $text;
+      margin-top: 0px;
+    }
+
+    .details {
+
+      .programs_used {
+
+        display: flex;
+        justify-content: left;
+
+        img.logo {
+          top: 0px;
+          height: 40px;
+          width: 40px;
+          margin: 10px;
+        }
+      }
+
+      .camera_details {
+
+        display: flex;      
+        margin:auto;
+        justify-content: left;
+        
+        .camera_icon {
+          height: 2rem;
+          width: 2rem;
+          filter: brightness(50%);
+          margin: 5px;
+        }
+
+        .camera_name {
+          margin: 5px;
+        }
+      }
+    }
+  }
+  

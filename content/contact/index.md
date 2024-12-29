@@ -1,8 +1,7 @@
 ---
 title: Get in Contact.
 layout: blank
+style: contact
 ---
 
-{{< text align="center" >}}
-[mastodon](https://fosstodon.org/@soerensc)
-{{</ text >}}w
+{{< image src="media/mastodon.svg" link="https://fosstodon.org/@soerensc" >}}

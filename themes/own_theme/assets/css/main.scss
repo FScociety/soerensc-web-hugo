@@ -1,138 +1,21 @@
 @import "_vars.scss";
 
-/* Default Elements */
-/* $$$$$$$$ */
+// Import pages
+@import "pages/menu.scss";
+@import "pages/article.scss";
+@import "pages/work.scss";
+@import "pages/contact.scss";
 
-html {
-  font-family: $sans-font;
-  scroll-behavior: smooth;
-}
-
-body {
-  color: $text;
-  background-color: $bg;
-  font-size: 1.15rem;
-  line-height: 1.5;
-  text-align: left;
-  margin: 0px;
-}
-
-/* Format headers */
-/* $$$$$$$ */
-
-::selection {
-  color: $bg;
-  background: $text;
-}
-
-h1 {
-  font-size: 8rem;
-  margin: 0px;
-  font-weight:bold; 
-  font-family: $sans-font;
-  text-align: center;
-}
-
-h2 {
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 25px;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1.44rem;
-}
-
-h5 {
-  font-size: 1.15rem;
-}
-
-h6 {
-  font-size: 0.96rem;
-}
-
-p {
-  margin: 1.5rem 0;
-  color: $text-darker;
-  font-size: 1.5rem;
-}
-
-a {
-  color: $text;
-}
-
-@media screen and (max-width: 1500px) {
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-
-}
-
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 3.5rem;
-  }
-}
-
-/* Reusable Parts */
-/* $$$$$$$ */
-
-.select-sensor {
-  .zoomer, .zoomer-rev {
-    transition: scale 0.15s;
-  }   
-}
-
-  .select-sensor:hover {
-    .zoomer {
-      scale: 0.99;
-    }
-
-    .zoomer-rev {
-      scale: 1.025;
-    }
-  }
-
-
-/* Specific Elements */
-/* $$$$$$$$- */
-
-.site-container {
-  margin-top: 130px;
-}
-
-.content-container {
-  padding: 0 25px;
-  max-width: 1000px;
-  min-width: 0px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
-}
-
+// Import page layouts
+@import "layouts/page.scss";
+@import "layouts/footer.scss";
 @import "layouts/header.scss";
 
-@import "pages/project-menu.scss";
-@import "pages/single.scss";
-@import "pages/work.scss";
-
+// Import page components
 @import "components/lite-yt-embed.scss";
 @import "components/own-gallery.scss";
 @import "components/row.scss";
 @import "components/cv-timeline.scss";
 @import "components/text.scss";
 @import "components/image.scss";
-
-@import "layouts/footer.scss";
+@import "components/select.scss";

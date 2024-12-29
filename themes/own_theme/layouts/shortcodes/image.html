@@ -10,6 +10,9 @@
 <!-- Image scaling -->
 {{ $scale := .Get "scale" }}
 
+<!-- Image Link -->
+{{ $link := .Get "link" }}
+
 <!-- Pack values into disctionary and send them to image partial -->
-{{ $imageParams := dict "src" $src "alt" $alt "scale" $scale }}
+{{ $imageParams := dict "src" $src "alt" $alt "scale" $scale "link" $link }}
 {{ partial "image.html" $imageParams }}

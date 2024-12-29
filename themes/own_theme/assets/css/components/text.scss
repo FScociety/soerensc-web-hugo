@@ -1,4 +1,83 @@
- .text.left {
+html {
+    h1 {
+        font-size: 8rem;
+        margin: 0px;
+        font-weight:bold; 
+        font-family: $sans-font;
+        text-align: center;
+    }
+        
+    h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    }
+    
+    h3 {
+    font-size: 2rem;
+    }
+    
+    h4 {
+    font-size: 1.44rem;
+    }
+    
+    h5 {
+    font-size: 1.15rem;
+    }
+    
+    h6 {
+    font-size: 0.96rem;
+    }
+    
+    p {
+    margin: 1.5rem 0;
+    color: $text-darker;
+    font-size: 1.5rem;
+    }
+    
+    a {
+    color: $text;
+    }
+
+    @media screen and (max-width: 1500px) {
+        h1 {
+          font-size: 5rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+      
+      }
+      
+    @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    }  @media screen and (max-width: 1500px) {
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    }
+    
+    @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    }
+}
+
+.text.left {
     text-align: left;
 }
 

@@ -2,6 +2,7 @@
 title: "Test: Failed"
 draft: false
 year: "2021"
+date: 2021-04-10
 programs_used: 
     - Blender
     - Premire-Pro
