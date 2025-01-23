@@ -1,6 +1,6 @@
 ---
 title: "Test: Failed"
-draft: false
+layout: article
 year: "2021"
 date: 2021-04-10
 programs_used: 

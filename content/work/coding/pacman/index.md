@@ -1,5 +1,6 @@
 ---
 title: "Pacman"
+layout: article
 programs_used:
     - Java
 ---

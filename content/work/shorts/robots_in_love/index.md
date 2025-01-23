@@ -1,6 +1,6 @@
 ---
 title: "Robots in Love"
-draft: false
+layout: article
 year: "2021"
 programs_used: 
     - Blender

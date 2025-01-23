@@ -31,7 +31,7 @@ Future: 10
 
 
 {{< cv-timeline-grid width=10 >}}
-    {{< cv-timeline-item name="IT & 3D Interships" date="2019-2023" start=3 end=8 height=1 >}}
+    {{< cv-timeline-item name="IT & 3D Interships" date="2019-2023" start=4 end=8 height=1 >}}
     {{< cv-timeline-item name="Filmakademie BW" date="2023-Future" start=8 end=10 height=1 type="end" >}}
     <!-- {{< cv-timeline-item name="Shortfilms For Youth Service" date="2018-2021" parts=10 start=3 end=6 >}} -->
     {{< cv-timeline-item name="Coding Stuff" date="2018-2024" parts=10 start=3 end=9 >}}

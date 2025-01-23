@@ -1,6 +1,6 @@
 ---
 title: "Laptop becomes alive"
-draft: false
+layout: article
 year: "2020"
 programs_used:
     - Blender

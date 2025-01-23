@@ -1,0 +1,92 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
+  <diagram name="Page-1" id="lmwW8sGM-3yVBmzDY8J0">
+    <mxGraphModel dx="1185" dy="679" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#1E1E1E" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t8_6HRTFUcTFkdvco57l-21" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1E1E1E;strokeColor=#EEEEEE;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="120" y="370" width="280" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-20" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=light-dark(#1e1e1e, #a4a0c6);strokeColor=#EEEEEE;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="520" y="370" width="150" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-1" value="main" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#FFFFFF;shape=mxgraph.azure.computer;labelBackgroundColor=none;fontColor=#FFFFFF;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="400" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-2" value="render 1" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#FFFFFF;shape=mxgraph.azure.computer;labelBackgroundColor=none;fontColor=#FFFFFF;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="477.5" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-3" value="..." style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#FFFFFF;shape=mxgraph.azure.computer;labelBackgroundColor=none;fontColor=#FFFFFF;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="560" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-5" value="main pc" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=light-dark(#ffffff, #a4a0c6);shape=mxgraph.azure.computer;labelBackgroundColor=none;fontColor=#FFFFFF;fillStyle=auto;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="400" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-6" value="friends pc" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#FFFFFF;shape=mxgraph.azure.computer;labelBackgroundColor=none;fontColor=#FFFFFF;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="545" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-13" value="network share" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#FFFFFF;shape=mxgraph.azure.server_rack;labelBackgroundColor=none;fontColor=#FFFFFF;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="515" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;labelBackgroundColor=none;strokeColor=#4D4D4D;fontColor=default;" parent="1" source="t8_6HRTFUcTFkdvco57l-1" target="t8_6HRTFUcTFkdvco57l-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-23" value="&lt;div&gt;samba&lt;/div&gt;10Gbit" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#1E1E1E;fontColor=#FFFFFF;rounded=1;" parent="t8_6HRTFUcTFkdvco57l-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.449" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;labelBackgroundColor=none;strokeColor=#4D4D4D;fontColor=default;entryX=0.011;entryY=0.488;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="t8_6HRTFUcTFkdvco57l-13" target="t8_6HRTFUcTFkdvco57l-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="540" />
+              <mxPoint x="240" y="500" />
+              <mxPoint x="311" y="500" />
+            </Array>
+            <mxPoint x="310" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-24" value="&lt;div&gt;samba&lt;/div&gt;10Gbit" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#1E1E1E;fontColor=#FFFFFF;rounded=1;" parent="t8_6HRTFUcTFkdvco57l-15" vertex="1" connectable="0">
+          <mxGeometry x="0.6079" y="1" relative="1" as="geometry">
+            <mxPoint x="-15" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.019;entryY=0.351;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;strokeColor=#4D4D4D;fontColor=default;" parent="1" source="t8_6HRTFUcTFkdvco57l-13" target="t8_6HRTFUcTFkdvco57l-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="540" />
+              <mxPoint x="240" y="576" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-25" value="&lt;div&gt;samba&lt;/div&gt;10Gbit" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#1E1E1E;fontColor=#FFFFFF;rounded=1;" parent="t8_6HRTFUcTFkdvco57l-16" vertex="1" connectable="0">
+          <mxGeometry x="0.6125" y="1" relative="1" as="geometry">
+            <mxPoint x="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;strokeColor=#4D4D4D;fontColor=default;" parent="1" source="t8_6HRTFUcTFkdvco57l-5" target="t8_6HRTFUcTFkdvco57l-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-27" value="syncthing&lt;div&gt;1Gbit&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#1E1E1E;fontColor=#FFFFFF;rounded=1;" parent="t8_6HRTFUcTFkdvco57l-17" vertex="1" connectable="0">
+          <mxGeometry x="0.0362" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;labelBackgroundColor=none;strokeColor=#4D4D4D;fontColor=default;" parent="1" source="t8_6HRTFUcTFkdvco57l-5" target="t8_6HRTFUcTFkdvco57l-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-26" value="syncthing&amp;nbsp;&lt;div&gt;1Gbit&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#FFFFFF;rounded=1;" parent="t8_6HRTFUcTFkdvco57l-18" vertex="1" connectable="0">
+          <mxGeometry x="0.0517" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t8_6HRTFUcTFkdvco57l-30" value="&lt;b&gt;Home&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;fontColor=#FFFFFF;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="565" y="338" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1BTQQQxTuXjdgut98QCF-2" value="&lt;b&gt;Uni&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;fontColor=#FFFFFF;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="338" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

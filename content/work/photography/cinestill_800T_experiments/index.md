@@ -1,5 +1,6 @@
 ---
 title: "Fun with cinestill 800T"
+layout: article
 camera: Canon A1
 date: 2022-10-05
 ---

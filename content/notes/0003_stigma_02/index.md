@@ -10,23 +10,29 @@ programs_used:
 
 {{< image src="media/final.webm" scale=50 >}}
 
-## Software choice
+## Intro
+
+The project was a uni project for Filmakademie Baden-Württemberg in collaboration with Akademie für Darstellende Kunst.
+Me and another VFX student did the effect and I did this shot from beginning to end.
+
 I choose Blender and the flip-fluids addon for all the 3d stuff and nuke for compositing.
 I thought about using houdini but I had no experience and no license, so i went with the safe route.
 
-## Shot structure
+## Workflow
+
+### Structure
 
 1. Set reconstruction based on 3d scans of the room and the characters
 2. A fluid simulation using the 3d mesh as a collision
 3. Roto of the characters and compositing. 
 
-## Workflow
+### Splitting the project
 
-### Splitting into different files
 For the entire 3d process i used blender, which I have a lot of experience.
-Though this project was a new challenge. 
-In the beginning I naivly had everything in one file, but then I started to play around with the sim everything became slow.
-The modelling was really painfull, so it was clear to me I have to split the project into different files.
+Though this project was a new challenge :)
+In the beginning I naivly had everything in one file, but then I added the simulation the file became incresingly slow.
+Therefore the modelling was really painful, so it was clear to me I have to split the project into different files and link them together.
+
 I choose for 3 files:
 
 - rendering.blend
@@ -39,15 +45,13 @@ Voala everything was up to speed again. This had two other advantages:
 
 - individual versioning of the different working regions / files
 
-- smaller file sizes when versioning. ( the modelling file was huge ( 1GB ). When I a new version of lighting I then only had to update version the lightweight rendering file and not the bloated modelling )
+- smaller file sizes when versioning. The modelling file was around 1 GB in size, so changing the lighting part made me a new version where the majority of the filesize didn't change.
 
 LEARNING: From this I took away, that its not only usefull for teams to split the project into different files
 but it can also be usefull for one person projects. Though it ads complexity and chances for things breaking which for most projets is not worth it
 
-### File linking and versioning
-For versioning I used a small script from another project.
-It would save the file a an incremented version number to the same directory ( the working dir ).
-Then one directory it would remove the the version from the name and store it there.
+### File versioning
+For versioning I used a small script. It would save a copy with an incremented version number to the same directory ( the work dir ). Then another copy with removed version numbers one directory up acting as the publish file.
 For example:
 
     └── modelling
@@ -55,57 +59,49 @@ For example:
         └── work
             └── sh01_mod_01.blend
 
-When using this structure you can link to the file without versioning and will work with new versions.
+Later I could relink the published file which always has the same name, so no relinking in the other files.
 
-TODO: GEONODE bin ich mir noch nicht ganz so sicher und muss nochmal in die files schauen
+### Robust linking
 
-### using geo node for linking.
+Earlier I wrote about my need on why I needed to split up my blend file and how i versionend the files. But for the linking between them to work required some consideration. In the beginning I referenced the collection from the modelling file directly into the rendering and simulation file. Then i noticed that I need different versions of the fluid scene but also different ones for the individual render passes in the rendering file. So i began splitting the different parts of the room into different collections. and then instanced the ones which i needed. The problem with that solution was that it wasn't robust and could easily break. When I rename a collection or restructured the scene in the modeling file I had to update the structure downstream files. 
+
+{{< image src="media/stigma-project-structure.png" scale=50 >}}
+
+So I structured it that the modelling file already defines what the fluid and rendering file will get and prepares this. Adding new stuff to the fluid collision would be super easy, cause I just had to instance the internal Collection from Modelling into the Fluid Export Collection. Also with this I could easily use the hierachy of the collections to make the structure easy. In the render all I want everything to be included, so I only instance the top level instances. But when I need more granular control like in the fluid collection i combine the lower level collections to my liking.  
+Then these prepared collections would be linked into the simulation and the rendering file. There a simple geometry node setup is taking the collection instance, realizing the geometry and then changing the material to my liking. This is an advantage over the normal collection instance, cause there you cannot change the material.  
+All this made a really robust and easily changeable linking workflow. Iam definetly gona use it for upcoming projects.
+
 
 ## the simulation
-After splitting file into three different parts I had to think of a way on how to bring the simulation from the simulation to the rendering file. I did some experimentation with the flip fluids addon, but had no success in linking the domain object from the simulation file into the rendering file. Also importing the raw simulation cache with a new domain object didn't work, so I choose to export alembic caches. These made the hole process a lot slower and basicly doubled my cache size,
-but with the time constrains I couldn't find anything *smarter*.
+After splitting the file into three different parts I had to think of a way on how to bring the simulation back into the rendering file.  
+I tried linking the fluid domain object of the flip fluids addon into the rendering file, but flip fluids addon doesn't support this behaviour and showed me nothing.  
+Another idea was to link the simulation cache to a new object, which sadly also didn't work.  
+
+So I ended up exportiong the simulation as an alembic sequence, which sadly doubled my simulation size.
 
 ## Hardware
 
-In the beginning of the project I only had my personal pc (i7 8700k 64gb gtx 1080).
-After some tests, it was clear my pc was at its limit. A big problem was that i trying to simulating and rendering simulatinoiusly to speed up my workflow.
-But with only one pc this was not really possible. I had the luck to be able to rent a second pc from a friend and place.
-I was a little slower but this way i could render the last simulation bake to test the lighting and shading while i was already baking the new simulation.
-This speed up my workflow a lot.
-In the final stage of the project i got acces to a new pc in uni which really rescured the project ( amd threadripper 128gb nvidia a6400 ).
-This speed up rendering and baking a lot and allowed me to go to a final voxel resolution of 1024.
-In uni i also had acces to 5 other pcs with varying configuration to render over night which also speed up my ability to test things.
+In the beginning of the project I only had my personal pc (i7 8700k 64gb gtx 1080). After some tests, it was clear my pc was at its limit.  
+To optimize time I wanted to work on the simulation while working on lighting. But I couldn't bake the simulation while it was rendering. I had luck cause a producer of the a pc which she didn't use for the time, so I could borrow it. It was a little slower but this way I could render the last simulation bake to test the lighting and shading while i was already baking the new simulation. This speed up my workflow a lot!  
+In the final stage of the project I had luck again and got access to a pc in uni ( amd threadripper 128gb nvidia a6400 ). This speed up rendering and baking a lot and allowed me to go to a final voxel resolution of 1024.  
+In uni I also had access to 5 other pcs over the night so i could use them to speed up the rendering.
 
 ### Syncronisation
 
-For this project to work it was crucial to sync the project files between the machines.
-I mostly used syncthing which was amazing. I takes some time to recognize new files but is really robust.
-I also used it to sync to the uni machine, I was lucky to have a fast internet without that it would probably would be much more tedious to sync big new simulations.
-The pc in the uni synced it then through a project share to other devices.
+{{< image src="media/stigma-sync-config.png" scale=50 >}}
 
-### setup before the upgrade
+For this project to work it was crucial to keep the project filesi between the machines in sync. I mostly used syncthing which was amazing. It takes some time to recognize new files but is really robust.  
+I also used it to sync to the uni machine, I was lucky to have a really fast internet ( 1GBit/s up and download ) without that it wouldn't really be feasible to sync simulation files between networks.
 
-While at home, a producer of the project was generous to give me her pc ( i6xxxx 32gb gtx 1070 ) for the project which really helped.
-So I could start a simulation on one machine and work rendering on the other.
-This really helped and speed up the process, though both pcs were a lot of the times at their limit.
+Besides syncthing I used a project share provided by uni to store the project so all the pcs in uni could be used to help rendering.
 
-To keep everything in sync I used Syncthing to keep in a synced folder between the pcs. 
+### Renderirng
 
-### setup after the upgrade
+For the rendering to work on many machines I uncecked the Overwrite and checked the Placeholders checkbox.
+This way a pc would look for not rendered frames cause it doesn't want to overwrite anything and then places a placeholder file so the other pcs know this frame is getting rendered by somebody else.
 
-At uni I also used syncthing to keep in sync with my pc at home.
-On the uni pc the project was stored on a local network share made availible by the uni.
-In the night I could use empty pcs to help out with rendering.
-The network share helped me to render the project in sync without a dedicated render manager.
-When rendering an image sequence in blender you can set the options:
-Overwrite to **false** and Placehold to **true**.
-This would allow one pc to mark the frame he is rendering right now (placeholder option) and
-skip the frames already rendered by the other clients (overwrite option).
+I had one problem though. I wasnt using the default output option for rendering, but rather the compositor node *File Output*. This doesnt have the overwrite and placeholder options. 
+I solved it by rendering the real image using the *File Output* node and doing the checks with the default node by rendering out a dummy png.
 
-Note: I had one problem. I wasnt using the default output option for rendering, 
-but rather the compositor node *File Output* for rendering. This doesnt have the overwrite and placeholder options.
-I solved it by rendering the real image using the *File Output* node and a dummy png in the Output Tab
-which would keep track of render management.
-
-Note: For this to work you need a fast network share. 
-I tried to use this method of render management with syncthing, which did not work, because it wasn't syncing the placeholder files fast enough so the two clients would render the same frame.
+For this to work you need a realtime network share. 
+I tried to use this method of render management with syncthing, but that didn't work, because it wasn't syncing the placeholder files fast enough so the other machines would start to render the same frame.

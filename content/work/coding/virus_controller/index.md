@@ -1,5 +1,6 @@
 ---
 title: "Virus Controller"
+layout: article
 programs_used:
     - Unity
 ---

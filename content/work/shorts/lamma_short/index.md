@@ -1,6 +1,6 @@
 ---
 title: "Lama Short"
-draft: false
+layout: article
 year: "on hold"
 programs_used:
     - Blender

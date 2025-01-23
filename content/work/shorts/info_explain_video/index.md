@@ -1,6 +1,6 @@
 ---
 title: "Computer sciene explainer video"
-draft: false
+layout: article
 year: "2021"
 weight: 30
 date: 2021-10-01

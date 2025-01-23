@@ -1,5 +1,6 @@
 ---
 title: "Blender Workflow Addons"
+layout: article
 programs_used:
     - Blender
 ---

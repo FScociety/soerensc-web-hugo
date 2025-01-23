@@ -1,6 +1,6 @@
 ---
 title: "Melon Movie"
-draft: false
+layout: article
 programs_used:
     - Blender
     - After-Effects

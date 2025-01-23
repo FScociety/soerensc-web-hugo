@@ -1,5 +1,6 @@
 ---
 title: "Dummy Joyride"
+layout: article
 programs_used:
     - Java
     - LibGDX
